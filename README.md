@@ -1,1 +1,1 @@
-# Legendary-Masterpiece
+# Mythical-Masterpiece
