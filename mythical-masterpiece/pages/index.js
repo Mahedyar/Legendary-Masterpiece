@@ -1,7 +1,9 @@
+import HeaderPart from "../components/Header/HeaderPart";
 
+const Home = () => {
+    return (
+        <HeaderPart />
+    )
+};
 
-export default function Home() {
-  return (
-<div>Hello World</div>
-  )
-}
+export default Home;
