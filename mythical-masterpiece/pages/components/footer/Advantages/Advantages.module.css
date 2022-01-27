@@ -1,0 +1,30 @@
+.hr--adv{
+    width: 100%;
+    border: 1px solid #d2d6d9;
+    overflow-y: auto;
+}
+.grid--adv{
+    padding: 0 5vw;
+}
+.advantage-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin: 6.5vh 0;
+    font-size: 14px;
+
+}
+.image--adv{
+    margin-left:16px;
+}
+.title-adv{
+    font-weight: bold;
+    color: #434343;
+}
+.description--adv{
+    color: #84868e;
+}
+
+
