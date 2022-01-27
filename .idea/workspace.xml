@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444986f8-7df3-4690-8042-feb3cac5f905" name="Changes" comment="first commit + assest file" />
+    <list default="true" id="444986f8-7df3-4690-8042-feb3cac5f905" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +73,7 @@
       <workItem from="1643262095071" duration="795000" />
       <workItem from="1643262913536" duration="2902000" />
       <workItem from="1643268649730" duration="208000" />
+      <workItem from="1643269109940" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="first commit + assest file">
       <created>1643261614247</created>
@@ -79,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643261614247</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1643269577231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643269577231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit + assest file" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit + assest file" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
