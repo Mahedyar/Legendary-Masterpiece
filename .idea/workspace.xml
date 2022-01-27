@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="444986f8-7df3-4690-8042-feb3cac5f905" name="Changes" comment="first commit + assest file" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Footer" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/index.js" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="249RtrUCI9IkTUPLafSHUnRxQ0u" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mythical-masterpiece/pages/assest/Images/Footer/logo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\assest\Images\Footer\logo" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\assets\TopFooter" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\assest\Images\Footer" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\TopFooterHolder" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\Advantages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="444986f8-7df3-4690-8042-feb3cac5f905" name="Changes" comment="" />
+      <created>1643041034192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643041034192</updated>
+      <workItem from="1643041035837" duration="24178000" />
+      <workItem from="1643262095071" duration="795000" />
+      <workItem from="1643262913536" duration="2902000" />
+      <workItem from="1643268649730" duration="208000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit + assest file">
+      <created>1643261614247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643261614247</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit + assest file" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit + assest file" />
+  </component>
+</project>
