@@ -1,6 +1,5 @@
 import {Grid} from "@mui/material";
 import AdvantagesItems from "./AdvantagesItems";
-import classes from "./Advantages.module.css";
 
 export default function Advantages() {
     const advantages = [
@@ -39,8 +38,9 @@ export default function Advantages() {
 
     return (
         <>
-            <div className={classes['hr--adv']}></div>
-            <Grid className={classes['grid--adv']} container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
+
+            <hr/>
+            <Grid sx={{paddingRight:10}}  container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
                 {advantages.map((item) => <AdvantagesItems
                     key={item.id}
                     title={item.title}
