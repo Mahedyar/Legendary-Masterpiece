@@ -1,4 +1,4 @@
-import {Grid} from "@mui/material";
+import {Grid, Box} from "@mui/material";
 import AdvantagesItems from "./AdvantagesItems";
 
 export default function Advantages() {
@@ -40,15 +40,16 @@ export default function Advantages() {
         <>
 
             <hr/>
-            <Grid sx={{paddingRight:10}}  container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
-                {advantages.map((item) => <AdvantagesItems
-                    key={item.id}
-                    title={item.title}
-                    description={item.description}
-                    image={item.image}/>)
-                }
-            </Grid>
-
+                <Box sx={{width: '100%', margin: 'auto'}}>
+                    <Grid  sx={{paddingRight:10}} container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
+                        {advantages.map((item) => <AdvantagesItems
+                            key={item.id}
+                            title={item.title}
+                            description={item.description}
+                            image={item.image}/>)
+                        }
+                    </Grid>
+                </Box>
         </>
     )
 }

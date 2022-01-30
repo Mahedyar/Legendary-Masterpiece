@@ -2,6 +2,8 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
+import Typography from '@mui/material/Typography';
+import {Box } from "@mui/material";
 
 
 
@@ -17,23 +19,24 @@ const titr=[
             <List
                 sx={{
                     maxWidth: 900,
-                    maxHeight: 250,
+                    maxHeight: 300,
                     textAlign: 'right',
                     display:'flex',
                     justifyContent:'right',
                     direction:"rtl",
-                    color: "#141414",
-                    padding:0,
+                    lineHeight:0.2,
+
+
 
                 }}>
                 {titr.map((sectionId) => (
 
                     <li key={`section-${sectionId.title}`}>
                         <ul>
-                            <ListSubheader sx={{fontWeight:"bold" ,}}>{`${sectionId.title}`}</ListSubheader>
+                            <ListSubheader ><Typography variant="h6" sx={{fontWeight:"bold",color:" #141414"}}>{`${sectionId.title}`}</Typography></ListSubheader>
                             {sectionId.subTitle.map((item) => (
-                                <ListItem key={`${sectionId}-${item}`}>
-                                   <a href={"#"}> <ListItemText sx={{textAlign: 'right'}} primary={`${item}`} /></a>
+                                <ListItem  key={`${sectionId}-${item}`}>
+                                   <a href={"#"}> <Box sx={{height:10}}><Typography variant="body2" sx={{color: "#8c8c8c"}}><ListItemText sx={{textAlign: 'right'}} primary={`${item}`} /></Typography></Box></a>
                                 </ListItem>
                             ))}
                         </ul>

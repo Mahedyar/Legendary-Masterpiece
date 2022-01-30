@@ -8,6 +8,7 @@ export default function Icon() {
              <img
                  src={"https://images.timcheh.com/1/fill/24/24/sm/true/plain/https://static.timcheh.com/uploads/manual/images/icons/instagram-gradient.svg"}/>
              <TwitterIcon/>
+            <i class="icon icon-Telegram"></i>
              <TelegramIcon/>
              <LinkedInIcon/>
         </span>

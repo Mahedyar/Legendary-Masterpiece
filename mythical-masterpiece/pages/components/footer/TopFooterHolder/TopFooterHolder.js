@@ -2,6 +2,7 @@ import {Grid,Box} from "@mui/material";
 import Paper from '@mui/material/Paper';
 import {styled} from '@mui/material/styles';
 import Icon from "./Icon";
+import Typography from '@mui/material/Typography';
 
 const Item = styled(Paper)(({theme}) => ({
     boxShadow: 'none',
@@ -19,17 +20,17 @@ export default function TopFooterHolder() {
             <Grid container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
                 <Grid sm={4}>
                     <Item >
-                        <p>تیمچه در شبکه های اجتماعی: <Icon/></p>
+                        <Typography variant="subtitle2">تیمچه در شبکه های اجتماعی: <Icon/></Typography>
                     </Item>
                 </Grid>
                 <Grid sm={4}>
                     <Item>
-                    <p>آدرس ایمیل: Salam@timcheh.com</p>
+                    <Typography variant="subtitle2">آدرس ایمیل: Salam@timcheh.com</Typography>
                     </Item>
                 </Grid>
                 <Grid sm={4}>
                     <Item sx={{paddingRight:15}}>
-                    <p>شماره تماس: 021-91012959</p>
+                    <Typography variant="subtitle2">شماره تماس: 021-91012959</Typography>
                     </Item>
                 </Grid>
 
