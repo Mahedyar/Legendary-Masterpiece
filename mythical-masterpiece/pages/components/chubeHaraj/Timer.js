@@ -1,55 +1,51 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import { Typography } from "@mui/material";
+import React from "react";
+import { useState, useEffect } from "react";
+import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
 
 const Timer = (props) => {
-    const {initialMinute = 0,initialSeconds = 0} = props;
-    const [hours , setHours] = useState(23)
-    const [ minutes, setMinutes ] = useState(59);
-    const [seconds, setSeconds ] =  useState(59);
+  
+  const [hours, setHours] = useState(1);
+  const [minutes, setMinutes] = useState(59);
+  const [seconds, setSeconds] = useState(59);
 
-    useEffect(()=>{
-       setInterval(()=>{
-           setSeconds(seconds -1)
-       } , 1000)
+  useEffect(() => {
+    const intervalID = setInterval(() => {
+      updateTime();
+    }, 1000);
 
-       return ()=>{
-           clearInterval
-       }
-                
-        } , []);
+    return () => {
+      clearInterval(intervalID);
+    };
+  }, [seconds]);
 
-       
+  const updateTime = () => {
+    
+    if (seconds > 0) {
+      setSeconds(seconds - 1);
+    } else {
+      if (minutes > 0) {
+        setMinutes(minutes - 1);
+      } else {
+          if(hours > 0){
+            setHours(hours - 1);
+          }else{
+              setHours(23)
+          }
+        
+        setMinutes(59);
+      }
+      setSeconds(59);
+    }
+  };
 
-    // useEffect(()=>{
-    // let myInterval = setInterval(() => {
-    //     console.log("ticking")
-    //         if (seconds > 0) {
-    //             setSeconds(seconds - 1);
-    //         }
-    //         if (seconds === 0) {
-    //             if (minutes === 0) {
-    //                 clearInterval(myInterval)
-    //             } else {
-    //                 setMinutes(minutes - 1);
-    //                 setSeconds(59);
-    //             }
-    //         } 
-    //     }, 1000)
-    //     return ()=> {
-    //         clearInterval(myInterval);
-    //       };
-    // });
-
-    return (
-        <div>
-            
-            <h1>{hours}:{minutes}:{seconds}</h1>
-        {/* { minutes === 0 && seconds === 0
-            ? null
-            : <h1> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
-        } */}
-        </div>
-    )
-}
+  return (
+    <div>
+      <Typography sx={{color : "white" , fontSize : "25px"}}>
+        {HourglassBottomIcon}{hours}:{minutes}:{seconds}
+      </Typography>
+    </div>
+  );
+};
 
 export default Timer;

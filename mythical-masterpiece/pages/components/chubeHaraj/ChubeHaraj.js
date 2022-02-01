@@ -9,6 +9,7 @@ import chubeharaj from "../../assest/Images/ChubeHaraj/sale.png";
 import { Typography } from "@mui/material";
 import Timer from "./Timer";
 
+
 // import React from "react";
 // import {
 //   Page,
@@ -69,13 +70,15 @@ export default function BoxSx() {
             >
               چوب حراج
               <Box sx={{ height: "25px", backgroundColor: "#0082fd" , marginTop : "-20px" }}></Box>
+              <Timer/>
               
             </Typography>
+            
             <img src={chubeharaj.src} />
           </Box>
         </Box>
       </Container>
-      <Timer/>
+      
     </Box>
     
   );
