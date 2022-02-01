@@ -1,27 +1,34 @@
+import bahman from '../../assest/Images/Slider/bahman.png';
+import gPlus from '../../assest/Images/Slider/gplus.png';
+import header from '../../assest/Images/Slider/header.png';
+import slider from '../../assest/Images/Slider/slider.png';
+import snowa from '../../assest/Images/Slider/snowa.png';
+import yummy from '../../assest/Images/Slider/yummy.png';
+
 const DataSlider = [
     {
         id:1,
-        img:"https://images.timcheh.com/1/fill/2880/672/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/gplus-1011.jpg",
+        img:bahman,
     },
     {
         id:2,
-        img:"https://images.timcheh.com/1/fill/2880/672/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/slider-yummy-1104.jpg",
+        img:gPlus,
     },
     {
         id:3,
-        img:'https://images.timcheh.com/1/fill/2880/672/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/header-1027.jpg',
+        img:header,
     },
     {
         id:4,
-        img: 'https://images.timcheh.com/1/fill/2880/672/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/slider-snowa-1104.jpg',
+        img: slider,
     },
     {
         id:5,
-        img: 'https://static.timcheh.com/uploads/manual/images/homepage/desktop/gif/slider-1021.gif',
+        img: snowa,
     },
     {
         id: 6,
-        img: 'https://images.timcheh.com/1/fill/2880/672/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/code-takhfif-bahman-1101.jpg',
+        img: yummy,
     }
 ]
 export default DataSlider

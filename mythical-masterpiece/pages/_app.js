@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+// swiper slider
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
