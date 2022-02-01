@@ -1,13 +1,37 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import { useState, useEffect } from "react";
-import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
+// import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
 
+function numberToPersian(number) {
+  const persian = {
+    0: "۰",
+    1: "۱",
+    2: "۲",
+    3: "۳",
+    4: "۴",
+    5: "۵",
+    6: "۶",
+    7: "۷",
+    8: "۸",
+    9: "۹",
+  };
+  number = number.toString().split("");
+  let persianNumber = "";
+  for (let i = 0; i < number.length; i++) {
+    number[i] = persian[number[i]];
+  }
+  for (let i = 0; i < number.length; i++) {
+    persianNumber += number[i];
+  }
+  return persianNumber;
+}
 const Timer = (props) => {
   
   const [hours, setHours] = useState(1);
   const [minutes, setMinutes] = useState(59);
   const [seconds, setSeconds] = useState(59);
+ 
 
   useEffect(() => {
     const intervalID = setInterval(() => {
@@ -20,19 +44,18 @@ const Timer = (props) => {
   }, [seconds]);
 
   const updateTime = () => {
-    
     if (seconds > 0) {
       setSeconds(seconds - 1);
     } else {
       if (minutes > 0) {
         setMinutes(minutes - 1);
       } else {
-          if(hours > 0){
-            setHours(hours - 1);
-          }else{
-              setHours(23)
-          }
-        
+        if (hours > 0) {
+          setHours(hours - 1);
+        } else {
+          setHours(23);
+        }
+
         setMinutes(59);
       }
       setSeconds(59);
@@ -41,8 +64,10 @@ const Timer = (props) => {
 
   return (
     <div>
-      <Typography sx={{color : "white" , fontSize : "25px"}}>
-        {HourglassBottomIcon}{hours}:{minutes}:{seconds}
+      <Typography sx={{ color: "white", fontSize: "25px" , fontWeight : "bold" }}>
+        {numberToPersian(hours)}:{numberToPersian(minutes)}:{numberToPersian(seconds)}
+        
+        
       </Typography>
     </div>
   );
