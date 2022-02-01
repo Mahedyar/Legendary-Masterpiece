@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import { useState, useEffect } from "react";
-// import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
+import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
 
 function numberToPersian(number) {
   const persian = {
@@ -27,10 +27,16 @@ function numberToPersian(number) {
   return persianNumber;
 }
 const Timer = (props) => {
+
+  const initialTime = {
+    hours : 23 , 
+    minutes : 59 , 
+    seconds : 59
+  }
   
-  const [hours, setHours] = useState(1);
-  const [minutes, setMinutes] = useState(59);
-  const [seconds, setSeconds] = useState(59);
+  const [hours, setHours] = useState(initialTime.hours);
+  const [minutes, setMinutes] = useState(initialTime.minutes);
+  const [seconds, setSeconds] = useState(initialTime.seconds);
  
 
   useEffect(() => {
@@ -65,7 +71,7 @@ const Timer = (props) => {
   return (
     <div>
       <Typography sx={{ color: "white", fontSize: "25px" , fontWeight : "bold" }}>
-        {numberToPersian(hours)}:{numberToPersian(minutes)}:{numberToPersian(seconds)}
+     <HourglassBottomIcon/>{numberToPersian(hours)}:{numberToPersian(minutes)}:{numberToPersian(seconds)}
         
         
       </Typography>

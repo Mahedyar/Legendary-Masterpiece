@@ -5,27 +5,30 @@ import { Typography } from "@mui/material";
 
 export default function ItemCard() {
   return (
-           <Box
+    <Box
       sx={{
-        // minWidth: 275 ,
-        // m: 2,
-        marginLeft : 2 , paddingTop : 3 , marginBottom : 3 , 
+        height: 388,
+        marginLeft: 2,
+        paddingTop: 3,
+        marginBottom: 3,
         boxSizing: "border-box",
-        width: 250,
+        width: 215,
       }}
     >
       <ItemImage />
       <Typography
+        component="div"
         sx={{
           textAlign: "right",
-          marginBottom : 2 ,
-          marginTop : 1
+          marginBottom: 2,
+          marginTop: 1,
         }}
       >
         سنتور 4 مهر ویژه مدل فرد
       </Typography>
-      <Typography sx={{ display: "flex" }}>
+      <Typography component="div" sx={{ display: "flex" }}>
         <Typography
+          component="span"
           sx={{
             backgroundColor: "yellow",
             fontWeight: "bold",
@@ -35,6 +38,7 @@ export default function ItemCard() {
           %۴۲
         </Typography>
         <Typography
+          component="span"
           sx={{
             textDecoration: "line-through",
             color: "gray",
@@ -43,20 +47,23 @@ export default function ItemCard() {
           ۴۰۰۰۰۰۰
         </Typography>
       </Typography>
-      <Typography sx={{ display: "flex" , alignItems : "center" }}>
+      <Typography
+        component="div"
+        sx={{ display: "flex", alignItems: "center" }}
+      >
         <Typography
+          component="span"
           sx={{
             marginRight: 1,
-            color : "gray"
+            color: "gray",
           }}
         >
           تومان
         </Typography>
-        <Typography sx = {{fontWeight : "bold" , fontSize : 20}}>۲۳۰۰۰۰۰</Typography>
+        <Typography component="span" sx={{ fontWeight: "bold", fontSize: 20 }}>
+          ۲۳۰۰۰۰۰
+        </Typography>
       </Typography>
     </Box>
-
-      
-   
   );
 }

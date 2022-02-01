@@ -12,7 +12,7 @@ export default function ItemImage() {
       <Paper elevation={0} sx={{
           backgroundColor : "#f5f5f5" ,
           
-          height : 250  , 
+          height : 270  , 
           display : "flex" ,
           justifyContent : "center",
           alignItems : "center"

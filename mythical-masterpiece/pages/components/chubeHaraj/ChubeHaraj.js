@@ -8,18 +8,18 @@ import background from "../../assest/Images/ChubeHaraj/sale_bg.png";
 import chubeharaj from "../../assest/Images/ChubeHaraj/sale.png";
 import { Typography } from "@mui/material";
 import Timer from "./Timer";
+import ItemsSlider from "./ItemsSlider"
+
+const products = [{
+  
+  image : test ,
+  name : "لاستیک خودرو" ,
+  offPercent : "۴٪" ,
+  finalPrice : "۱.۱۷۴.۰۰۰"
+}]
 
 
-// import React from "react";
-// import {
-//   Page,
-//   Navbar,
-//   BlockTitle,
-//   Swiper,
-//   SwiperSlide,
-//   Block,
-// } from "framework7-react";
-// import "./swiper.css";
+
 
 export default function BoxSx() {
   return (
@@ -52,11 +52,7 @@ export default function BoxSx() {
               paddingRight: 2,
             }}
           >
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
+            <ItemsSlider/>
           </Paper>
           <Box sx={{ paddingLeft: "16px" }}>
             <Typography
