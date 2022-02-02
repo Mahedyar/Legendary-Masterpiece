@@ -3,7 +3,35 @@ import ItemImage from "./ItemImage";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 
-export default function ItemCard() {
+function numberToPersian(number) {
+  const persian = {
+    0: "۰",
+    1: "۱",
+    2: "۲",
+    3: "۳",
+    4: "۴",
+    5: "۵",
+    6: "۶",
+    7: "۷",
+    8: "۸",
+    9: "۹",
+  };
+  number = number.toString().split("");
+  let persianNumber = "";
+  for (let i = 0; i < number.length; i++) {
+    number[i] = persian[number[i]];
+  }
+  for (let i = 0; i < number.length; i++) {
+    persianNumber += number[i];
+  }
+  return persianNumber;
+}
+
+export default function ItemCard(props) {
+  const finalPrice = () => {
+    return numberToPersian((props.product.price * (100 - props.product.offPercent)) / 100);
+  };
+
   return (
     <Box
       sx={{
@@ -15,7 +43,7 @@ export default function ItemCard() {
         width: 215,
       }}
     >
-      <ItemImage />
+      <ItemImage image={props.product.image} />
       <Typography
         component="div"
         sx={{
@@ -24,7 +52,7 @@ export default function ItemCard() {
           marginTop: 1,
         }}
       >
-        سنتور 4 مهر ویژه مدل فرد
+        {props.product.name}
       </Typography>
       <Typography component="div" sx={{ display: "flex" }}>
         <Typography
@@ -35,7 +63,7 @@ export default function ItemCard() {
             marginRight: 1,
           }}
         >
-          %۴۲
+          {`%${numberToPersian(props.product.offPercent)}`}
         </Typography>
         <Typography
           component="span"
@@ -44,7 +72,7 @@ export default function ItemCard() {
             color: "gray",
           }}
         >
-          ۴۰۰۰۰۰۰
+          {numberToPersian(props.product.price)}
         </Typography>
       </Typography>
       <Typography
@@ -61,7 +89,8 @@ export default function ItemCard() {
           تومان
         </Typography>
         <Typography component="span" sx={{ fontWeight: "bold", fontSize: 20 }}>
-          ۲۳۰۰۰۰۰
+          
+          {finalPrice()}
         </Typography>
       </Typography>
     </Box>

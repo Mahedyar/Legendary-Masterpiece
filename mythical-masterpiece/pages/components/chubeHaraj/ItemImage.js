@@ -5,7 +5,7 @@ import Santur from "../../assest/Images/ChubeHaraj/img_1.png"
 import { width } from '@mui/system';
 import classes from "./ItemImage.module.css"
 
-export default function ItemImage() {
+export default function ItemImage(props) {
     
   return (
    
@@ -18,7 +18,7 @@ export default function ItemImage() {
           alignItems : "center"
       }}  >
           <img 
-          src={Santur.src}
+          src={props.image}
           className={classes.image}
           />
       </Paper>
