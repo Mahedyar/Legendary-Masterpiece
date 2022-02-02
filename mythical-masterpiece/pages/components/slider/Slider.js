@@ -34,6 +34,8 @@ export default function Slider(){
                 </Grid>
             </Container>
 
+
+
         </>
     )
 }
