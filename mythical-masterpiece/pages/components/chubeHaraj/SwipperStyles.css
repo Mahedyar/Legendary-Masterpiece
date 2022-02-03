@@ -1,19 +1,7 @@
 #app {
   height: 100%;
 }
-/* body {
-  position: relative;
-  height: 100%;
-}
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-} */
 :root {
   --swiper-navigation-size: 10px
 }
@@ -44,10 +32,8 @@ body {
 }
 
 .swiper-slide img {
-  /* display: block; */
   width: 65%;
-  /* height: 100%; */
-  /* object-fit: cover; */
+  
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -64,7 +50,7 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 50%;
-  z-index: 100;
+  z-index: 1000;
   box-shadow:0 2px 18px 0 rgb(0 0 0 / 8%) 
 
 }

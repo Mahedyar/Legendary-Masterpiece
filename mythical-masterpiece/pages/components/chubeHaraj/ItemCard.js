@@ -33,7 +33,7 @@ export default function ItemCard(props) {
   };
 
   return (
-    <Box
+    <Box key = {props.product.id}
       sx={{
         height: 388,
         marginLeft: 2,

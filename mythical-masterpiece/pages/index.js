@@ -1,19 +1,65 @@
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>
-import ChubeHaraj from "./components/chubeHaraj/ChubeHaraj"
-
+/>;
+import ChubeHaraj from "./components/chubeHaraj/ChubeHaraj";
+import livan from "./assest/Images/ChubeHaraj/img_1.png";
+import drill from "./assest/Images/ChubeHaraj/img_2.png";
+import kafsh from "./assest/Images/ChubeHaraj/img_3.png";
+import sandis from "./assest/Images/ChubeHaraj/img_4.png";
+import headphone from "./assest/Images/ChubeHaraj/img_5.png";
+import cream from "./assest/Images/ChubeHaraj/img.png";
+import KalaPreview from "./components/kalaPreview/KalaPreview";
 
 export default function Home() {
+  const products = [
+    {
+      id: 1,
+      image: livan.src,
+      name: "لیوان پلاستیکی",
+      offPercent: 14,
+      price: 15000,
+    },
+    {
+      id: 2,
+      image: drill.src,
+      name: "دریل",
+      offPercent: 22,
+      price: 800000,
+    },
+    {
+      id: 3,
+      image: kafsh.src,
+      name: "کفش ورزشی",
+      offPercent: 31,
+      price: 320000,
+    },
+    {
+      id: 4,
+      image: sandis.src,
+      name: "ساندیس",
+      offPercent: 8,
+      price: 8000,
+    },
+    {
+      id: 5,
+      image: headphone.src,
+      name: "هدفون مدل یونیوو",
+      offPercent: 48,
+      price: 450000,
+    },
+    {
+      id: 6,
+      image: cream.src,
+      name: "کرم مخصوص صورت",
+      offPercent: 17,
+      price: 85000,
+    },
+  ];
   return (
     <>
-    
-    <ChubeHaraj/>
-    
-    
+      <ChubeHaraj products={products} slidesPerView = {4} />
+      <KalaPreview products={products} slidesPerView = {5}/>
     </>
-
-
-  )
+  );
 }
