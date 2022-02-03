@@ -1,8 +1,6 @@
-import {Grid} from "@mui/material";
+import {Grid,Box,Container,Typography} from "@mui/material";
 import Paper from '@mui/material/Paper';
 import {styled} from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
-
 
 const Item = styled(Paper)(({theme}) => ({
     boxShadow: 'none',
@@ -16,17 +14,16 @@ const Item = styled(Paper)(({theme}) => ({
 }));
 export default function AdvantagesItems(props){
     return(
+        <Grid sm={2.4} >
+            <Item>
+                <div><img  src={props.image}/></div>
 
-            <Grid lg={2.4} sm={6} xs={12} >
-                <Item>
-                    <img  src={props.image}/>
-                    <span>
-                    <Typography variant="subtitle2" sx={{fontWeight:'bold'}} >{props.title}</Typography>
-                    <Typography variant="body2" sx={{fontSize:14}}> {props.description}</Typography>
-                </span>
-                </Item>
-            </Grid>
+                <Container >
+                    <Typography variant="button" sx={{fontSize:14,color:"#434343",fontWeight:"bold",lineHeight:1.5,letterSpacing:0}}>{props.title}</Typography>
+                    <Typography variant="body2" sx={{fontSize:12,color:"#84868e"}}> {props.description}</Typography>
+                </Container>
 
-
+            </Item>
+        </Grid>
     )
 }

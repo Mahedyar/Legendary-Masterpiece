@@ -1,6 +1,6 @@
 // import ShowMoreText from "react-show-more-text";
 import React, { useState } from "react";
-import {Box, Grid} from "@mui/material"
+import {Box, Grid,Container} from "@mui/material"
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -26,6 +26,8 @@ export default function AboutFooterHolder() {
     }));
     return (
         <>
+            <Box sx={{background: "#fafafa"}}>
+            <Container maxWidth={'lg'}>
             <Box sx={{width: '100%',textAlign:'raight',margin:'auto'}}>
                 <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
                     <Grid item sm={12} sx={{background:"#fafafa",padding:5}}>
@@ -36,10 +38,12 @@ export default function AboutFooterHolder() {
                             <Typography variant="body2" >{text}{<br/>}{expand?moreText:""}</Typography>
                         </Item>
                         <Item sx={{textAlign: 'center'}}>
-                            <Typography variant="button" onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon/>:<ExpandMoreIcon/>}</Typography>
+                            <Typography variant="caption" sx={{ fontWeight: 'bold',color:'#434343' }} onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon sx={{ fontSize: 12 }}/>:<ExpandMoreIcon sx={{ fontSize: 12 }}/>}</Typography>
                         </Item>
                     </Grid>
                 </Grid>
+            </Box>
+            </Container>
             </Box>
         </>
     )

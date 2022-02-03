@@ -1,4 +1,4 @@
-import {Grid, Box} from "@mui/material";
+import {Grid, Box,Container} from "@mui/material";
 import AdvantagesItems from "./AdvantagesItems";
 
 export default function Advantages() {
@@ -12,7 +12,7 @@ export default function Advantages() {
         {
             id: 4,
             title: "تضمین اصالت کالا",
-            description: "!واقعی",
+            description: "واقعی!",
             image: "https://images.timcheh.com/1/fill/80/80/sm/true/plain/https://static.timcheh.com/uploads/manual/images/others/advantage_4_new.svg"
         },
         {
@@ -23,8 +23,8 @@ export default function Advantages() {
         },
         {
             id: 2,
-            title: "روز ضمانت بازگشتی 10",
-            description: "!حتی سلیقه ای",
+            title: "10 روز ضمانت بازگشت",
+            description: "حتی سلیقه ای!",
             image: "https://images.timcheh.com/1/fill/80/80/sm/true/plain/https://static.timcheh.com/uploads/manual/images/others/advantage_2_new.svg"
         },
         {
@@ -38,10 +38,10 @@ export default function Advantages() {
 
     return (
         <>
-
             <hr/>
+            <Container  maxWidth={'lg'}>
                 <Box sx={{width: '100%', margin: 'auto'}}>
-                    <Grid  sx={{paddingRight:10}} container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
+                    <Grid container  >
                         {advantages.map((item) => <AdvantagesItems
                             key={item.id}
                             title={item.title}
@@ -50,6 +50,7 @@ export default function Advantages() {
                         }
                     </Grid>
                 </Box>
+            </Container>
         </>
     )
 }

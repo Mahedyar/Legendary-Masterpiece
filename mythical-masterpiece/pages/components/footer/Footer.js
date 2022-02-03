@@ -1,18 +1,24 @@
 import Advantages from "./Advantages/Advantages";
 import TopFooterHolder from "./TopFooterHolder/TopFooterHolder";
-import Container from "./Container/Container";
+import ContainerFooter from "./ContainerFooter/Container";
 import AboutFooterHolder from "./AboutFooterHolder";
 import CopyRightHolder from "./CopyRightHolder";
+import {Grid,Box,Container} from "@mui/material";
+import React, { useState } from "react";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 export default function footer() {
+    const matches = useMediaQuery('(min-width:769px)');
     return (
         <>
-            <h1>Footer</h1>
-            <Advantages/>
+
+            {matches && <Advantages/>}
             <TopFooterHolder/>
-            <Container/>
+            <ContainerFooter/>
             <AboutFooterHolder/>
             <CopyRightHolder/>
+
         </>
     )
 }

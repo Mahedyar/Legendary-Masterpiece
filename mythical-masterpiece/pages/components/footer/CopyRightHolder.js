@@ -1,4 +1,4 @@
-import {Box, Grid} from "@mui/material"
+import {Box, Grid,Container} from "@mui/material"
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
@@ -16,9 +16,10 @@ export default function CopyRightHolder() {
 
     }));
     return (
+        <Box sx={{background:"#f5f5f5"}}>
+        <Container maxWidth={'lg'}>
 
-        <Box sx={{ width: '100%'}}>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Grid container>
                 <Grid item sm={12}>
                     <Item>
                         <Typography variant="caption" display="block">کلیه حقوق این سایت متعلق به شرکت نوین تجارت مجازی آریا (تیمچه) است. <span>Copyrights Timcheh Co - 1399©</span></Typography>
@@ -26,6 +27,8 @@ export default function CopyRightHolder() {
                 </Grid>
 
             </Grid>
+
+        </Container>
         </Box>
 
     )
