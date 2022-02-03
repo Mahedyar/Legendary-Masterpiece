@@ -72,6 +72,7 @@ export default function ChubeHaraj() {
         backgroundColor: "#0a3680",
         backgroundImage: `url(${background.src})`,
         backgroundRepeat: "repeat-x",
+        zIndex : "1"
       }}
     >
       <Container id="Container">
@@ -81,12 +82,13 @@ export default function ChubeHaraj() {
             height: 516,
             alignItems: "center",
             justifyContent: "right",
+            
           }}
         >
           <Paper
             sx={{
               width: "calc(100% - 222px)",
-              
+              zIndex : " 1",
               display: "flex",
               alignItems: "center",
               justifyContent: "right",
