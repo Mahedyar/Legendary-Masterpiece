@@ -7,7 +7,7 @@ export default function ResSlider(){
     return(
         <>
             <Box >
-            <Grid sx={12}>
+            <Grid >
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}

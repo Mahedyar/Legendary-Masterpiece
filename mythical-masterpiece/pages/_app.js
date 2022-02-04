@@ -3,7 +3,7 @@ import '../styles/globals.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../pages/components/slider/styles.css";
+import "../components/slider/styles.css";
 // import "./assest/Font/YekanBoom.ttf";
 
 function MyApp({ Component, pageProps }) {

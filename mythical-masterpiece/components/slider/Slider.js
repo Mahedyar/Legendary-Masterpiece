@@ -1,12 +1,10 @@
 import DataSlider from "./DataSlider";
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {Container, Grid, Paper} from "@mui/material";
 import {Autoplay, Pagination, Navigation} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import ResSlider from '../slider/ResSlider'
+import ResSlider from './ResSlider'
 
 
 
@@ -25,7 +23,7 @@ export default function Slider() {
                 centeredSlides={true}
                 autoplay={{
                 delay: 2500,
-                disableOnInteraction: false,
+                // disableOnInteraction: false,
             }}
                 loop={true}
                 pagination={{
