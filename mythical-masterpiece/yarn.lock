@@ -811,7 +811,7 @@ dom-helpers@^5.0.1:
     "@babel/runtime" "^7.8.7"
     csstype "^3.0.2"
 
-dom7@^4.0.2:
+dom7@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
   integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
@@ -1154,6 +1154,11 @@ flatted@^3.1.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.4.tgz#28d9969ea90661b5134259f312ab6aa7929ac5e2"
   integrity sha512-8/sOawo8tJ4QOBX8YlQBMxL8+RLZfxMQOif9o0KUKTNTjMYElWPE0r/m5VNFxTRd0NSw8qSy8dajrwX4RYI1Hw==
+
+framework7-react@^6.3.15:
+  version "6.3.15"
+  resolved "https://registry.yarnpkg.com/framework7-react/-/framework7-react-6.3.15.tgz#914d6eb36ceea9995e3f008026aa2934367ac80d"
+  integrity sha512-GbvOZOlLArligdIOL3Pu9/XhFohjNTHBO7CGJl3H+Svn/teMtjCIXXxE5DL/WdxwtRVB7MTMvlRehNoZFjgrug==
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -2124,12 +2129,12 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swiper@^7.4.1:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.4.1.tgz#99fc586d1335b45250d2c6b3128dc91f8047d3e7"
-  integrity sha512-dhbL4tpYFvHug1J7GnKElfTi6EYhlZy/vNZRhHkWFyUsWZ1Vovipxj3la5gqllMogygXJMe3zvVv+f6eppvWiA==
+swiper@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.0.1.tgz#9b5ef989182a8e5e5c66d9abb85baadbbcbf600f"
+  integrity sha512-WLQvR+EVEQHoGaRaZ8QlPUzwVC6aPS9U1XG9/wN4MHcxmCDKQKZL21uhB3YghJvnP5Wo07YwvnsEJ1inAHNHnQ==
   dependencies:
-    dom7 "^4.0.2"
+    dom7 "^4.0.4"
     ssr-window "^4.0.2"
 
 text-table@^0.2.0:
