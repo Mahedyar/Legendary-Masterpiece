@@ -15,3 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+/*@font-face {*/
+/*  font-family: 'YekanBoom';*/
+/*  src: local('YekanBoom'), url(./pages/assest/Font/YekanBoom.ttf) format('truetype');*/
+/*}*/
+/*h1{*/
+/*  font-family: YekanBoom;*/
+/*}*/
