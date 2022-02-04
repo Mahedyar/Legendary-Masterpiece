@@ -74,6 +74,7 @@ export default function Home() {
         cardsPaddingTop={1}
         imagedKalaPreview = {1}
         previewImage = {firstImagedPreview.src}
+        ImageTitle={"لوازم آرایشی"}
       />
     </>
   );
