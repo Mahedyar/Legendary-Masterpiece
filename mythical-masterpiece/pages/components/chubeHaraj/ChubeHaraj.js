@@ -10,8 +10,8 @@ import ItemsSlider from "./ItemsSlider";
 import background from "../../assest/Images/ChubeHaraj/sale_bg.png";
 import chubeharaj from "../../assest/Images/ChubeHaraj/sale.png";
 
+
 export default function ChubeHaraj(props) {
-  
   return (
     <Box
       sx={{
@@ -44,7 +44,11 @@ export default function ChubeHaraj(props) {
               zIndex: "1",
             }}
           >
-            <ItemsSlider products={props.products} />
+            <ItemsSlider
+              products={props.products}
+              slidesPerView={props.slidesPerView}
+              cardsPaddingTop={props.cardsPaddingTop}
+            />
           </Paper>
           <Box sx={{ paddingLeft: "16px" }}>
             <Typography

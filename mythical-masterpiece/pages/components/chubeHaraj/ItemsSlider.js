@@ -7,10 +7,12 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 export default function ItemsSlider(props) {
+  
+  // console.log(cardsPaddingTop)
   return (
     <>
       <Swiper
-        slidesPerView={4.7}
+        slidesPerView={props.slidesPerView}
         spaceBetween={2}
         loop={true}
         loopFillGroupWithBlank={true}
@@ -20,7 +22,7 @@ export default function ItemsSlider(props) {
       >
         {props.products.map((product) => (
           <SwiperSlide>
-            <ItemCard product={product} />
+            <ItemCard product={product} cardsPaddingTop={props.cardsPaddingTop} />
           </SwiperSlide>
         ))}
       </Swiper>

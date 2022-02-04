@@ -51,7 +51,9 @@
   padding: 20px;
   border-radius: 50%;
   z-index: 1000;
-  box-shadow:0 2px 18px 0 rgb(0 0 0 / 8%) 
+  box-shadow:0 2px 18px 0 rgb(0 0 0 / 8%)  ;
+  margin-bottom: 45px;
+  
 
 }
 

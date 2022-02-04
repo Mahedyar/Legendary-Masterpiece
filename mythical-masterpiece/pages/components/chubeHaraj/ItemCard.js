@@ -29,15 +29,18 @@ function numberToPersian(number) {
 
 export default function ItemCard(props) {
   const finalPrice = () => {
-    return numberToPersian((props.product.price * (100 - props.product.offPercent)) / 100);
+    return numberToPersian(
+      (props.product.price * (100 - props.product.offPercent)) / 100
+    );
   };
 
   return (
-    <Box key = {props.product.id}
+    <Box
+      key={props.product.id}
       sx={{
         height: 388,
         marginLeft: 2,
-        paddingTop: 3,
+        paddingTop: props.cardsPaddingTop,
         marginBottom: 3,
         boxSizing: "border-box",
         width: 215,
@@ -89,7 +92,6 @@ export default function ItemCard(props) {
           تومان
         </Typography>
         <Typography component="span" sx={{ fontWeight: "bold", fontSize: 20 }}>
-          
           {finalPrice()}
         </Typography>
       </Typography>

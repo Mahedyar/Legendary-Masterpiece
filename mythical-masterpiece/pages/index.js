@@ -10,8 +10,11 @@ import sandis from "./assest/Images/ChubeHaraj/img_4.png";
 import headphone from "./assest/Images/ChubeHaraj/img_5.png";
 import cream from "./assest/Images/ChubeHaraj/img.png";
 import KalaPreview from "./components/kalaPreview/KalaPreview";
+import firstImagedPreview from "./assest/Images/KalaPreview/ladies_new.png"
+import secondImagedPreview from "./assest/Images/KalaPreview/men_new.png"
 
 export default function Home() {
+  // const kalaPreviewTitleHide = 1 , 
   const products = [
     {
       id: 1,
@@ -58,8 +61,20 @@ export default function Home() {
   ];
   return (
     <>
-      <ChubeHaraj products={products} slidesPerView = {4} />
-      <KalaPreview products={products} slidesPerView = {5}/>
+      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <KalaPreview
+        products={products}
+        slidesPerView={4}
+        cardsPaddingTop={1}
+        imagedKalaPreview = {1}
+        previewImage = {firstImagedPreview.src}
+      />
     </>
   );
 }
