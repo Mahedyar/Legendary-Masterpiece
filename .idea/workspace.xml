@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="mediaFooter">
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/instagram-mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-linkedin-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-telegram-app-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-twitter-50 .png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/instagram-gradient.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_1_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_2_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_3_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_4_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_5_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/kasbokar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/lendo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/resaneh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResAboutFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResCopyRight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ItemL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ItemR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ResTitr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTopHolder/ResIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTopHolder/ResTopHolder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/MediaFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/MediaFooter.js" afterDir="false" />
-    </list>
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="main meurge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +76,7 @@
       <workItem from="1643269109940" duration="531000" />
       <workItem from="1644072215653" duration="983000" />
       <workItem from="1644080349595" duration="1381000" />
-      <workItem from="1644081891157" duration="508000" />
+      <workItem from="1644081891157" duration="892000" />
     </task>
     <task id="LOCAL-00001" summary="first commit + assest file">
       <created>1643261614247</created>
@@ -143,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644080211343</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="main meurge">
+      <created>1644082599701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644082599701</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +144,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="main" />
     <MESSAGE value="mediaFooter" />
-    <option name="LAST_COMMIT_MESSAGE" value="mediaFooter" />
+    <MESSAGE value="main meurge" />
+    <option name="LAST_COMMIT_MESSAGE" value="main meurge" />
   </component>
 </project>
