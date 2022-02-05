@@ -14,16 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
-<<<<<<< HEAD
 
-/*@font-face {*/
-/*  font-family: 'YekanBoom';*/
-/*  src: local('YekanBoom'), url(./pages/assest/Font/YekanBoom.ttf) format('truetype');*/
-/*}*/
-/*h1{*/
-/*  font-family: YekanBoom;*/
-/*}*/
-=======
 .MuiContainer-maxWidthLg{
  max-width:100%;
   width:  1410px;
@@ -68,4 +59,4 @@ padding-right: 0;
     flex-direction: row;
     justify-content: center;
 }
->>>>>>> origin/Footer
+
