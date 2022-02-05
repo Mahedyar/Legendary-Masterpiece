@@ -1,10 +1,11 @@
 // import ShowMoreText from "react-show-more-text";
 import React, { useState } from "react";
-import {Box, Grid} from "@mui/material"
+import {Box, Grid,Container} from "@mui/material"
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import Typography from '@mui/material/Typography';
 
 export default function AboutFooterHolder() {
     const text = "تیمچه، فروشگاهی اینترنتی با مدل بازارگاه یا «MarketPlace» است که با تنوع ده‌ها هزار کالا در دسته‌های متفاوت، خرید آنلاین همه‌چیز را برای همه در سراسر کشور امکان‌پذیر کرده است. لندو، اولین و بزرگ‌ترین استارتاپ ایرانی در حوزه خرید اقساطی، فروشگاه اینترنتی تیمچه را راه‌اندازی کرده است. ارسال رایگان به سراسر کشور، ضمانت اصل بودن کالا، ضمانت ده‌روزه بازگشت کالا، پشتیبانی در هفت روز هفته و امکان خرید اقساطی کالاها، مزایایی است که تیمچه برای خلق یک تجربه متفاوت از خرید آنلاین فراهم کرده است. در تیمچه سبدهایتان را با هرچیزی که در فکرش بودید، پر می‌کنیم. از موبایل و تلویزیون و دوربین گرفته تا ساز و ابزار و پوشیدنی و خوردنی!";
@@ -25,20 +26,24 @@ export default function AboutFooterHolder() {
     }));
     return (
         <>
+            <Box sx={{background: "#fafafa"}}>
+            <Container maxWidth={'lg'}>
             <Box sx={{width: '100%',textAlign:'raight',margin:'auto'}}>
                 <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
                     <Grid item sm={12} sx={{background:"#fafafa",padding:5}}>
                         <Item>
-                            <h3>تیمچه، خرید آنلاین همه نوع کالا</h3>
+                            <Typography variant="h6" sx={{fontWeight:"bold"}}>تیمچه، خرید آنلاین همه نوع کالا</Typography>
                         </Item>
-                        <Item sx={{color:"#8c8c8c",marginTop:-5,paddingLeft:5}}>
-                            <p>{text}{<br/>}{expand?moreText:""}</p>
+                        <Item sx={{color:"#8c8c8c"}}>
+                            <Typography variant="body2" >{text}{<br/>}{expand?moreText:""}</Typography>
                         </Item>
                         <Item sx={{textAlign: 'center'}}>
-                            <span onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon/>:<ExpandMoreIcon/>}</span>
+                            <Typography variant="caption" sx={{ fontWeight: 'bold',color:'#434343' }} onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon sx={{ fontSize: 12 }}/>:<ExpandMoreIcon sx={{ fontSize: 12 }}/>}</Typography>
                         </Item>
                     </Grid>
                 </Grid>
+            </Box>
+            </Container>
             </Box>
         </>
     )

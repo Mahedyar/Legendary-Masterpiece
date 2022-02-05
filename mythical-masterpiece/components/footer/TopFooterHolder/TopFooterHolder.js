@@ -1,40 +1,75 @@
-import {Grid,Box} from "@mui/material";
+import {Grid, Box, Container} from "@mui/material";
 import Paper from '@mui/material/Paper';
 import {styled} from '@mui/material/styles';
 import Icon from "./Icon";
+import Typography from '@mui/material/Typography';
 
 const Item = styled(Paper)(({theme}) => ({
     boxShadow: 'none',
-    padding: theme.spacing(0.5),
+    padding: 9,
     textAlign: 'right',
     color: "#141414",
-    background: "#fafafa",
     fontsize: 10,
     direction: "rtl",
+    background: "#fafafa",
+    // display:'flex',
+    // flexDirection:'row',
+    // justifyContent:'center',
+    // alignItems:'center'
 }));
 export default function TopFooterHolder() {
     return (
         <>
-            <Box sx={{width: '100%',textAlign:'raight',margin:'auto',background: "#fafafa"}}>
-            <Grid container rowSpacing={1} columnSpacing={{xs: 0, sm: 0, md: 0}}>
-                <Grid sm={4}>
-                    <Item >
-                        <p>تیمچه در شبکه های اجتماعی: <Icon/></p>
-                    </Item>
-                </Grid>
-                <Grid sm={4}>
-                    <Item>
-                    <p>آدرس ایمیل: Salam@timcheh.com</p>
-                    </Item>
-                </Grid>
-                <Grid sm={4}>
-                    <Item sx={{paddingRight:15}}>
-                    <p>شماره تماس: 021-91012959</p>
-                    </Item>
-                </Grid>
+            <Box sx={{background: "#fafafa"}}>
+                <Container maxWidth={'lg'} sx={{background: "#fafafa",display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
+                    <Grid container >
+                        <Grid sm={4}>
+                            <Item >
+                                <Typography  variant="subtitle2">تیمچه در شبکه های اجتماعی: <Icon/></Typography>
+                            </Item>
+                        </Grid>
+                        <Grid sm={4}>
+                            <Item>
+                                <Typography variant="subtitle2">آدرس ایمیل: Salam@timcheh.com</Typography>
+                            </Item>
+                        </Grid>
+                        <Grid sm={4}>
+                            <Item sx={{paddingRight: 15}}>
+                                <Typography variant="subtitle2">شماره تماس: 021-91012959</Typography>
+                            </Item>
+                        </Grid>
 
-            </Grid>
+                    </Grid>
+                </Container>
             </Box>
+
+
+
+            {/*    <Box*/}
+            {/*        sx={{*/}
+            {/*            display: 'flex',*/}
+            {/*            justifyContent: 'space-around',*/}
+            {/*            p: 1,*/}
+            {/*            m: 1,*/}
+            {/*            bgcolor: 'background.paper',*/}
+            {/*            borderRadius: 1,*/}
+            {/*            direction: "rtl",*/}
+            {/*            background: "#fafafa",*/}
+            {/*        }}*/}
+            {/*    >*/}
+            {/*        <Item><Typography  variant="subtitle2">شماره تماس: 021-91012959</Typography></Item>*/}
+            {/*        <Item><Typography variant="subtitle2">آدرس ایمیل: Salam@timcheh.com</Typography></Item>*/}
+            {/*        <Item>*/}
+            {/*        <Box>*/}
+            {/*            <Grid >*/}
+            {/*                <Typography  variant="subtitle2">تیمچه در شبکه های اجتماعی: <Icon/></Typography>*/}
+
+            {/*            </Grid>*/}
+            {/*        </Box>*/}
+            {/*        </Item>*/}
+            {/*    </Box>*/}
+
+
         </>
     )
 }
