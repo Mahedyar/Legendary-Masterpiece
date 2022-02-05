@@ -32,7 +32,7 @@ export default function AboutFooterHolder() {
                                 <Item>
                                     <Typography variant="h6" sx={{fontWeight:"bold"}}>تیمچه، خرید آنلاین همه نوع کالا</Typography>
                                 </Item>
-                                <Item sx={{color:"#8c8c8c"}}>
+                                <Item sx={{color:"#8c8c8c",padding:0}}>
                                     <Typography variant="body2" >{text}{<br/>}{expand?moreText:""}</Typography>
                                 </Item>
                                 <Item sx={{textAlign: 'center'}}>

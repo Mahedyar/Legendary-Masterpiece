@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fa1a592-cbc2-4a03-b407-f7249b3a2bda" name="Changes" comment="edit footer">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/instagram-mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/MediaFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResAboutFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResCopyRight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTitr/ItemL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTitr/ItemR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTitr/ResTitr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTopHolder/ResIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTopHolder/ResTopHolder.js" afterDir="false" />
+    <list default="true" id="1fa1a592-cbc2-4a03-b407-f7249b3a2bda" name="Changes" comment="Responsive Footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/footer/ContainerFooter/ResTitr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/footer/ContainerFooter/SymbolsHolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/ContainerFooter/SymbolsHolder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResAboutFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResAboutFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResCopyRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResCopyRight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResSymbolsHolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643961213761</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Responsive Footer">
+      <created>1644066816932</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644066816932</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +145,7 @@
     <MESSAGE value="4th commit for slider" />
     <MESSAGE value="5th commit for  edit slider" />
     <MESSAGE value="edit footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit footer" />
+    <MESSAGE value="Responsive Footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Responsive Footer" />
   </component>
 </project>

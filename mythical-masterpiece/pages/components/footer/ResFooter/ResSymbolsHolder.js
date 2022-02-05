@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import kasbokar from '../../../assest/Images/Footer/logo/kasbokar.png';
 import lendo from '../../../assest/Images/Footer/logo/lendo.svg';
 import resaneh from '../../../assest/Images/Footer/logo/resaneh.png';
+import Typography from '@mui/material/Typography';
 
 function Item(props) {
     const { sx, ...other } = props;
@@ -35,7 +36,7 @@ export default function ResSymbolsHolder(){
                 >
                     <Item><img src={kasbokar.src}/></Item>
                     <Item><img src={resaneh.src}/></Item>
-                    <Item><img src={lendo.src}/><p>برخواسته از تیم لندو</p></Item>
+                    <Item><img src={lendo.src}/><div><Typography variant="caption">برخواسته از تیم لندو</Typography></div></Item>
 
                 </Box>
 
