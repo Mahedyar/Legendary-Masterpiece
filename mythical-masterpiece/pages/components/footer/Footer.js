@@ -5,20 +5,17 @@ import AboutFooterHolder from "./AboutFooterHolder";
 import CopyRightHolder from "./CopyRightHolder";
 import {Grid,Box,Container} from "@mui/material";
 import React, { useState } from "react";
-import useMediaQuery from '@mui/material/useMediaQuery';
-
+import ResFooter from '../footer/ResFooter/ResFooter';
 
 export default function footer() {
-    const matches = useMediaQuery('(min-width:769px)');
+
     return (
         <>
-
-            {matches && <Advantages/>}
+            <Advantages/>
             <TopFooterHolder/>
             <ContainerFooter/>
             <AboutFooterHolder/>
             <CopyRightHolder/>
-
         </>
     )
 }

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51cea0c4-3992-4cec-8951-7b3abb82a45b" name="Changes" comment="edit footer" />
+    <list default="true" id="1fa1a592-cbc2-4a03-b407-f7249b3a2bda" name="Changes" comment="edit footer">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/instagram-mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/MediaFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResAboutFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResCopyRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTitr/ItemL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTitr/ItemR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTitr/ResTitr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTopHolder/ResIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/footer/ResFooter/ResTopHolder/ResTopHolder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/footer/ContainerFooter/ResTitr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/footer/ContainerFooter/SymbolsHolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/ContainerFooter/SymbolsHolder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,13 +39,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Slider" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="24T8aOkGneatBt6g7sZe0g06fWZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/assest/Images/Footer/ResTopFooter" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -41,7 +65,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\assest\Images\Footer\ResTopFooter" />
       <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\assest\Images\Footer\TopFooter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\ResFooter\ResTopHolder" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\ResFooter" />
     </key>
   </component>
   <component name="RunManager">
