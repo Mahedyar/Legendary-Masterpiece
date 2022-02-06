@@ -1,36 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="mediaFooter">
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/instagram-mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-linkedin-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-telegram-app-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-twitter-50 .png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/instagram-gradient.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_1_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_2_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_3_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_4_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_5_new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/kasbokar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/lendo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/resaneh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResAboutFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResCopyRight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ItemL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ItemR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ResTitr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTopHolder/ResIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTopHolder/ResTopHolder.js" afterDir="false" />
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/MediaFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/MediaFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +27,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/index.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="249RtrUCI9IkTUPLafSHUnRxQ0u" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
