@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3b8fe5a-76e1-4853-95ee-7c1dbe4a58c3" name="Changes" comment="" />
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="mediaFooter">
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/instagram-mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/ResTopFooter/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-linkedin-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-telegram-app-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/icons8-twitter-50 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter/instagram-gradient.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_1_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_2_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_3_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_4_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/advantages/advantage_5_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/kasbokar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/lendo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/logo/resaneh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResAboutFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResCopyRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ItemL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ItemR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTitr/ResTitr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTopHolder/ResIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResTopHolder/ResTopHolder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/MediaFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/MediaFooter.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -17,13 +48,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Header_Section" />
+        <entry key="$PROJECT_DIR$" value="Footer" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="249Pra9OgObWOQhnEILDWG3npCS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/index.js" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="249RtrUCI9IkTUPLafSHUnRxQ0u" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -31,34 +66,84 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Full maximilian course Files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Footer/TopFooter" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Assigments\Mythical-Masterpiece1\mythical-masterpiece\assets\Images\Footer\TopFooter" />
+      <recent name="G:\Assigments\Mythical-Masterpiece1\mythical-masterpiece\assets\Images\Footer\ResTopFooter" />
+      <recent name="G:\Assigments\Mythical-Masterpiece1\mythical-masterpiece\assets\Images\Footer\logo" />
+      <recent name="G:\Assigments\Mythical-Masterpiece1\mythical-masterpiece\assets\Images\Footer\advantages" />
+      <recent name="G:\Assigments\Mythical-Masterpiece1\mythical-masterpiece\components\footer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\assest\Images\Footer" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\TopFooterHolder" />
+      <recent name="G:\Assigments\Mythical-Masterpiece\mythical-masterpiece\pages\components\footer\Advantages" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a3b8fe5a-76e1-4853-95ee-7c1dbe4a58c3" name="Changes" comment="" />
-      <created>1643040029489</created>
+      <changelist id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="test" />
+      <created>1643041034192</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1643040029489</updated>
-      <workItem from="1643040031985" duration="1270000" />
-      <workItem from="1643041329293" duration="343000" />
-      <workItem from="1643041834677" duration="101000" />
-      <workItem from="1643041946992" duration="72000" />
-      <workItem from="1643411504038" duration="5000" />
-      <workItem from="1643467192052" duration="606000" />
-      <workItem from="1643641256221" duration="7000" />
-      <workItem from="1643838815744" duration="215000" />
+      <updated>1643041034192</updated>
+      <workItem from="1643041035837" duration="24178000" />
+      <workItem from="1643262095071" duration="795000" />
+      <workItem from="1643262913536" duration="2902000" />
+      <workItem from="1643268649730" duration="208000" />
+      <workItem from="1643269109940" duration="531000" />
+      <workItem from="1644072215653" duration="983000" />
+      <workItem from="1644080349595" duration="1381000" />
+      <workItem from="1644081891157" duration="508000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit + assest file">
+      <created>1643261614247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643261614247</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1643269577231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643269577231</updated>
+    </task>
+    <task id="LOCAL-00003" summary="main">
+      <created>1644077921417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644077921417</updated>
+    </task>
+    <task id="LOCAL-00004" summary="main">
+      <created>1644079140656</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644079140656</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mediaFooter">
+      <created>1644080211343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644080211343</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +160,13 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit + assest file" />
+    <MESSAGE value="test" />
+    <MESSAGE value="main" />
+    <MESSAGE value="mediaFooter" />
+    <option name="LAST_COMMIT_MESSAGE" value="mediaFooter" />
   </component>
 </project>
