@@ -5,9 +5,9 @@ import ItemCard from "./ItemCard";
 import Box from "@mui/material/Box";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import classes from "./SwipperStyles.module.css";
 
 export default function ItemsSlider(props) {
-  
   // console.log(cardsPaddingTop)
   return (
     <>
@@ -22,7 +22,10 @@ export default function ItemsSlider(props) {
       >
         {props.products.map((product) => (
           <SwiperSlide>
-            <ItemCard product={product} cardsPaddingTop={props.cardsPaddingTop} />
+            <ItemCard
+              product={product}
+              cardsPaddingTop={props.cardsPaddingTop}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

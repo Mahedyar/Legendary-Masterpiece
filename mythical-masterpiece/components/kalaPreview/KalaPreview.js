@@ -6,7 +6,6 @@ import { Typography } from "@mui/material";
 import KalaPreviewTitle from "./KalaPreviewTitle";
 
 const KalaPreview = (props) => {
-  console.log(props.cardsPaddingTop);
   return (
     <>
       <Container>
