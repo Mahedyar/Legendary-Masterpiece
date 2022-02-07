@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import BlueButton from "./BlueButton";
 import SingleComment from "./SingleComment";
+import ProgressBar from "./ProgressBar"
 
 const comments = [
   {
@@ -54,7 +55,16 @@ const Comments = () => {
             </Typography>
             <BlueButton padding="10px 60px">افزودن نظر جدید</BlueButton>
           </Box>
-          <Box sx={{ width: "50%", paddingRight: "10%" }}>4.6</Box>
+
+
+          <Box sx={{ width: "50%", paddingRight: "10%" }}>4.6
+          <ProgressBar/>
+          <ProgressBar/>
+          <ProgressBar/>
+          <ProgressBar/>
+          <ProgressBar/>
+          </Box>
+
         </Box>
         <Box sx={{ marginTop: "200px" }}>
           <Box
