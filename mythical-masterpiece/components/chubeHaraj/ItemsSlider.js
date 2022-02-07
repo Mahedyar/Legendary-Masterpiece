@@ -5,12 +5,14 @@ import ItemCard from "./ItemCard";
 import Box from "@mui/material/Box";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import classes from "./SwipperStyles.module.css";
+// import classes from "./SwipperStyles.module.css";
 
 export default function ItemsSlider(props) {
   // console.log(cardsPaddingTop)
   return (
-    <>
+    // <div className="chubeHaraj">
+       
+      < >
       <Swiper
         slidesPerView={props.slidesPerView}
         spaceBetween={2}
@@ -18,7 +20,7 @@ export default function ItemsSlider(props) {
         loopFillGroupWithBlank={true}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        // className="mySwiper"
       >
         {props.products.map((product) => (
           <SwiperSlide>
@@ -29,6 +31,11 @@ export default function ItemsSlider(props) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+      </>
+      
+    
+  
+    // </div>
+   
   );
 }
