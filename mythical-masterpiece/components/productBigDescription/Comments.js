@@ -66,7 +66,8 @@ const Comments = () => {
           </Box>
           {comments.map((singleComment) => (
             <SingleComment
-              id={singleComment.id}
+            key = {singleComment.id}
+              
               title={singleComment.title}
               userName={singleComment.userName}
               content={singleComment.content}

@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 const SingleComment = (props) => {
   return (
     <>
-      <Box key={props.id} sx={{ marginTop: "32px" , borderBottom : "1px solid #d9d9d9" ,paddingBottom : "24px"}}>
+      <Box  sx={{ marginTop: "32px" , borderBottom : "1px solid #d9d9d9" ,paddingBottom : "24px"}}>
           
         <Rating value={5} size="small" />
         <Box
