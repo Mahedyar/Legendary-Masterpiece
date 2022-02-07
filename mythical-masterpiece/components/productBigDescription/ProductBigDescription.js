@@ -9,6 +9,7 @@ import EqualizerIcon from "@mui/icons-material/Equalizer";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import Typography from "@mui/material/Typography";
 import Moshakhasat from "./Moshakhasat";
+import Comments from "./Comments";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -105,7 +106,7 @@ export default function CustomizedTabs() {
           </StyledTabs>
         </Box>
         <TabPanel value={value} index={0}>
-          Item One
+          <Comments/>
         </TabPanel>
         <TabPanel value={value} index={1}>
           <Moshakhasat/>
