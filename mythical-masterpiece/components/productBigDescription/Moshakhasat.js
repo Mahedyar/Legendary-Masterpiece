@@ -9,37 +9,70 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: "15px",
   textAlign: "right",
   color: theme.palette.text.secondary,
-  backgroundColor : "#fafafa" ,
-  boxShadow : "none"
+  backgroundColor: "#fafafa",
+  boxShadow: "none",
+  fontWeight : "bold"
+}));
+
+const BlankItem = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: "15px",
+  textAlign: "right",
+  color: theme.palette.text.secondary,
+  backgroundColor: "#ffffff",
+  boxShadow: "none",
+  
 }));
 
 const properties = [
-    {
-        id: 1,
-        قطر: "۱۰.۷ میلی متر",
-      },
-      {
-        id: 2,
-        image: drill.src,
-        
-      }
-]
+  {
+    id: 1,
+    title: "قابلیت ها",
+    description: [
+      "تمیز کنندگی , سفید کنندگی , براق کنندگی , لکه زدایی , جلوگیری از رسوبات آهکی در ماشین ظرفشویی",
+      "تست ",
+      "سلام دنیا",
+    ],
+  },
+  {
+    id: 2,
+    title: "رایحه",
+    description: ["سلام", "چه خبر ؟"],
+  },
+];
 export default function Moshakhasat() {
+  const blankMaker = (description) => {
+    if (description.length > 1) {
+      let remainingDescriptions = description.slice(1, description.length);
+      console.log(remainingDescriptions);
+
+      return remainingDescriptions.map((content) => (
+        <>
+          <Grid item xs={3}>
+            <BlankItem></BlankItem>
+          </Grid>
+
+          <Grid item xs={9}>
+            <Item>{content}</Item>
+          </Grid>
+        </>
+      ));
+    }
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={3}>
-          <Item>قطر قاب</Item>
-        </Grid>
-        <Grid item xs={9}>
-          <Item>10.7 میلی متر</Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>xs=4</Item>
-        </Grid>
-        <Grid item xs={9}>
-          <Item>xs=8</Item>
-        </Grid>
+        {properties.map((property) => (
+          <>
+            <Grid item xs={3}>
+              <Item>{property.title}</Item>
+            </Grid>
+            <Grid item xs={9}>
+              <Item>{property.description[0]}</Item>
+            </Grid>
+            {blankMaker(property.description)}
+          </>
+        ))}
       </Grid>
     </Box>
   );
