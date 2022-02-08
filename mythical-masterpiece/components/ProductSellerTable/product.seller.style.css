@@ -1,0 +1,67 @@
+.psbox1{
+    border: 1px solid rgb(210, 206, 206);
+}
+.psicon{
+    margin: 10px 16px;
+    width: 20px;
+    height: 20px;
+}
+.psicon1{
+    margin: 0 -7px 0 0;
+    width: 8px;
+    height: 8px;
+    color: darkgrey;
+}
+.psicon2{
+    margin: 8px 26px 8px -8px;
+    width: 14px;
+    height: 14px;
+    color: #03bb03;
+    background-color: white;
+}
+
+.pskey1{
+    box-sizing: border-box;
+    margin-right: 70px;
+}
+
+.pstext1{
+    font-size: 14px;
+    color: darkgrey;
+}
+.pstext11{
+    font-size: 14px;
+    color: rgba(24, 145, 246, 0.87);
+    font-weight: bold;
+}
+.pstext2{
+    font-size: 14px;
+    margin: 0 0 2rem 0;
+    color: darkgrey;
+}
+.pstext21{
+    font-size: 14px;
+    margin: 0 0 2rem 0;
+}
+.pstext3{
+    font-size: 14px;
+    margin: 0.8rem 0;
+}
+.pstext31{
+    font-size: 14px;
+    margin: 0.8rem 0;
+    font-weight: 20px;
+}
+.pshalf_background{
+    background: linear-gradient(to top, rgba(255, 221, 0, 0.91) 60%, transparent 60%);
+}
+.pstext4{
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+}
+
+.pssection1{
+    background-color: rgba(245, 245, 245, 0.96);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}

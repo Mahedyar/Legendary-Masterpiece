@@ -10,6 +10,7 @@ import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from "../components/footer/MediaFooter";
+import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -17,6 +18,16 @@ import MediaFooter from "../components/footer/MediaFooter";
 
 export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
+  const sellers =
+    {
+      seller : "موبایل استور",
+      score : "۱۵۰",
+      sellerType : "خوب",
+      guarantee : "گارانتی ۱۸ ماهه شرکتی",
+      availability : "موجود در انبار تیمچه"
+    };
+
+
   const products = [
     {
       id: 1,
@@ -63,28 +74,29 @@ export default function Home() {
   ];
   return (
     <>
-      <Slider />
+      <ProductSellerTable sellers = {sellers}/>
+      {/*<Slider />*/}
 
-      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+      {/*<ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />*/}
 
-      <KalaPreview
-        products={products}
-        slidesPerView={5}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  slidesPerView={5}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
 
-      <KalaPreview
-        products={products}
-        slidesPerView={4}
-        cardsPaddingTop={1}
-        imagedKalaPreview={1}
-        previewImage={firstImagedPreview.src}
-        ImageTitle={"لوازم آرایشی"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  slidesPerView={4}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  imagedKalaPreview={1}*/}
+      {/*  previewImage={firstImagedPreview.src}*/}
+      {/*  ImageTitle={"لوازم آرایشی"}*/}
+      {/*/>*/}
 
-      {/*Footer*/}
-      <MediaFooter />
+      {/*/!*Footer*!/*/}
+      {/*<MediaFooter />*/}
     </>
   );
 }
