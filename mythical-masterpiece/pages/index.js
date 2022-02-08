@@ -20,7 +20,7 @@ export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
   const sellers =
     {
-      seller : "موبایل استور",
+      seller : "پارس",
       score : "۱۵۰",
       sellerType : "خوب",
       guarantee : "گارانتی ۱۸ ماهه شرکتی",
