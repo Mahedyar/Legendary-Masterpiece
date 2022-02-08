@@ -1,0 +1,19 @@
+.img1{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.box11{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 5px 0 5px 35px;
+}
+.text11{
+    white-space: nowrap;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 14px;
+}

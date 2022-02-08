@@ -9,6 +9,7 @@ import cream from "../assets/Images/ChubeHaraj/img.png";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
+import LittleBox1 from "../components/LittleBox/LittleBox1";
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -62,22 +63,23 @@ export default function Home() {
   ];
   return (
     <>
-      <Slider />
-      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
-      <KalaPreview
-        products={products}
-        slidesPerView={5}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <KalaPreview
-        products={products}
-        slidesPerView={4}
-        cardsPaddingTop={1}
-        imagedKalaPreview={1}
-        previewImage={firstImagedPreview.src}
-        ImageTitle={"لوازم آرایشی"}
-      />
+      <LittleBox1/>
+      {/*<Slider />*/}
+      {/*<ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />*/}
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  slidesPerView={5}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  slidesPerView={4}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  imagedKalaPreview={1}*/}
+      {/*  previewImage={firstImagedPreview.src}*/}
+      {/*  ImageTitle={"لوازم آرایشی"}*/}
+      {/*/>*/}
     </>
   );
 }
