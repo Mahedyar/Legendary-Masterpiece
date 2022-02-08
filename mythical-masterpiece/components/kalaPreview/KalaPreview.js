@@ -6,14 +6,14 @@ import { Typography } from "@mui/material";
 import KalaPreviewTitle from "./KalaPreviewTitle";
 
 const KalaPreview = (props) => {
-  console.log(props.cardsPaddingTop);
   return (
-    <>
+    <div className="chubeHaraj" >
       <Container>
         <Box sx={props.imagedKalaPreview ? { display: "flex" } : {}}>
           {!props.imagedKalaPreview && (
             <KalaPreviewTitle previewTitle={props.previewTitle} />
           )}
+          
 
           <ItemsSlider
             products={props.products}
@@ -30,7 +30,7 @@ const KalaPreview = (props) => {
           )}
         </Box>
       </Container>
-    </>
+    </div>
   );
 };
 

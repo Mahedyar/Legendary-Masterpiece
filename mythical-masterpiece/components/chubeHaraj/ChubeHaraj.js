@@ -10,10 +10,10 @@ import ItemsSlider from "./ItemsSlider";
 import background from "../../assets/Images/ChubeHaraj/sale_bg.png";
 import chubeharaj from "../../assets/Images/ChubeHaraj/sale.png";
 
-
 export default function ChubeHaraj(props) {
   return (
-    <Box
+    <div className="chubeHaraj">
+      <Box
       sx={{
         // width: 1500,
         display: "flex",
@@ -76,5 +76,7 @@ export default function ChubeHaraj(props) {
         </Box>
       </Container>
     </Box>
+    </div>
+    
   );
 }
