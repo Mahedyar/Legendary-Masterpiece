@@ -10,6 +10,14 @@ import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from "../components/footer/MediaFooter";
+import AdsCard1 from "../components/AdsCard/AdsCard1";
+import AdsCard2 from "../components/AdsCard/AdsCard2";
+import AdsCard3 from "../components/AdsCard/AdsCard3";
+import AdsCard4 from "../components/AdsCard/AdsCard4";
+import AdsCard5 from "../components/AdsCard/AdsCard5";
+import AdsCard6 from "../components/AdsCard/AdsCard6";
+import AdsCard7 from "../components/AdsCard/AdsCard7";
+import AdsCard8 from "../components/AdsCard/AdsCard8";
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -63,28 +71,36 @@ export default function Home() {
   ];
   return (
     <>
-      <Slider />
+      <AdsCard1/>
+      <AdsCard2/>
+      <AdsCard3/>
+      <AdsCard4/>
+      <AdsCard5/>
+      <AdsCard6/>
+      <AdsCard7/>
+      <AdsCard8/>
+      {/*<Slider />*/}
 
-      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+      {/*<ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />*/}
 
-      <KalaPreview
-        products={products}
-        slidesPerView={5}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  slidesPerView={5}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
 
-      <KalaPreview
-        products={products}
-        slidesPerView={4}
-        cardsPaddingTop={1}
-        imagedKalaPreview={1}
-        previewImage={firstImagedPreview.src}
-        ImageTitle={"لوازم آرایشی"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  slidesPerView={4}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  imagedKalaPreview={1}*/}
+      {/*  previewImage={firstImagedPreview.src}*/}
+      {/*  ImageTitle={"لوازم آرایشی"}*/}
+      {/*/>*/}
 
-      {/*Footer*/}
-      <MediaFooter />
+      {/*/!*Footer*!/*/}
+      {/*<MediaFooter />*/}
     </>
   );
 }
