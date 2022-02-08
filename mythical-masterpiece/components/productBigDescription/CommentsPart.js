@@ -1,7 +1,8 @@
 import { Box, Container, Typography } from "@mui/material";
 import BlueButton from "./BlueButton";
 import SingleComment from "./SingleComment";
-import ProgressBar from "./ProgressBar"
+import ProgressBar from "./ProgressBar";
+import CommentsRatingBars from "./CommentsRatingBars";
 
 const comments = [
   {
@@ -56,17 +57,17 @@ const Comments = () => {
             <BlueButton padding="10px 60px">افزودن نظر جدید</BlueButton>
           </Box>
 
-
-          <Box sx={{ width: "50%", paddingRight: "10%" }}>4.6
-          <ProgressBar/>
-          <ProgressBar/>
-          <ProgressBar/>
-          <ProgressBar/>
-          <ProgressBar/>
+          <Box sx={{ width: "50%", paddingRight: "10%" }}>
+            <CommentsRatingBars
+              fiveStar={15}
+              fourStar={4}
+              threeStar={3}
+              twoStar={2}
+              oneStar={1}
+            />
           </Box>
-
         </Box>
-        <Box sx={{ marginTop: "200px" }}>
+        <Box sx={{ marginTop: "120px" }}>
           <Box
             sx={{ borderBottom: "1px solid #f0f0f0", paddingBottom: "10px" }}
           >
@@ -76,8 +77,7 @@ const Comments = () => {
           </Box>
           {comments.map((singleComment) => (
             <SingleComment
-            key = {singleComment.id}
-              
+              key={singleComment.id}
               title={singleComment.title}
               userName={singleComment.userName}
               content={singleComment.content}

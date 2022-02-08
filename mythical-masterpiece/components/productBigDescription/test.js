@@ -1,29 +1,35 @@
-import * as React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import TextField from '@mui/material/TextField';
-import rtlPlugin from 'stylis-plugin-rtl';
-import { prefixer } from 'stylis';
-import { CacheProvider } from '@emotion/react';
-import createCache from '@emotion/cache';
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
 
-const theme = createTheme({
-  direction: 'rtl', // Both here and <body dir="rtl">
-});
-// Create rtl cache
-const cacheRtl = createCache({
-  key: 'muirtl',
-  stylisPlugins: [prefixer, rtlPlugin],
-});
+import LinearProgress, {
+  linearProgressClasses,
+} from "@mui/material/LinearProgress";
+import { Typography } from "@mui/material";
 
-export default function Direction() {
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  margin: "25px 0  ",
+  height: 10,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor:
+      theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
+    borderRadius: 5,
+  },
+}));
+
+// Inspired by the former Facebook spinners.
+
+export default function CustomizedProgressBars() {
   return (
-    <CacheProvider value={cacheRtl}>
-      <ThemeProvider theme={theme}>
-        <div dir="rtl">
-          <TextField label="Name" variant="standard" />
-          <input type="text" placeholder="Name" />
-        </div>
-      </ThemeProvider>
-    </CacheProvider>
+    <Box sx={{ flexGrow: 1 }}>
+      
+        <Typography>5 star</Typography>
+        <BorderLinearProgress variant="determinate" value={65} />
+     
+    </Box>
   );
 }
