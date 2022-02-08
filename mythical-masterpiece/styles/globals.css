@@ -60,3 +60,26 @@ padding-right: 0;
     justify-content: center;
 }
 
+.css-i6g36c-MuiButtonBase-root-MuiButton-root{
+    padding: 1px 3px;
+    border-radius: 5px;
+    background: #8c8c8c;
+    cursor: auto;
+    font-size: 12px;
+    box-shadow: none;
+    min-width: 1px;
+}
+.css-i6g36c-MuiButtonBase-root-MuiButton-root:hover{
+    background: #8c8c8c;
+    box-shadow: none;
+}
+.btn--SubBottom{
+    background: #FFF;
+    color: #8c8c8c;
+    font-size: 12px;
+    padding: 0;
+
+}
+.btn--SubBottom:hover{
+    background: #FFF;
+}
