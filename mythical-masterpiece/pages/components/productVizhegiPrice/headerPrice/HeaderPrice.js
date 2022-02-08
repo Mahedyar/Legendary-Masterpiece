@@ -5,15 +5,15 @@ import Color from "./Color";
 
 
 function Item(props) {
-    const { sx, ...other } = props;
+    const {sx, ...other} = props;
     return (
         <Box
             sx={{
 
                 fontSize: '0.875rem',
                 fontWeight: '700',
-                direction:'rtl',
-                boxShadow:'none',
+                direction: 'rtl',
+                boxShadow: 'none',
                 ...sx,
             }}
             {...other}
@@ -21,14 +21,15 @@ function Item(props) {
     );
 }
 
-export default function HeaderPrice(){
-    return(
+export default function HeaderPrice() {
+    return (
         <>
-            <div style={{ width: '100%' }}>
-                <Box variant={'outline'} sx={{ display: 'grid', gridTemplateRows: 'repeat(3, 1fr)' }}>
-                    <Item><h3>گوشی موبایل شیائومی مدل Poco X3 Pro دو سیم کارت، ظرفیت 256 گیگابایت با رم 8 گیگابایت</h3></Item>
+            <div style={{width: '100%'}}>
+                <Box variant={'outline'} sx={{display: 'grid', gridTemplateRows: 'repeat(3, 1fr)'}}>
+                    <Item><h3>گوشی موبایل شیائومی مدل Poco X3 Pro دو سیم کارت، ظرفیت 256 گیگابایت با رم 8 گیگابایت</h3>
+                    </Item>
                     <Item>
-                       <SubTop/>
+                        <SubTop/>
                         <SubBottom/>
                         <hr/>
                     </Item>
