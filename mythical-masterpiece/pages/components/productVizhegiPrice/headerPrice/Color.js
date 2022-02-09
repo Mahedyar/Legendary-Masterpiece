@@ -22,29 +22,35 @@ function Item(props) {
 }
 
 export default function Color() {
-    const [select,setSelect]=useState(false)
-    const selector=()=>{
-        setSelect(true)
+    const [select,setSelect]=useState({show:false,id:null})
+    const selector=(key)=>{
+        setSelect({
+            show: true,
+            id:key
+        })
     }
-    const funSelect=()=>{
 
-    }
-    const color = [{id: 1, color: '#feed00'},{id:2,color: '#0000ff'}, {id:3,color: '#000000'},{id:4,color: 'pink'}]
+    const color = [{id: 1, color: '#feed00',name:'زرد'},{id:2,color: '#0000ff',name:'آبی'}, {id:3,color: '#000000',name:'مشکی'},{id:4,color: 'pink',name:'صورتی'}]
     let outLinedIcon=<CheckOutlinedIcon/>
     return (
         <>
             <div >
+
+                <p>رنگ:{}</p>
                 <Box
                     sx={{
                         display: 'flex',
                         flexDirection: 'row',
 
                     }}>
-                    {color.map((item)=>( <Item className={'border'} onClick={funSelect} key={item.id}>
-                        {!select?
-                        <CheckOutlinedIcon sx={{color: item.color, borderRadius: 1, background: item.color,fontSize:20}}/>:
-                        <CheckOutlinedIcon sx={{color: '#fff', borderRadius: 1, background: item.color,fontSize:20}}/>}
-                    </Item>))}
+
+                    {color.map((item)=> <Item className={`${select.show && select.id===item.id?'border':''}`} onClick={()=>selector(item.id)} key={item.id}>
+
+                        {select.show && select.id===item.id?
+
+                        <CheckOutlinedIcon sx={{color: '#fff', borderRadius: 1, background: item.color,fontSize:20}}/>:
+                            <CheckOutlinedIcon sx={{color: item.color, borderRadius: 1, background: item.color,fontSize:20}}/>}
+                    </Item>)}
                 </Box>
             </div>
 

@@ -104,5 +104,17 @@ img {
     max-width: 34px;
     padding-right: 5px;
     padding-top: 5px;
+    overflow: hidden;
 
+}
+.takhfif{
+    background: yellow;
+margin-top:43px ;
+    margin-left: 30px;
+    height: 3vh;
+    width: 2vw;
+    text-align: center;
+}
+.css-cuefkz-MuiContainer-root{
+    max-width: 550px;
 }

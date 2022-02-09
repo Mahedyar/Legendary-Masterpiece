@@ -34,9 +34,7 @@ export default function HeaderPrice() {
                         <hr/>
                     </Item>
                     <Item>
-                        <p>رنگ: آبی</p>
                         <Color/>
-
                     </Item>
                 </Box>
             </div>
