@@ -39,14 +39,14 @@ export default function subBottom(){
                         <Stack direction="row" spacing={1}>
                             <Button sx={{direction:"ltr"}} variant="contained" endIcon={<StarIcon sx={{fontSize:12}}/>}>4.9</Button>
                             <span/>
-                            <span style={{color: '#8c8c8c'}}> از 57 رای</span>
+                            <span style={{color: '#8c8c8c',fontSize:'12px'}}> از 57 رای</span>
                         </Stack>
                     </Item>
                     <Item>
                         <Stack direction="row" spacing={1}>
-                        <Button className={'btn--SubBottom'} sx={{direction:"ltr"}} variant="contained" endIcon={<TextsmsOutlinedIcon sx={{fontSize:12}}/>}></Button>
+                        <Button className={'btn--SubBottom'} sx={{direction:"ltr"}} variant="contained" endIcon={<TextsmsOutlinedIcon sx={{fontSize:10}}/>}></Button>
                             <span/>
-                            <span style={{color: '#8c8c8c'}}> (57 نظر)</span>
+                            <span style={{color: '#8c8c8c',fontSize:'12px'}}> (57 نظر)</span>
                     </Stack>
                     </Item>
                 </Box>
