@@ -8,7 +8,7 @@ import "../components/kalaPreview/KalaPreview.css"
 
 import "../components/slider/styles.css";
 import "../components/chubeHaraj/SwipperStyles.css";
-import "../components/AdsCard/ads.card1.style.css";
+import "../components/AdsCard/adsCardStyle.css";
 // import "../components/chubeHaraj/SwipperStyles.module.css";
 
 // import "./assest/Font/YekanBoom.ttf";

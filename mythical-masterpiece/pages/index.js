@@ -71,36 +71,75 @@ export default function Home() {
   ];
   return (
     <>
-      <AdsCard1/>
-      <AdsCard2/>
-      <AdsCard3/>
-      <AdsCard4/>
-      <AdsCard5/>
-      <AdsCard6/>
-      <AdsCard7/>
-      <AdsCard8/>
-      {/*<Slider />*/}
+      <Slider />
+      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+      <AdsCard1 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
 
-      {/*<ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />*/}
+      <AdsCard2 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard3 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <KalaPreview
+        products={products}
+        slidesPerView={4}
+        cardsPaddingTop={1}
+        imagedKalaPreview={1}
+        previewImage={firstImagedPreview.src}
+        ImageTitle={"لوازم آرایشی"}
+      />
+      <AdsCard4 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard5 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard6 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard7 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard8 />
+      <KalaPreview
+        products={products}
+        slidesPerView={5}
+        cardsPaddingTop={1}
+        previewTitle={"گوشی موبایل"}
+      />
 
-      {/*<KalaPreview*/}
-      {/*  products={products}*/}
-      {/*  slidesPerView={5}*/}
-      {/*  cardsPaddingTop={1}*/}
-      {/*  previewTitle={"گوشی موبایل"}*/}
-      {/*/>*/}
-
-      {/*<KalaPreview*/}
-      {/*  products={products}*/}
-      {/*  slidesPerView={4}*/}
-      {/*  cardsPaddingTop={1}*/}
-      {/*  imagedKalaPreview={1}*/}
-      {/*  previewImage={firstImagedPreview.src}*/}
-      {/*  ImageTitle={"لوازم آرایشی"}*/}
-      {/*/>*/}
-
-      {/*/!*Footer*!/*/}
-      {/*<MediaFooter />*/}
+      <MediaFooter />
     </>
   );
 }
