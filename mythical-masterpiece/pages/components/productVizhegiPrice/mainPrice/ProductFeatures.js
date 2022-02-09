@@ -37,7 +37,7 @@ export default function ProductFeatures() {
                 >
                     <Item>
                         <Typography variant="body2" sx={{fontWeight: 'bold', paddingBottom: 1}}>ویژگی محصولات: </Typography>
-                        {features.map((item) => <Typography sx={{paddingBottom: 1}} key={item.id} variant="body2">
+                        {features.map((item) => <Typography sx={{paddingBottom: 1,fontSize:12}} key={item.id} variant="body2">
                             {item.feature}</Typography>)}
                         <Typography variant="body2" sx={{fontWeight: 'bold', color: 'rgb(0, 130, 253)', paddingBottom: 1.5}}>
                             <a href={'#'}>توضیحات بیشتر</a></Typography>

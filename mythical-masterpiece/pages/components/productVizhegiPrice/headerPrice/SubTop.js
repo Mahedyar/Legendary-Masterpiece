@@ -28,8 +28,8 @@ export default function subTop(){
                         flexDirection: 'row',
                     }}
                 >
-                    <Item><Typography>برند:  <a>شیائومی</a>  </Typography></Item>
-                    <Item><Typography>دسته بندی:  <a>گوشی موبایل</a>  </Typography></Item>
+                    <Item><Typography sx={{color:'#8c8c8c'}}>برند:  <a href={'#'} style={{color:'rgb(0, 130, 253)'}}>شیائومی</a>  </Typography></Item>
+                    <Item><Typography sx={{color:'#8c8c8c'}}>دسته بندی:  <a href={'#'} style={{color:'rgb(0, 130, 253)'}}>گوشی موبایل</a>  </Typography></Item>
                 </Box>
             </div>
         </>
