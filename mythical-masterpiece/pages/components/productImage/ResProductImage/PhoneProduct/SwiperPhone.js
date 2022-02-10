@@ -30,11 +30,8 @@ export default function SwiperPhone() {
               }}
               loop={true}
               pagination={
-                matches
-                  ? {
-                      clickable: true,
-                    }
-                  : {}
+                matches ? {
+                      clickable: true,} : {}
               }
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
@@ -43,7 +40,7 @@ export default function SwiperPhone() {
               {item.images.map((img) => (
                 <SwiperSlide key={item.product}>
                   <Container maxWidth="sm">
-                    <img src={img} />
+                    <img className={'Img-product'} src={img} />
                   </Container>
                 </SwiperSlide>
               ))}

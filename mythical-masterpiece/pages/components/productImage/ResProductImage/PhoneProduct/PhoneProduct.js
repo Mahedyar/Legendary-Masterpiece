@@ -15,6 +15,7 @@ export default function PhoneProduct() {
               backgroundColor: "#f5f5f5",
               margin: "auto",
               borderRadius: 3,
+                maxHeight:420,
             }}
           >
             <SwiperPhone />
