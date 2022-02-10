@@ -62,5 +62,7 @@ padding-right: 0;
 }
 .Img-product{
     mix-blend-mode: multiply;
+    border-radius: 5px;
+
 }
 

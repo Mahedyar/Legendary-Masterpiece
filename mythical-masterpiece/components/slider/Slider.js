@@ -19,11 +19,10 @@ export default function Slider() {
                 <Grid sx={12}>
                 <Swiper
                 slidesPerView={1}
-                spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
                 delay: 2500,
-                // disableOnInteraction: false,
+                disableOnInteraction: false,
             }}
                 loop={true}
                 pagination={{
