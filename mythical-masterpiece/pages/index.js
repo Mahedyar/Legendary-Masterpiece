@@ -24,8 +24,7 @@ import useWindowSize from "../utils/useWindowSize";
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 />;
 
-const Home =() => {
-
+const Home = () => {
   // const kalaPreviewTitleHide = 1 ,
   const products = [
     {
@@ -75,21 +74,20 @@ const Home =() => {
   const windowSize = useWindowSize();
   // const slideRespHandler = (windowSize) => {
   //   if (windowSize.width > 425) {
-  //     KalaSlide = 4 
+  //     KalaSlide = 4
   //   } else {
-      
+
   //   }
 
   // }
-  console.log(windowSize.width)
+  // console.log(windowSize.width)
   return (
     <>
       <Slider />
-      <ChubeHaraj products={products} slidesPerView= {windowSize.width > 425 ?  3 :  1 } cardsPaddingTop={3} />
+      <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />
       <KalaPreview
         products={products}
-        slidesPerView = {windowSize.width > 425 ?  4 :  2 }
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
@@ -97,57 +95,50 @@ const Home =() => {
       <AdsCard2 />
       <KalaPreview
         products={products}
-        slidesPerView={windowSize.width > 425 ?  4 :  2 }
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
       <AdsCard3 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
       <KalaPreview
         products={products}
-        slidesPerView={4}
         cardsPaddingTop={1}
         imagedKalaPreview={1}
+        previewTitle={"لوازم آرایشی"}
         previewImage={firstImagedPreview.src}
-        ImageTitle={"لوازم آرایشی"}
+        // ImageTitle={"لوازم آرایشی"}
       />
       <AdsCard4 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
       <AdsCard5 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
       <AdsCard6 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
       <AdsCard7 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
       <AdsCard8 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
@@ -155,7 +146,6 @@ const Home =() => {
       <MediaFooter />
     </>
   );
-}
+};
 
-
-export default Home
+export default Home;

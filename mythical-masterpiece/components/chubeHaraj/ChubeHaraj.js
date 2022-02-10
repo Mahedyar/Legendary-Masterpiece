@@ -9,8 +9,10 @@ import Timer from "./Timer";
 import ItemsSlider from "./ItemsSlider";
 import background from "../../assets/Images/ChubeHaraj/sale_bg.png";
 import chubeharaj from "../../assets/Images/ChubeHaraj/sale.png";
+import useWindowSize from "../../utils/useWindowSize";
 
 export default function ChubeHaraj(props) {
+  const windowSize = useWindowSize()
   return (
     <div className="chubeHaraj">
       <Box
@@ -46,7 +48,7 @@ export default function ChubeHaraj(props) {
           >
             <ItemsSlider
               products={props.products}
-              slidesPerView={props.slidesPerView}
+              slidesPerView={windowSize.width > 425 ?  3 :  1 } 
               cardsPaddingTop={props.cardsPaddingTop}
             />
           </Paper>
