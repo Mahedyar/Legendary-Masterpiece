@@ -39,14 +39,17 @@ export default function ItemCard(props) {
       key={props.product.id}
       sx={{
         height: 388,
-        marginLeft: 2,
-        paddingTop: props.cardsPaddingTop,
+        // marginLeft: 2,
+        // paddingTop: props.cardsPaddingTop,
+        padding : "16px" ,
         marginBottom: 3,
         boxSizing: "border-box",
         width: 215,
+        minWidth : "138px"
       }}
     >
       <ItemImage image={props.product.image} />
+
       <Typography
         component="div"
         sx={{
