@@ -81,7 +81,7 @@ export default function ChubeHaraj(props) {
                 <Timer />
               </Typography>
 
-              <img src={chubeharaj.src} />
+              <img style = {{width: `${windowSize.width > 425 ? "240px" : "120px"}`}} src={chubeharaj.src} />
             </Box>
           </Box>
         </Container>
