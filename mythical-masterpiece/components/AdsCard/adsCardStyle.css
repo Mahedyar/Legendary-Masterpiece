@@ -1,25 +1,25 @@
 .img11{
-    width: 95%;
+    width: 100%;
     height: 90%;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 10px;
     margin: 25px 0;
 }
 .img12{
-    width: 95%;
+    width: 100%;
     height: 100%;
     border-bottom-right-radius: 80px;
     border-top-right-radius: 10px;
     margin: 25px 0;
 }
 .img21{
-    width: 95%;
+    width: 100%;
     height: 90%;
     border-radius: 10px;
     margin: 12px 0;
 }
 .img31{
-    width: 90%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     margin: 12px 0;
@@ -37,19 +37,19 @@
     margin: 0 0 10px 0;
 }
 .img44{
-    width: 85%;
+    width: 94%;
     height: 510px;
     border-radius: 10px;
     margin: 10px 0 0 30px;
 }
 .img51{
-    width: 98%;
+    width: 100%;
     height: 90%;
     border-radius: 10px;
     margin: 12px 0;
 }
 .adsbox{
-    width: 1140px;
+    /* width: 1140px;
     /*height: 633px;*/
-    margin: 0 0 0 6.5rem;
+    /* margin: 0 0 0 6.5rem; */ 
 }

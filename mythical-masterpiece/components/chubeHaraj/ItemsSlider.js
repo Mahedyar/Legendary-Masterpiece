@@ -7,7 +7,9 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 // import classes from "./SwipperStyles.module.css";
 
+
 export default function ItemsSlider(props) {
+  
   // console.log(cardsPaddingTop)
   return (
     // <div className="chubeHaraj">

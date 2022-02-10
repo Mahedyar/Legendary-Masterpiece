@@ -18,12 +18,14 @@ import AdsCard5 from "../components/AdsCard/AdsCard5";
 import AdsCard6 from "../components/AdsCard/AdsCard6";
 import AdsCard7 from "../components/AdsCard/AdsCard7";
 import AdsCard8 from "../components/AdsCard/AdsCard8";
+import useWindowSize from "../utils/useWindowSize";
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 />;
 
-export default function Home() {
+const Home =() => {
+
   // const kalaPreviewTitleHide = 1 ,
   const products = [
     {
@@ -69,14 +71,25 @@ export default function Home() {
       price: 85000,
     },
   ];
+
+  const windowSize = useWindowSize();
+  // const slideRespHandler = (windowSize) => {
+  //   if (windowSize.width > 425) {
+  //     KalaSlide = 4 
+  //   } else {
+      
+  //   }
+
+  // }
+  console.log(windowSize.width)
   return (
     <>
       <Slider />
-      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+      <ChubeHaraj products={products} slidesPerView= {windowSize.width > 425 ?  3 :  1 } cardsPaddingTop={3} />
       <AdsCard1 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
+        slidesPerView = {windowSize.width > 425 ?  4 :  2 }
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
@@ -84,7 +97,7 @@ export default function Home() {
       <AdsCard2 />
       <KalaPreview
         products={products}
-        slidesPerView={5}
+        slidesPerView={windowSize.width > 425 ?  4 :  2 }
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
@@ -143,3 +156,6 @@ export default function Home() {
     </>
   );
 }
+
+
+export default Home

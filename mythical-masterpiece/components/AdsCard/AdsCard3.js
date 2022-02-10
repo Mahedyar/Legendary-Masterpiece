@@ -9,7 +9,7 @@ export default function AdsCard3() {
     return (
         <Container>
             <Box className="adsbox">
-                <Grid container spacing={0}>
+                <Grid container spacing={4}>
                     <Grid item xs={6} sm={6} md={3} lg={3}>
                         <Paper elevation={0}>
                             <a href="">
