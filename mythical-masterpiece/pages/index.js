@@ -1,9 +1,9 @@
-import HeaderPart from "../components/Header/HeaderPart";
-import HeaderMenu from "../components/Header/HeaderMenu"
+
+import Header from "../components/Header/Header"
 
 const Home = () => {
     return (
-        <HeaderMenu />
+        <Header />
     )
 };
 
