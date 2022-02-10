@@ -26,12 +26,6 @@ import Header from "../components/Header/Header"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 />;
 
-
-
-        
-
-
-export default Home;
 const Home = () => {
   // const kalaPreviewTitleHide = 1 ,
   const products = [
@@ -79,16 +73,8 @@ const Home = () => {
     },
   ];
 
-  const windowSize = useWindowSize();
-  // const slideRespHandler = (windowSize) => {
-  //   if (windowSize.width > 425) {
-  //     KalaSlide = 4
-  //   } else {
-
-  //   }
-
-  // }
-  // console.log(windowSize.width)
+//   const windowSize = useWindowSize();
+  
   return (
     <>
     <Header />

@@ -1,15 +1,18 @@
-import {Fragment} from "react";
+import { Fragment } from "react";
+import classes from "./Header.module.css";
+import HeaderGif from "../../assets/Images/Header/timche-header-add.gif";
+import TitlePart from "./TitlePart";
+import { Container } from "@mui/material";
 
-import classes from "./Header.module.css"
-import HeaderGif from "../../assests/adds/timche-header-add.gif"
+const Header = () => {
+  return (
+    <>
+      <img className={classes.gifImage} src={HeaderGif.src} alt="some shit" />
+      <Container sx={{marginTop : "15px"}}>
+        <TitlePart />
+      </Container>
+    </>
+  );
+};
 
-const HeaderMenu = () => {
-    return (
-        <Fragment>
-            <img className={classes.gifImage} src={HeaderGif.src} alt="some shit"/>
-           
-        </Fragment>
-    )
-}
-
-export default HeaderMenu
+export default Header;
