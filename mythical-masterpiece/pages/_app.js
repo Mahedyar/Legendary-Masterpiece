@@ -3,9 +3,14 @@ import '../styles/globals.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "../components/kalaPreview/KalaPreview.css"
+
+
 import "../components/slider/styles.css";
 import "../components/chubeHaraj/SwipperStyles.css";
-import "../components/kalaPreview/KalaPreview.css"
+import "../components/AdsCard/adsCardStyle.css";
+// import "../components/chubeHaraj/SwipperStyles.module.css";
+
 // import "./assest/Font/YekanBoom.ttf";
 
 function MyApp({ Component, pageProps }) {

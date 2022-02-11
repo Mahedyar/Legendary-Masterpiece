@@ -3,6 +3,7 @@ import {Container, Grid, Paper} from "@mui/material";
 import {Autoplay, Pagination, Navigation} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import useMediaQuery from '@mui/material/useMediaQuery';
+// import "./styles.module.css"
 
 import ResSlider from './ResSlider'
 
