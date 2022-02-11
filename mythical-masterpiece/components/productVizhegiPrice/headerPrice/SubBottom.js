@@ -1,6 +1,4 @@
-
 import Box from '@mui/material/Box';
-import Typography from "@mui/material/Typography";
 import StarIcon from '@mui/icons-material/Star';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
