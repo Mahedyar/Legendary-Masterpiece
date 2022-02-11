@@ -10,13 +10,13 @@ export default function MainProductPrice() {
         <>
 
             <CssBaseline/>
-            <Container maxWidth="sm">
+
                 <Box sx={{bgcolor: '#fff', height: '100vh'}}>
                     <HeaderPrice/>
                     <ProductPrice/>
                     <ProductFeatures/>
                 </Box>
-            </Container>
+
 
         </>
     )

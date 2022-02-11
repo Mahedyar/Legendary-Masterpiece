@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import MainProductImage from "../components/productImage/MainProductImage";
+import ProductVizhegiPrice from "../components/productVizhegiPrice/ProductVizhegiPrice";
 
 
 export default function ProductPage() {
@@ -10,9 +12,8 @@ export default function ProductPage() {
             sx={{
                 width: '100%',
                 height: '140px',
-                color: '#fff',
                 '& > .MuiBox-root > .MuiBox-root': {
-                    p: 1,
+                    p: 0.5,
 
                     fontSize: '0.875rem',
                     fontWeight: '700',
@@ -41,13 +42,12 @@ export default function ProductPage() {
                 <Box sx={{ gridArea: 'header', bgcolor: 'primary.main' }}>Header</Box>
                 <Box sx={{ gridArea: 'breadCrumb', bgcolor: 'pink' }}>breadCrumb</Box>
                 <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}>Seller</Box>
-                <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}>info</Box>
-                <Box sx={{ gridArea: 'sidebar', bgcolor: 'error.main' }}>Image</Box>
+                <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}><ProductVizhegiPrice/></Box>
+                <Box sx={{ gridArea: 'sidebar', bgcolor: 'red' }}><MainProductImage/></Box>
                 <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}>stylesFeatures</Box>
                 <Box sx={{ gridArea: 'tabList', bgcolor: '#20c02b' }}>tabList</Box>
                 <Box sx={{ gridArea: 'SimilarProduct', bgcolor: 'peachpuff' }}>SimilarProduct</Box>
                 <Box sx={{ gridArea: 'footer', bgcolor: 'warning.dark' }}>Footer</Box>
-
 
             </Box>
         </Box>

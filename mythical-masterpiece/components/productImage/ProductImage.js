@@ -9,7 +9,6 @@ function Item(props) {
         <Box
             sx={{
                 bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#fff'),
-                color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
                 border: '0px solid',
                 ...sx,
             }}
@@ -23,11 +22,8 @@ export default function ProductImage(){
     return(
         <>
             <div style={{ width: '100%' }}>
-                <Box sx={{ display: 'grid', gridTemplateRows: 'repeat(3, 1fr)' }}>
                     <Item><BoxMaxImage/></Item>
                     <Item><BoxMinImage/></Item>
-
-                </Box>
             </div>
         </>
     )

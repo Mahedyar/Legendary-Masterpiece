@@ -14,16 +14,16 @@ export default function BoxMaxImage(){
     }));
     return(
         <>
-            <Box
+            <Box className={'max-Image'}
                 sx={{
-                    width: 430,
+                    width: 420,
                     height: 420,
                     backgroundColor: '#f5f5f5',
                     borderRadius:3,
                     margin:'auto',
                 }}
             >
-                <Box sx={{ flexGrow: 1 }}>
+                <Box>
                     <Grid container spacing={2}>
                         <Grid item xs={9.5}>
                             {DataCard.map((item)=>
