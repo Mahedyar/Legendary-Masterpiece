@@ -10,12 +10,13 @@ const SearchBox = () => {
         sx={{
           marginRight: "50px",
           bgcolor: "#f5f5f5",
-          width: "420px",
+          width: "70%",
           height: "48px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           padding: "0 10px",
+          borderRadius : "5px"
         }}
       >
         <InputBase

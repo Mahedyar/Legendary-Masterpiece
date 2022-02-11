@@ -15,7 +15,7 @@ const TitlePart = () => {
           justifyContent: "space-between",
         }}
       >
-        <Box sx={{display : "flex"}}>
+        <Box sx={{display : "flex" , width : "60%"}}>
           <img src={timcheLogo.src}></img>
           <SearchBox />
         </Box>
