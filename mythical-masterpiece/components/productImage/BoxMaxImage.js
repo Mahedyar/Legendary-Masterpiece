@@ -1,7 +1,6 @@
 import {Box,Grid} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import lamp from '../../../assets/Images/ProductImage/lamp.jpg';
 import LocalMaxImage from "./LocalMaxImage";
 import DataCard from "./DataCard";
 import Icon from "./Icon";
