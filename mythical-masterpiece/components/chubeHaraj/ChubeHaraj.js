@@ -50,7 +50,7 @@ export default function ChubeHaraj(props) {
             >
               <ItemsSlider
                 products={props.products}
-                slidesPerView={windowSize.width > 425 ? 3 : 1}
+                slidesPerView={windowSize.width > 425 ? 3 : 1.5}
                 cardsPaddingTop={props.cardsPaddingTop}
               />
             </Paper>

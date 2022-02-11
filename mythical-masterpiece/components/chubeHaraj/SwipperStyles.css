@@ -11,6 +11,7 @@
 .chubeHaraj .swiper {
   width: 100%;
   height: 100%;
+  direction: rtl;
 }
 
 .chubeHaraj .swiper-slide {
