@@ -32,6 +32,7 @@ export default function ProductPage() {
                                         "main main info info info sidebar sidebar sidebar "
                                         "stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures "
                                          "tabList tabList tabList tabList  tabList tabList tabList tabList"
+                                         "SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct"
                                          ". . . . . . . . "
                                          ". . . . . . . . "
                                          "footer footer footer footer  footer footer footer footer"`,
@@ -39,12 +40,14 @@ export default function ProductPage() {
             >
                 <Box sx={{ gridArea: 'header', bgcolor: 'primary.main' }}>Header</Box>
                 <Box sx={{ gridArea: 'breadCrumb', bgcolor: 'pink' }}>breadCrumb</Box>
-                <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}>Main</Box>
+                <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}>Seller</Box>
                 <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}>info</Box>
-                <Box sx={{ gridArea: 'sidebar', bgcolor: 'error.main' }}>Sidebar</Box>
+                <Box sx={{ gridArea: 'sidebar', bgcolor: 'error.main' }}>Image</Box>
                 <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}>stylesFeatures</Box>
                 <Box sx={{ gridArea: 'tabList', bgcolor: '#20c02b' }}>tabList</Box>
+                <Box sx={{ gridArea: 'SimilarProduct', bgcolor: 'peachpuff' }}>SimilarProduct</Box>
                 <Box sx={{ gridArea: 'footer', bgcolor: 'warning.dark' }}>Footer</Box>
+
 
             </Box>
         </Box>
