@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
+import taileft from "../../assets/Images/Ads/taileft.gif";
+import tairight from "../../assets/Images/Ads/tairight.png";
 // import {img21} from './ads.card2.style.css';
 
 export default function AdsCard7() {
@@ -14,7 +16,7 @@ export default function AdsCard7() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src="https://static.timcheh.com/uploads/manual/images/homepage/desktop/2.%202-tai_left.gif"
+                                    src={taileft.src}
                                     className="img21"/>
                             </a>
                         </Paper>
@@ -23,7 +25,7 @@ export default function AdsCard7() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src="https://images.timcheh.com/1/fill/1276/312/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/2%20tai_right0910.jpg"
+                                    src={tairight.src}
                                     className="img21"/>
                             </a>
                         </Paper>

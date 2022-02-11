@@ -3,6 +3,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
+import keyboard from "../../assets/Images/Ads/keyboard.png";
+import monitor from "../../assets/Images/Ads/monitor.png";
+import mouse from "../../assets/Images/Ads/mouse.png";
+import speaker from "../../assets/Images/Ads/speaker.png";
 // import {img31} from './ads.card3.style.css';
 
 export default function AdsCard3() {
@@ -14,7 +18,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src="https://images.timcheh.com/1/fill/630/408/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/keyboard-1002.jpg"
+                                    src={keyboard.src}
                                     className="img31"/>
                             </a>
                         </Paper>
@@ -23,7 +27,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src="https://images.timcheh.com/1/fill/630/408/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/monitor-1002.jpg"
+                                    src={monitor.src}
                                     className="img31"/>
                             </a>
                         </Paper>
@@ -32,7 +36,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src="https://images.timcheh.com/1/fill/630/408/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/mouse-1002.jpg"
+                                    src={mouse.src}
                                     className="img31"/>
                             </a>
                         </Paper>
@@ -41,7 +45,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src="https://images.timcheh.com/1/fill/630/408/sm/true/plain/https://static.timcheh.com/uploads/manual/images/homepage/desktop/speaker-1002.jpg"
+                                    src={speaker.src}
                                     className="img31"/>
                             </a>
                         </Paper>
