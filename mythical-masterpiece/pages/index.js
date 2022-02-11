@@ -10,21 +10,9 @@ import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from "../components/footer/MediaFooter";
-import AdsCard1 from "../components/AdsCard/AdsCard1";
-import AdsCard2 from "../components/AdsCard/AdsCard2";
-import AdsCard3 from "../components/AdsCard/AdsCard3";
-import AdsCard4 from "../components/AdsCard/AdsCard4";
-import AdsCard5 from "../components/AdsCard/AdsCard5";
-import AdsCard6 from "../components/AdsCard/AdsCard6";
-import AdsCard7 from "../components/AdsCard/AdsCard7";
-import AdsCard8 from "../components/AdsCard/AdsCard8";
-import useWindowSize from "../utils/useWindowSize";
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>;
 
-const Home = () => {
+
+export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
   const products = [
     {
@@ -70,82 +58,31 @@ const Home = () => {
       price: 85000,
     },
   ];
-
-  const windowSize = useWindowSize();
-  // const slideRespHandler = (windowSize) => {
-  //   if (windowSize.width > 425) {
-  //     KalaSlide = 4
-  //   } else {
-
-  //   }
-
-  // }
-  // console.log(windowSize.width)
   return (
     <>
       <Slider />
-      <ChubeHaraj products={products} cardsPaddingTop={3} />
-      <AdsCard1 />
+
+      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+
       <KalaPreview
         products={products}
+        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
 
-      <AdsCard2 />
       <KalaPreview
         products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard3 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <KalaPreview
-        products={products}
+        slidesPerView={4}
         cardsPaddingTop={1}
         imagedKalaPreview={1}
-        previewTitle={"لوازم آرایشی"}
         previewImage={firstImagedPreview.src}
-        // ImageTitle={"لوازم آرایشی"}
-      />
-      <AdsCard4 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard5 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard6 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard7 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard8 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+        ImageTitle={"لوازم آرایشی"}
       />
 
+      {/*Footer*/}
       <MediaFooter />
+
     </>
   );
-};
-
-export default Home;
+}
