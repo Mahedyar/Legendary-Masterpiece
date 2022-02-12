@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="Product Seller Table has been dynamicated.">
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="photes renamed">
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Lendo/lendosign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Lendo/shahneshin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/components/ProductSellerTable/productSellerStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/ProductBuyLendo/ProductBuyLendo.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/ProductBuyLendo/ProductBuyLendo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/ProductBuyLendo/product.lendo.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/ProductBuyLendo/productLendoStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/ProductSellerTable/ProductSellerTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/ProductSellerTable/ProductSellerTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/ProductSellerTable/product.seller.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Ads" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,6 +102,7 @@
       <workItem from="1644306441259" duration="1383000" />
       <workItem from="1644331589994" duration="4520000" />
       <workItem from="1644336970529" duration="316000" />
+      <workItem from="1644659071172" duration="6764000" />
     </task>
     <task id="LOCAL-00001" summary="first commit + assest file">
       <created>1643261614247</created>

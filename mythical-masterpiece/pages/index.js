@@ -11,6 +11,7 @@ import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from "../components/footer/MediaFooter";
 import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
+import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -24,9 +25,14 @@ export default function Home() {
       score : "۱۵۰",
       sellerType : "خوب",
       guarantee : "گارانتی ۱۸ ماهه شرکتی",
-      availability : "موجود در انبار تیمچه"
+      availability : "موجود در انبار تیمچه",
     };
-
+  const lendo =
+      {
+        prepayment : "۰",
+        installment : "۴۶۴,۲۶۷",
+        reward : "۲۰,۰۰۰",
+      };
 
   const products = [
     {
@@ -74,7 +80,8 @@ export default function Home() {
   ];
   return (
     <>
-      <ProductSellerTable sellers = {sellers}/>
+      {/*<ProductBuyLendo lendo = {lendo}/>*/}
+      {/*<ProductSellerTable sellers = {sellers}/>*/}
       {/*<Slider />*/}
 
       {/*<ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />*/}
