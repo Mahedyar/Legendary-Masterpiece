@@ -4,28 +4,58 @@ import Box from "@mui/material/Box";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Typography } from "@mui/material";
 import KalaPreviewTitle from "./KalaPreviewTitle";
-import useWindowSize from "../../utils/useWindowSize";
+
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const KalaPreview = (props) => {
+  let tabletSize = false;
+  let slidesPerView;
+  const mobileSize = useMediaQuery("(max-width:425px)");
+  const fullSize = useMediaQuery("(min-width:1024px)");
+  if (!mobileSize && !fullSize) {
+    tabletSize = true;
+  }
 
-  const windowSize = useWindowSize();
+  const slideNumberHandler = () => {
+    if (fullSize) {
+      if (props.imagedKalaPreview) {
+        slidesPerView = 4;
+      } else {
+        slidesPerView = 5;
+      }
+    }
+    if (tabletSize) {
+      slidesPerView = 2;
+    }
+    if (mobileSize) {
+      slidesPerView = 1;
+    }
+    
+
+    return slidesPerView;
+  };
+
+  
   return (
-    <div className="chubeHaraj" >
+    <div className="chubeHaraj">
       <Container>
-        <Box sx={(props.imagedKalaPreview && windowSize.width > 768 ) ? { display: "flex" } : {}}>
-          {(!props.imagedKalaPreview || (windowSize.width < 768)) &&(
+        <Box
+          sx={props.imagedKalaPreview && fullSize ? { display: "flex" } : {}}
+        >
+          {(!props.imagedKalaPreview || !fullSize) && (
             <KalaPreviewTitle previewTitle={props.previewTitle} />
           )}
-          
 
           <ItemsSlider
             products={props.products}
-            slidesPerView={windowSize.width > 425 ?  4 :  2 }
+            slidesPerView={slideNumberHandler()}
             cardsPaddingTop={props.cardsPaddingTop}
           />
-          {props.imagedKalaPreview &&  (windowSize.width > 768) && (
+          {props.imagedKalaPreview && fullSize && (
             <Box>
-              <Box sx={{ display: "flex", position: "absolute" , width : "300px"}}>
+              <Box
+                sx={{ display: "flex", position: "absolute", width: "300px" }}
+              >
                 {/* <KalaPreviewTitle previewTitle={props.ImageTitle} /> */}
               </Box>
               {<img className="previewImage" src={props.previewImage} />}

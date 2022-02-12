@@ -18,7 +18,7 @@ import AdsCard5 from "../components/AdsCard/AdsCard5";
 import AdsCard6 from "../components/AdsCard/AdsCard6";
 import AdsCard7 from "../components/AdsCard/AdsCard7";
 import AdsCard8 from "../components/AdsCard/AdsCard8";
-import useWindowSize from "../utils/useWindowSize";
+
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -71,7 +71,7 @@ const Home = () => {
     },
   ];
 
-  const windowSize = useWindowSize();
+  
   // const slideRespHandler = (windowSize) => {
   //   if (windowSize.width > 425) {
   //     KalaSlide = 4

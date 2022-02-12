@@ -9,10 +9,45 @@ import Timer from "./Timer";
 import ItemsSlider from "./ItemsSlider";
 import background from "../../assets/Images/ChubeHaraj/sale_bg.png";
 import chubeharaj from "../../assets/Images/ChubeHaraj/sale.png";
-import useWindowSize from "../../utils/useWindowSize";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useState } from "react";
 
 export default function ChubeHaraj(props) {
-  const windowSize = useWindowSize();
+  // const [slidesNumber, setSlidesNumber] = useState(4);
+
+
+  let tabletSize = false;
+  let slidesPerView 
+  const mobileSize = useMediaQuery("(max-width:425px)");
+  const fullSize = useMediaQuery("(min-width:1024px)");
+  if (!mobileSize && !fullSize) {
+    tabletSize = true;
+  }
+
+  const slideNumberHandler = () =>{
+    if(fullSize) {
+      slidesPerView = 4.7
+    }
+    if (tabletSize) {
+     slidesPerView = 2;
+    }
+    if (mobileSize) {
+      slidesPerView = 1;
+    }
+   
+
+    return slidesPerView
+
+  }
+  
+
+
+  console.log(
+    ` fullSize : ${fullSize} , tabletSize : ${tabletSize}, mobileSize : ${mobileSize}`
+  );
+
+  const windowSize = "500px";
+
   return (
     <div className="chubeHaraj">
       <Box
@@ -43,20 +78,20 @@ export default function ChubeHaraj(props) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "right",
-               
+
                 zIndex: "1",
-                backgroundColor : 'transparent'
+                backgroundColor: "transparent",
               }}
             >
               <ItemsSlider
                 products={props.products}
-                slidesPerView={windowSize.width > 425 ? 3 : 1.5}
+                slidesPerView={slideNumberHandler()}
                 cardsPaddingTop={props.cardsPaddingTop}
               />
             </Paper>
             <Box
               sx={{
-                width: `${windowSize.width > 425 ? "240px" : "120px"}`,
+                width: `${windowSize > 425 ? "240px" : "120px"}`,
                 margin: "0 16px",
               }}
             >
@@ -81,7 +116,10 @@ export default function ChubeHaraj(props) {
                 <Timer />
               </Typography>
 
-              <img style = {{width: `${windowSize.width > 425 ? "240px" : "120px"}`}} src={chubeharaj.src} />
+              <img
+                style={{ width: `${windowSize > 425 ? "240px" : "120px"}` }}
+                src={chubeharaj.src}
+              />
             </Box>
           </Box>
         </Container>

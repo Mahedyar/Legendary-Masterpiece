@@ -3,11 +3,11 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { width } from "@mui/system";
 import classes from "./ItemImage.module.css";
-import useWindowSize from "../../utils/useWindowSize";
+
 
 
 export default function ItemImage(props) {
-    const windowSize = useWindowSize()
+   
   return (
     <Paper
       elevation={0}
