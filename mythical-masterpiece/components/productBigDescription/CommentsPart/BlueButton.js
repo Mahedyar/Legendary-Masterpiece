@@ -25,7 +25,8 @@ const BlueButton = (props) => {
         border: "none",
         height: "48px",
         marginTop: "30px",
-        fontWeight : "bold"
+        fontWeight : "bold" ,
+        cursor : "pointer"
       }}
     >
       {props.children}
