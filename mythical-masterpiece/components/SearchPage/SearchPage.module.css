@@ -1,0 +1,22 @@
+.pic {
+    width: 100vw;
+    display: block;
+}
+
+.pageContent {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.pageGrid {
+    width: 84%;
+    display: grid;
+    grid-template-columns: 3.5fr 1.2fr;
+    align-items: flex-start;
+}
+
+.s2 {
+    background: yellow;
+}
