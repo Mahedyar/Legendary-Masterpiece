@@ -29,7 +29,7 @@ export default function MenuButton() {
 
   return (
     <>
-      {open.show && <ModalMenu onClose={open.show} onOpen={open.show} />}
+      {open.show && <ModalMenu  onOpen={open.show} />}
       <div style={{ width: "100%" }}>
         <Box
           sx={{

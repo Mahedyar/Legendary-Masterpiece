@@ -16,7 +16,7 @@ const style = {
 export default function ModalMenu(props) {
   return (
     <>
-      <Modal sx={{backgroundColor : "red", position : "unset"}} open={props.onOpen} onClose={props.onConfirm}>
+      <Modal sx={{backgroundColor : "red", position : "unset"}} open={props.onOpen} >
         <Box sx={style}>
           <h1>hello</h1>
           <h1>hello</h1>
