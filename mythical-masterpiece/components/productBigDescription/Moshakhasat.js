@@ -3,6 +3,8 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { Typography } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -11,7 +13,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   backgroundColor: "#fafafa",
   boxShadow: "none",
-  fontWeight : "bold"
+  fontWeight: "bold",
 }));
 
 const BlankItem = styled(Paper)(({ theme }) => ({
@@ -21,7 +23,6 @@ const BlankItem = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   backgroundColor: "#ffffff",
   boxShadow: "none",
-  
 }));
 
 const properties = [
@@ -41,19 +42,22 @@ const properties = [
   },
 ];
 export default function Moshakhasat() {
+  const matches = useMediaQuery("(min-width:769px)");
   const blankMaker = (description) => {
     if (description.length > 1) {
       let remainingDescriptions = description.slice(1, description.length);
-      console.log(remainingDescriptions);
+      // console.log(remainingDescriptions);
 
       return remainingDescriptions.map((content) => (
         <>
-          <Grid item xs={3}>
-            <BlankItem></BlankItem>
-          </Grid>
+          {matches && (
+            <Grid item xs={3}>
+              <BlankItem></BlankItem>
+            </Grid>
+          )}
 
-          <Grid item xs={9}>
-            <Item>{content}</Item>
+          <Grid item xs={matches ? 9 : 12}>
+            <Item sx ={matches ? {} : {fontSize : "13px"}}>{content}</Item>
           </Grid>
         </>
       ));
@@ -61,14 +65,17 @@ export default function Moshakhasat() {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
+      
+      <Typography sx={{fontSize : `${matches ? "18px" : "16x" }` , fontWeight : "bold" , margin : "0 12px 10px 0"}}>مشخصات</Typography>
       <Grid container spacing={2}>
+        
         {properties.map((property) => (
           <>
-            <Grid item xs={3}>
-              <Item>{property.title}</Item>
+            <Grid item xs={matches ? 3 : 12}>
+              <Item sx={matches ? {} : {backgroundColor : "#f0f0f0" , fontSize : "13px"}}>{property.title}</Item>
             </Grid>
-            <Grid item xs={9}>
-              <Item>{property.description[0]}</Item>
+            <Grid item xs={matches ? 9 : 12}>
+              <Item sx ={matches ? {} : {fontSize : "13px"}}>{property.description[0]}</Item>
             </Grid>
             {blankMaker(property.description)}
           </>

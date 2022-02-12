@@ -2,18 +2,26 @@ import { Box } from "@mui/material";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ResponsiveGreenFiveStar from "./ResponsiveGreenFiveStar";
 const SingleComment = (props) => {
   const matches = useMediaQuery("(min-width:769px)");
   return (
     <>
       <Box
         sx={{
-          marginTop: "32px",
+          marginTop: `${matches ? "32px" : "15px"}`,
           borderBottom: "1px solid #d9d9d9",
           paddingBottom: "24px",
         }}
       >
-        <Rating value={5} size="small" />
+        <Box>
+          {matches ? (
+            <Rating value={5} size="small" />
+          ) : (
+            <ResponsiveGreenFiveStar />
+          )}
+        </Box>
+
         <Box
           sx={{
             display: "flex",
@@ -21,7 +29,13 @@ const SingleComment = (props) => {
             alignItems: "center",
           }}
         >
-          <Typography sx={matches ? { fontSize: "18px", fontWeight: "bold" }:{fontSize: "13px", fontWeight: "bold" }}>
+          <Typography
+            sx={
+              matches
+                ? { fontSize: "18px", fontWeight: "bold" }
+                : { fontSize: "13px", fontWeight: "bold" }
+            }
+          >
             {props.title}
           </Typography>
           {matches && (
@@ -40,7 +54,11 @@ const SingleComment = (props) => {
           )}
         </Box>
         <Typography
-          sx={matches ? { color: "#8c8c8c", fontSize: "14px", margin: "5px 0 20px 0" } : { color: "#8c8c8c", fontSize: "12px", margin: "5px 0 20px 0" }}
+          sx={
+            matches
+              ? { color: "#8c8c8c", fontSize: "14px", margin: "5px 0 20px 0" }
+              : { color: "#8c8c8c", fontSize: "12px", margin: "5px 0 20px 0" }
+          }
         >
           {props.userName}
         </Typography>

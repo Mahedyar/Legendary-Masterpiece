@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import NumberToPersian from "../chubeHaraj/NumberToPersian";
+import NumberToPersian from "../../chubeHaraj/NumberToPersian";
 
 
 

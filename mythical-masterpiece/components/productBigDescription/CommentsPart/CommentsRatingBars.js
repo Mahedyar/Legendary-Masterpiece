@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import ProgressBar from "./ProgressBar";
 import Rating from "@mui/material/Rating";
-import NumberToPersian from "../chubeHaraj/NumberToPersian";
+import NumberToPersian from "../../chubeHaraj/NumberToPersian";
 
 const CommentsRatingBars = (props) => {
   const totalComments =

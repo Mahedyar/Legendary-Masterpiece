@@ -75,7 +75,7 @@ const Comments = () => {
           </Box>
           
         </Box>
-        <Box sx={{ marginTop: "120px" }}>
+        <Box sx={{ marginTop: "100px" }}>
           <Box
             sx={matches ?{ borderBottom: "1px solid #f0f0f0", paddingBottom: "10px" }:{ borderBottom: "1px solid #d9d9d9", paddingBottom: "5px"}}
           >
