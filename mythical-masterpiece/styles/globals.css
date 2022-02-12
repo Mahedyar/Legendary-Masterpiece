@@ -60,3 +60,17 @@ padding-right: 0;
     justify-content: center;
 }
 
+.Chip-header{
+    border-radius: 10px;
+}
+
+.icon-menu{
+    transform: rotate(180deg);
+}
+.btn-menu:hover{
+    color: #007aff;
+}
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
+    margin-top: 13%;
+    height: auto;
+}

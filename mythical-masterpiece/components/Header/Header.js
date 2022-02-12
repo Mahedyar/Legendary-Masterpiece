@@ -3,7 +3,8 @@ import classes from "./Header.module.css";
 import HeaderGif from "../../assets/Images/Header/timche-header-add.gif";
 import TitlePart from "./TitlePart";
 import Menu from "./Menu"
-import { Container } from "@mui/material";
+import { Container ,Box} from "@mui/material";
+
 
 const Header = () => {
   return (
@@ -13,6 +14,8 @@ const Header = () => {
         <TitlePart />
         <Menu/>
       </Container>
+        <Box sx={{ borderBottom:"1px solid #d9d9d9",width: '100%' }} />
+
     </>
   );
 };

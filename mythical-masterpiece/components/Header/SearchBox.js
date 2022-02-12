@@ -1,4 +1,3 @@
-
 import SearchIcon from "@mui/icons-material/Search";
 import Box from "@mui/material/Box";
 import InputBase from '@mui/material/InputBase';

@@ -19,7 +19,6 @@ const TitlePart = () => {
           <img src={timcheLogo.src}></img>
           <SearchBox />
         </Box>
-
         <TitlePartIcons />
       </Box>
     </>

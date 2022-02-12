@@ -45,13 +45,13 @@ export default function DividerStack() {
         <Item>
           {" "}
           <Chip
+              className={'Chip-header'}
             label="در تیمچه بفروش ! "
             component="a"
             href="#basic-chip"
             variant="outlined"
             clickable
             color="primary"
-            borderRadius = "2px"
           />
         </Item>
 

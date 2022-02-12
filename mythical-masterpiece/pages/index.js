@@ -21,10 +21,7 @@ import AdsCard8 from "../components/AdsCard/AdsCard8";
 import useWindowSize from "../utils/useWindowSize";
 
 import Header from "../components/Header/Header"
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>;
+
 
 const Home = () => {
   // const kalaPreviewTitleHide = 1 ,
