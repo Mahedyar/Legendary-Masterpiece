@@ -3,6 +3,7 @@ import BlueButton from "./BlueButton";
 import SingleComment from "./SingleComment";
 import ProgressBar from "./ProgressBar";
 import CommentsRatingBars from "./CommentsRatingBars";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const comments = [
   {
@@ -35,29 +36,34 @@ const comments = [
 ];
 
 const Comments = () => {
+  const matches = useMediaQuery("(min-width:769px)");
+  console.log(matches);
   return (
     <>
       <Container>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box sx={{ width: "50%", paddingLeft: "10%" }}>
-            <Typography
-              component="h2"
-              sx={{
-                fontSize: "18px",
-                fontWeight: "bold",
-                marginBottom: "12px",
-              }}
-            >
-              چطور میتوانم درباره این کالا نظر دهم
-            </Typography>
-            <Typography component="p" sx={{ fontSize: "14px" }}>
-              اگر این محصول را از تیمچه خریداری کرده‌اید و یا تجربه استفاده از
-              آن را دارید، می‌توانید با زدن بر روی دکمه زیر، نظر خود ثبت کنید.
-            </Typography>
-            <BlueButton padding="10px 60px">افزودن نظر جدید</BlueButton>
-          </Box>
+          {matches && (
+            <Box sx={{ width: "50%", paddingLeft: "10%" }}>
+              <Typography
+                component="h2"
+                sx={{
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                  marginBottom: "12px",
+                }}
+              >
+                چطور میتوانم درباره این کالا نظر دهم
+              </Typography>
+              <Typography component="p" sx={{ fontSize: "14px" }}>
+                اگر این محصول را از تیمچه خریداری کرده‌اید و یا تجربه استفاده از
+                آن را دارید، می‌توانید با زدن بر روی دکمه زیر، نظر خود ثبت کنید.
+              </Typography>
 
-          <Box sx={{ width: "50%", paddingRight: "10%" }}>
+              <BlueButton width = {"50%"}>افزودن نظر جدید</BlueButton>
+            </Box>
+          )}
+
+          <Box sx={matches ? {width : "50%" , paddingRight: "10%" }:{ width: "100%" }}>
             <CommentsRatingBars
               fiveStar={15}
               fourStar={4}
@@ -65,15 +71,20 @@ const Comments = () => {
               twoStar={2}
               oneStar={1}
             />
+            {!matches && <BlueButton width = {"100%"} >افزودن نظر جدید</BlueButton>}
           </Box>
+          
         </Box>
         <Box sx={{ marginTop: "120px" }}>
           <Box
-            sx={{ borderBottom: "1px solid #f0f0f0", paddingBottom: "10px" }}
+            sx={matches ?{ borderBottom: "1px solid #f0f0f0", paddingBottom: "10px" }:{ borderBottom: "1px solid #d9d9d9", paddingBottom: "5px"}}
           >
-            <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
+            {matches ? <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
               نظر کاربران
-            </Typography>
+            </Typography> : <Typography sx={{ fontSize: "14px", fontWeight: "bold" }}>
+              جدید ترین نظرات
+            </Typography> }
+            
           </Box>
           {comments.map((singleComment) => (
             <SingleComment

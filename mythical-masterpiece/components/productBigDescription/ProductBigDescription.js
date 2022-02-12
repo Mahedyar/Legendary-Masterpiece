@@ -9,10 +9,15 @@ import EqualizerIcon from "@mui/icons-material/Equalizer";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import Typography from "@mui/material/Typography";
 import Moshakhasat from "./Moshakhasat";
-import CommentsPart from "./CommentsPart";
+import CommentsPart from "./CommentsPart"; 
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+
 
 function TabPanel(props) {
+  
   const { children, value, index, ...other } = props;
+  const matches = useMediaQuery("(min-width:769px)")
 
   return (
     <div
@@ -23,7 +28,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 , direction : "rtl"}}>
+        <Box sx={matches ?{ p: 3 , direction : "rtl"}:{direction : "rtl"}}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -46,6 +51,7 @@ const StyledTabs = styled((props) => (
     display: "flex",
     justifyContent: "center",
     backgroundColor: "transparent",
+   
   },
   "& .MuiTabs-indicatorSpan": {
     maxWidth: 40,
@@ -55,13 +61,16 @@ const StyledTabs = styled((props) => (
 });
 
 const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
+  
   ({ theme }) => ({
     textTransform: "none",
     fontWeight: theme.typography.fontWeightRegular,
-    fontSize: theme.typography.pxToRem(15),
+    // fontSize: theme.typography.pxToRem(15),
     marginRight: theme.spacing(1),
     fontWeight : "bold" ,
     color: "#8c8c8c",
+    width : "10px" ,
+
     "&.Mui-selected": {
       color: "#141414",
     },
@@ -72,6 +81,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
 );
 
 export default function CustomizedTabs() {
+  const matches = useMediaQuery("(min-width:769px)")
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -91,17 +101,20 @@ export default function CustomizedTabs() {
               icon={<MessageIcon />}
               iconPosition="end"
               label="نظر کاربران"
+              sx = {matches ? {fontSize : "15px"} : {fontSize : "13px"}}
 
             />
             <StyledTab
               icon={<ReceiptLongIcon />}
               iconPosition="end"
               label="مشخصات"
+              sx = {matches ? {fontSize : "15px"} : {fontSize : "13px"}}
             />
             <StyledTab
               icon={<EqualizerIcon />}
               iconPosition="end"
               label="نقد و بررسی"
+              sx = {matches ? {fontSize : "15px"} : {fontSize : "13px"}}
             />
           </StyledTabs>
         </Box>
