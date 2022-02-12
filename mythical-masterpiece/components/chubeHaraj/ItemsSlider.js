@@ -17,7 +17,7 @@ export default function ItemsSlider(props) {
       < >
       <Swiper
         slidesPerView={props.slidesPerView}
-        spaceBetween={2}
+        spaceBetween={6}
         loop={true}
         loopFillGroupWithBlank={true}
         navigation={true}
@@ -25,7 +25,7 @@ export default function ItemsSlider(props) {
         // className="mySwiper"
       >
         {props.products.map((product) => (
-          <SwiperSlide>
+          <SwiperSlide >
             <ItemCard
               product={product}
               cardsPaddingTop={props.cardsPaddingTop}
