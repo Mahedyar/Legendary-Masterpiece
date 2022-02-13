@@ -14,6 +14,7 @@ import "../components/AdsCard/adsCardStyle.css";
 
 // import "./assest/Font/YekanBoom.ttf";
 
+
 function MyApp({ Component, pageProps }) {
   
   return <Component {...pageProps} />

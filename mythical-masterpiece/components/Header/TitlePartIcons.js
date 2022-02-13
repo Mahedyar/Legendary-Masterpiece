@@ -77,8 +77,7 @@ export default function DividerStack() {
                 vertical: "bottom",
                 horizontal: "right",
               }}
-              showZero
-            >
+              showZero>
               <ShoppingCartOutlinedIcon sx={{ color: "black" }} />
             </StyledBadge>
           </IconButton>

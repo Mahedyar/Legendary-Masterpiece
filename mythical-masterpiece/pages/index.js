@@ -21,6 +21,7 @@ import AdsCard8 from "../components/AdsCard/AdsCard8";
 import useWindowSize from "../utils/useWindowSize";
 
 import Header from "../components/Header/Header"
+import ResHeader from "../components/Header/ResHeader/ResHeader";
 
 
 const Home = () => {
@@ -74,7 +75,8 @@ const Home = () => {
   
   return (
     <>
-    <Header />
+      <ResHeader/>
+    {/*<Header />*/}
       {/* <Slider />
       <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />
