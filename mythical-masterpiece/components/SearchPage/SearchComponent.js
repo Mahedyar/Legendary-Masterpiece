@@ -3,6 +3,7 @@ import img from "../../assets/Images/Ads/SearchPageAdd.webp"
 import classes from "./SearchPage.module.css"
 import BreadCrumbs from "./BreadCrumbs";
 import FilteredSection from "./FilteredSection";
+import FilterOptions from "./FilterOptions";
 
 const getPageSize = () => {
     const [screenSize, setScreenSize] = useState([900, 1440]);
@@ -19,7 +20,7 @@ const getPageSize = () => {
     return screenSize;
 }
 
-const SearchPage = () => {
+const SearchComponent = () => {
     const [height, width] = getPageSize();
 
 
@@ -30,11 +31,11 @@ const SearchPage = () => {
             <div className={classes.pageContent}>
                 <div className={classes.pageGrid}>
                     <FilteredSection arrayLengh={17} />
-                    <div className={classes.s2}>hello</div>
+                    <FilterOptions />
                 </div>
             </div>
         </Fragment>
     )
 }
 
-export default SearchPage;
+export default SearchComponent;

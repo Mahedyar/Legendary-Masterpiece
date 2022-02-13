@@ -1,8 +1,10 @@
-import SearchPage from "../components/SearchPage/SearchPage";
+import Link from 'next/link'
+
+import SearchComponent from "../components/SearchPage/SearchComponent";
 
 const Home = () => {
   return (
-      <SearchPage />
+      <Link href={'/search'}>to search Page</Link>
   )
 };
 

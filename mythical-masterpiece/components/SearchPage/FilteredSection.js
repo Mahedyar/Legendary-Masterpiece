@@ -29,7 +29,7 @@ const FilteredSection = (props) => {
             <div className={classes.cardsGrid}>
                 <ul>
                     {[].map(item => (
-                        <p key={key}>hello</p>
+                        <li>nothing</li>
                     ))}
                 </ul>
             </div>
