@@ -38,14 +38,16 @@ export default function ItemCard(props) {
     <Box
       key={props.product.id}
       sx={{
-        height: 388,
+        height: props.fullSize ? 388 : 403 ,
+        width:  props.fullSize ? 215 : 240 ,
+        boxSizing: "border-box",
         // marginLeft: 2,
         // paddingTop: props.cardsPaddingTop,
-        padding : "16px" ,
-        marginBottom: 3,
-        boxSizing: "border-box",
-        width: 215,
-        minWidth : "138px"
+        // padding : "16px" ,
+        // marginBottom: 3,
+       
+       
+        // minWidth : "138px"
       }}
     >
       <ItemImage image={props.product.image} />
@@ -60,7 +62,7 @@ export default function ItemCard(props) {
       >
         {props.product.name}
       </Typography>
-      <Typography component="div" sx={{ display: "flex" }}>
+      <Typography component="div" sx={{ display: "flex" , direction : "ltr"}}>
         <Typography
           component="span"
           sx={{
@@ -83,7 +85,7 @@ export default function ItemCard(props) {
       </Typography>
       <Typography
         component="div"
-        sx={{ display: "flex", alignItems: "center" }}
+        sx={{ display: "flex", alignItems: "center" , direction : "ltr" }}
       >
         <Typography
           component="span"

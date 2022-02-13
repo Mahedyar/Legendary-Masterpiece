@@ -12,49 +12,53 @@ import chubeharaj from "../../assets/Images/ChubeHaraj/sale.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 
-export default function ChubeHaraj(props) {
-  // const [slidesNumber, setSlidesNumber] = useState(4);
+const ChubeHaraj = (props) => {
+ 
 
-
-  let tabletSize = false;
-  let slidesPerView 
+  // let tabletSize = false;
+  
   const mobileSize = useMediaQuery("(max-width:425px)");
   const fullSize = useMediaQuery("(min-width:1024px)");
-  if (!mobileSize && !fullSize) {
-    tabletSize = true;
-  }
+  const [slidesNumber, setSlidesNumber] = useState(0);
+  const [tabletSize , setTabletSize] = useState(false)
+  const [chubWidth , setChubWidth] = useState()
+ 
 
-  const slideNumberHandler = () =>{
-    if(fullSize) {
-      slidesPerView = 4.7
-    }
-    if (tabletSize) {
-     slidesPerView = 2;
-    }
-    if (mobileSize) {
-      slidesPerView = 1;
-    }
-   
-
-    return slidesPerView
+    
+React.useEffect(()=>{
+  if (fullSize) {
+    setSlidesNumber(4.7);
+    setChubWidth(1082)
 
   }
   
+  if (mobileSize) {
+    setSlidesNumber(1);
+    setChubWidth(290)
+  }
 
+  if (!mobileSize && !fullSize) {
+    setTabletSize(true) ;
+    setChubWidth(690)
+    setSlidesNumber(2);
+  }
 
-  console.log(
-    ` fullSize : ${fullSize} , tabletSize : ${tabletSize}, mobileSize : ${mobileSize}`
-  );
-
-  const windowSize = "500px";
+}
+,[mobileSize , fullSize])
+ 
 
   return (
+   
     <div className="chubeHaraj">
+      
+      
       <Box
         sx={{
           // width: 1500,
           display: "flex",
-          height: 516,
+          height: fullSize ? 516 : 842 ,
+          padding : "40px 0" ,
+          marginBottom : "34px" ,
           backgroundColor: "#0a3680",
           backgroundImage: `url(${background.src})`,
           backgroundRepeat: "repeat-x",
@@ -64,35 +68,16 @@ export default function ChubeHaraj(props) {
         <Container id="Container">
           <Box
             sx={{
-              display: "flex",
-              height: 516,
+              display: fullSize ? "flex" : "block",
+              // height: 516,
               alignItems: "center",
               justifyContent: "right",
             }}
           >
-            <Paper
+            {!fullSize && <Box
               sx={{
-                width: "calc(100% - 222px)",
-                minWidth: "138px",
-                zIndex: " 1",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "right",
-
-                zIndex: "1",
-                backgroundColor: "transparent",
-              }}
-            >
-              <ItemsSlider
-                products={props.products}
-                slidesPerView={slideNumberHandler()}
-                cardsPaddingTop={props.cardsPaddingTop}
-              />
-            </Paper>
-            <Box
-              sx={{
-                width: `${windowSize > 425 ? "240px" : "120px"}`,
-                margin: "0 16px",
+                width: `${fullSize ? "240px" : "190px"}`,
+                margin: "0 auto",
               }}
             >
               <Typography
@@ -117,13 +102,80 @@ export default function ChubeHaraj(props) {
               </Typography>
 
               <img
-                style={{ width: `${windowSize > 425 ? "240px" : "120px"}` }}
+                style={{
+                  // width: `${fullSize || tabletSize ? "240px" : "120px"}`,
+                  marginLeft : "0 auto"
+                }}
                 src={chubeharaj.src}
               />
-            </Box>
+            </Box> }
+            <Paper
+              sx={{
+                // width: "calc(100% - 222px)",
+                width : chubWidth ,
+                minWidth: "138px",
+                zIndex: " 1",
+                display: "block",
+                alignItems: "center",
+                justifyContent: "right",
+                zIndex: "1",
+                backgroundColor:  "white",
+              }}
+            >
+              <Box sx={{padding : "24px 16px 24px 0" , height : fullSize ? "436px" : "451px"  }}>
+                <ItemsSlider
+                  products={props.products}
+                  // stateRun = {responsiveNumberHandler()}
+                  slidesPerView={slidesNumber}
+                  cardsPaddingTop={props.cardsPaddingTop}
+                  fullSize = {fullSize}
+                  tabletSize = {tabletSize}
+                  mobileSize = {mobileSize}
+                />
+              </Box>
+            </Paper>
+            {fullSize && <Box
+              sx={{
+                width: `${fullSize ? "240px" : "190px"}`,
+                // margin: "0 auto",
+                paddingLeft : "16px"
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "yellow",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  fontSize: "32px",
+
+                  zIndex: 1,
+                }}
+              >
+                چوب حراج
+                <Box
+                  sx={{
+                    height: "25px",
+                    backgroundColor: "#0082fd",
+                    marginTop: "-20px",
+                  }}
+                ></Box>
+                <Timer />
+                <img
+                style={{
+                  // width: `${fullSize || tabletSize ? "240px" : "120px"}`,
+                  // margin : "0 auto"
+                }}
+                src={chubeharaj.src}
+              />
+              </Typography>
+
+            
+            </Box> }
           </Box>
         </Container>
       </Box>
     </div>
   );
 }
+
+export default ChubeHaraj
