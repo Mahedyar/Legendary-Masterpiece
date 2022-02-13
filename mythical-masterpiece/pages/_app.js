@@ -6,10 +6,10 @@ import "swiper/css/navigation";
 import "../components/kalaPreview/KalaPreview.css"
 
 
-import "../components/slider/styles.css";
-import "../components/chubeHaraj/SwipperStyles.css";
-import "../components/ProductSellerTable/productSellerStyle.css";
-import "../components/ProductBuyLendo/productLendoStyle.css"
+// import "../components/slider/styles.css";
+// import "../components/chubeHaraj/SwipperStyles.css";
+// import "../components/ProductSellerTable/productSellerStyle.css";
+// import "../components/ProductBuyLendo/productLendoStyle.css"
 // import "../components/chubeHaraj/SwipperStyles.module.css";
 
 // import "./assest/Font/YekanBoom.ttf";
