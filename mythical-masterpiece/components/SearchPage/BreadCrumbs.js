@@ -7,7 +7,7 @@ const BreadCrumbs = () => {
             <ul className={classes.breadCrumbs}>
                 <li><Link href={"/"}>خانه</Link></li>
                 {["موبایل","دیجیتال","لوازم جانبی"].map(item => (
-                    <li><Link href={"/"}>{item}</Link></li>
+                    <li key={item}><Link href={"/"}>{item}</Link></li>
                 ))}</ul>
         </div>
     )
