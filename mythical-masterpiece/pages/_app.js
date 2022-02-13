@@ -1,4 +1,9 @@
+import "../styles/fontsCss/fontiran.css"
+
 import '../styles/globals.css';
+
+import "../styles/fontsCss/fontsStyle.css"
+
 // swiper slider
 import "swiper/css";
 import "swiper/css/pagination";

@@ -14,7 +14,9 @@ function numberToPersian(number) {
     6: "۶",
     7: "۷",
     8: "۸",
-    9: "۹",
+    9: "۹", 
+    "," : "," ,
+    
   };
   number = number.toString().split("");
   let persianNumber = "";
@@ -28,24 +30,24 @@ function numberToPersian(number) {
 }
 
 export default function ItemCard(props) {
+  const numberDotmaker = (number) => {
+    var parts = number.toString().split(".");
+        parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");
+        return parts.join(",");
+  }
   const finalPrice = () => {
-    return numberToPersian(
-      (props.product.price * (100 - props.product.offPercent)) / 100
-    );
+    return numberToPersian(numberDotmaker((props.product.price * (100 - props.product.offPercent)) / 100))
+      
+    
   };
 
   return (
     <Box
       key={props.product.id}
       sx={{
-        height: 388,
-        // marginLeft: 2,
-        // paddingTop: props.cardsPaddingTop,
-        padding : "16px" ,
-        marginBottom: 3,
+        height: props.fullSize ? 388 : 403 ,
+        width:  props.fullSize ? 215 : 240 ,
         boxSizing: "border-box",
-        width: 215,
-        minWidth : "138px"
       }}
     >
       <ItemImage image={props.product.image} />
@@ -60,7 +62,7 @@ export default function ItemCard(props) {
       >
         {props.product.name}
       </Typography>
-      <Typography component="div" sx={{ display: "flex" }}>
+      <Typography component="div" sx={{ display: "flex" , direction : "ltr"}}>
         <Typography
           component="span"
           sx={{
@@ -69,7 +71,7 @@ export default function ItemCard(props) {
             marginRight: 1,
           }}
         >
-          {`%${numberToPersian(props.product.offPercent)}`}
+          {`%${numberToPersian(props.product.offPercent) }`}
         </Typography>
         <Typography
           component="span"
@@ -78,12 +80,12 @@ export default function ItemCard(props) {
             color: "gray",
           }}
         >
-          {numberToPersian(props.product.price)}
+          {numberToPersian(numberDotmaker(props.product.price))}
         </Typography>
       </Typography>
       <Typography
         component="div"
-        sx={{ display: "flex", alignItems: "center" }}
+        sx={{ display: "flex", alignItems: "center" , direction : "ltr" }}
       >
         <Typography
           component="span"
