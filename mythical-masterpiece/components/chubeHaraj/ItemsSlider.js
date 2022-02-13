@@ -24,14 +24,14 @@ export default function ItemsSlider(props) {
         modules={[Navigation]}
         // className="mySwiper"
       >
-        {props.products.map((product) => (
+        {props.products ? props.products.map((product) => (
           <SwiperSlide >
             <ItemCard
               product={product}
               cardsPaddingTop={props.cardsPaddingTop}
             />
           </SwiperSlide>
-        ))}
+        )) : null}
       </Swiper>
       </>
       
