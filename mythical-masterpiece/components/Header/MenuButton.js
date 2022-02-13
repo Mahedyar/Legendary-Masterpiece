@@ -42,7 +42,7 @@ export default function MenuButton() {
             <Item
               onMouseEnter={() => hoverIcon(item.id)}
               onMouseLeave={function (event) {
-                handleClose();
+                // handleClose();
                 unHoverIcon();
               }}
               onMouseOver={handleOpen}

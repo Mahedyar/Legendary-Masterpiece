@@ -71,6 +71,13 @@ padding-right: 0;
     color: #007aff;
 }
 .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
-    margin-top: 13%;
+margin-top: 13%;
     height: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.css-10hburv-MuiTypography-root{
+    line-height: 0.1;
+}
+.css-6u3gtx-MuiListSubheader-root{
+    padding-right: 0;
 }

@@ -13,6 +13,7 @@ const TitlePart = () => {
           direction: "rtl",
           alignItems: "center",
           justifyContent: "space-between",
+
         }}
       >
         <Box sx={{display : "flex" , width : "60%"}}>
