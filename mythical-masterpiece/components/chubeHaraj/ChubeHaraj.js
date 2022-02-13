@@ -45,28 +45,7 @@ React.useEffect(()=>{
 
 }
 ,[mobileSize , fullSize])
-  // const responsiveNumberHandler = () => {
-    
-
-
-  //   // if (fullSize) {
-  //   //   setSlidesNumber(4.7);
-  //   // }
-  //   // if (tabletSize) {
-  //   //   setSlidesNumber(2);
-  //   // }
-  //   // if (mobileSize) {
-  //   //   setSlidesNumber(1);
-  //   // }
-
-  //   // return slidesPerView;
-  // };
-
-  // console.log(
-  //   ` fullSize : ${fullSize} , tabletSize : ${tabletSize}, mobileSize : ${mobileSize}`
-  // );
-
-  // const windowSize = "500px";
+ 
 
   return (
    
@@ -132,7 +111,8 @@ React.useEffect(()=>{
             </Box> }
             <Paper
               sx={{
-                width: "calc(100% - 222px)",
+                // width: "calc(100% - 222px)",
+                width : chubWidth ,
                 minWidth: "138px",
                 zIndex: " 1",
                 display: "block",
@@ -142,7 +122,7 @@ React.useEffect(()=>{
                 backgroundColor:  "white",
               }}
             >
-              <Box sx={{padding : "24px 0" , height : fullSize ? "436px" : "451px"  , width : chubWidth}}>
+              <Box sx={{padding : "24px 16px 24px 0" , height : fullSize ? "436px" : "451px"  }}>
                 <ItemsSlider
                   products={props.products}
                   // stateRun = {responsiveNumberHandler()}
@@ -157,7 +137,8 @@ React.useEffect(()=>{
             {fullSize && <Box
               sx={{
                 width: `${fullSize ? "240px" : "190px"}`,
-                margin: "0 auto",
+                // margin: "0 auto",
+                paddingLeft : "16px"
               }}
             >
               <Typography
@@ -179,15 +160,16 @@ React.useEffect(()=>{
                   }}
                 ></Box>
                 <Timer />
-              </Typography>
-
-              <img
+                <img
                 style={{
                   // width: `${fullSize || tabletSize ? "240px" : "120px"}`,
-                  marginLeft : "0 auto"
+                  // margin : "0 auto"
                 }}
                 src={chubeharaj.src}
               />
+              </Typography>
+
+            
             </Box> }
           </Box>
         </Container>
