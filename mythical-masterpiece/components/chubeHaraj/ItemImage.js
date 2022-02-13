@@ -13,8 +13,8 @@ export default function ItemImage(props) {
       elevation={0}
       sx={{
         backgroundColor: "#f5f5f5",
-        
-        margin: "0 16px",
+        // width : 215 , 
+        // margin: "0 16px",
         height: 270,
         display: "flex",
         justifyContent: "center",

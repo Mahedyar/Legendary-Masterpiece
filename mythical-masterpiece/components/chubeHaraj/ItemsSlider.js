@@ -12,12 +12,13 @@ export default function ItemsSlider(props) {
   
   // console.log(cardsPaddingTop)
   return (
-    // <div className="chubeHaraj">
+   
        
       < >
+      
       <Swiper
         slidesPerView={props.slidesPerView}
-        spaceBetween={6}
+        spaceBetween={20}
         loop={true}
         loopFillGroupWithBlank={true}
         navigation={true}
@@ -29,10 +30,16 @@ export default function ItemsSlider(props) {
             <ItemCard
               product={product}
               cardsPaddingTop={props.cardsPaddingTop}
+              fullSize = {props.fullSize}
+              tabletSize = {props.tabletSize}
+              mobileSize = {props.mobileSize}
             />
           </SwiperSlide>
         ))}
       </Swiper>
+
+      
+      
       </>
       
     

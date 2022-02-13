@@ -38,13 +38,14 @@ export default function ItemCard(props) {
     <Box
       key={props.product.id}
       sx={{
-        height: 388,
+        height: props.fullSize ? 388 : 403 ,
+        width:  props.fullSize ? 215 : 240 ,
         // marginLeft: 2,
         // paddingTop: props.cardsPaddingTop,
-        padding : "16px" ,
+        // padding : "16px" ,
         marginBottom: 3,
         boxSizing: "border-box",
-        width: 215,
+       
         minWidth : "138px"
       }}
     >
