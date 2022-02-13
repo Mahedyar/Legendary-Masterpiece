@@ -9,7 +9,9 @@ const KalaPreviewTitle = (props) => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        marginTop: "15px",
+        
+        margin : "15px 0 "
+
       }}
     >
       <Box sx={{ display: "flex" }}>

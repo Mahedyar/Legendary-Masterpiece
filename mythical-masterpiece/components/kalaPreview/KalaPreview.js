@@ -6,36 +6,33 @@ import { Typography } from "@mui/material";
 import KalaPreviewTitle from "./KalaPreviewTitle";
 
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useEffect, useState } from "react";
 
 const KalaPreview = (props) => {
-  let tabletSize = false;
-  let slidesPerView;
   const mobileSize = useMediaQuery("(max-width:425px)");
   const fullSize = useMediaQuery("(min-width:1024px)");
-  if (!mobileSize && !fullSize) {
-    tabletSize = true;
-  }
+  const [slidesNumber, setSlidesNumber] = useState(0);
+  const [tabletSize, setTabletSize] = useState(false);
+  const [chubWidth, setChubWidth] = useState();
 
-  const slideNumberHandler = () => {
+  useEffect(() => {
     if (fullSize) {
-      if (props.imagedKalaPreview) {
-        slidesPerView = 4;
-      } else {
-        slidesPerView = 5;
-      }
+      setSlidesNumber(5);
+      setChubWidth(1082);
     }
-    if (tabletSize) {
-      slidesPerView = 2;
-    }
+
     if (mobileSize) {
-      slidesPerView = 1;
+      setSlidesNumber(1);
+      setChubWidth(290);
     }
-    
 
-    return slidesPerView;
-  };
+    if (!mobileSize && !fullSize) {
+      setTabletSize(true);
+      setChubWidth(690);
+      setSlidesNumber(3);
+    }
+  }, [mobileSize, fullSize]);
 
-  
   return (
     <div className="chubeHaraj">
       <Container>
@@ -48,9 +45,10 @@ const KalaPreview = (props) => {
 
           <ItemsSlider
             products={props.products}
-            slidesPerView={slideNumberHandler()}
-            cardsPaddingTop={props.cardsPaddingTop}
+            slidesPerView={slidesNumber}
+            // cardsPaddingTop={props.cardsPaddingTop}
           />
+
           {props.imagedKalaPreview && fullSize && (
             <Box>
               <Box

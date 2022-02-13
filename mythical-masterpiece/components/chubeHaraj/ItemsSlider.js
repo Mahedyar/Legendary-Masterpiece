@@ -7,15 +7,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 // import classes from "./SwipperStyles.module.css";
 
-
 export default function ItemsSlider(props) {
-  
   // console.log(cardsPaddingTop)
   return (
-   
-       
-      < >
-      
+    <>
       <Swiper
         slidesPerView={props.slidesPerView}
         spaceBetween={20}
@@ -26,25 +21,18 @@ export default function ItemsSlider(props) {
         // className="mySwiper"
       >
         {props.products.map((product) => (
-          <SwiperSlide >
+          <SwiperSlide>
             <ItemCard
               product={product}
-              cardsPaddingTop={props.cardsPaddingTop}
-              fullSize = {props.fullSize}
-              tabletSize = {props.tabletSize}
-              mobileSize = {props.mobileSize}
+              fullSize={props.fullSize}
+              tabletSize={props.tabletSize}
+              mobileSize={props.mobileSize}
             />
           </SwiperSlide>
         ))}
       </Swiper>
+    </>
 
-      
-      
-      </>
-      
-    
-  
     // </div>
-   
   );
 }
