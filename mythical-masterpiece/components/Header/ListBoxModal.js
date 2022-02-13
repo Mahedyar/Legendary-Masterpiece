@@ -32,19 +32,19 @@ export default function ListBoxModal(props) {
             }}
             subheader={<li/>}
         >
-            {props.DataSubtitle.map((sectionId) => (
+            {/* {props.DataSubtitle.map((sectionId) => ( */}
 
-                <li key={`section-${sectionId.props.title}`}>
+                <li key={`section-${props.title}`}>
                     <ul>
-                        <ListSubheader sx={{background:'transparent'}}>{sectionId.props.title}<ArrowBackIosNewIcon sx={{fontSize:10}}/></ListSubheader>
-                        {sectionId.props.subTitle.map((item) => (
-                            <ListItem  key={`${sectionId}-${item}`}>
+                        <ListSubheader sx={{background:'transparent'}}>{props.title}<ArrowBackIosNewIcon sx={{fontSize:10}}/></ListSubheader>
+                        {props.subTitle.map((item) => (
+                            <ListItem  key={`${item}`}>
                                 <a href={"#"}> <Box sx={{height:10}}><ListItemText  sx={{textAlign: 'right'}} primary={`${item}`} /></Box></a>
                             </ListItem>
-                        ))}
+                       ))} 
                     </ul>
                 </li>
-            ))}
+            {/* ))} */}
         </List>
     );
 }

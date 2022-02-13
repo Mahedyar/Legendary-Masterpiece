@@ -29,7 +29,7 @@ export default function MenuButton() {
 
   return (
     <>
-      {open.show && <ModalMenu  onOpen={open.show} />}
+      {open.show && <ModalMenu onClose = {handleClose} onOpen={open.show} />}
       <div style={{ width: "100%" }}>
         <Box
           sx={{
@@ -42,7 +42,7 @@ export default function MenuButton() {
             <Item
               onMouseEnter={() => hoverIcon(item.id)}
               onMouseLeave={function (event) {
-                // handleClose();
+                // !open.show ? handleClose() : ()=>{};
                 unHoverIcon();
               }}
               onMouseOver={handleOpen}
