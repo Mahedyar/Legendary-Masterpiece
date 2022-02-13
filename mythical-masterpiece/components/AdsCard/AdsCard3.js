@@ -3,10 +3,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
-import keyboard from "../../assets/Images/Ads/keyboard.png";
-import monitor from "../../assets/Images/Ads/monitor.png";
-import mouse from "../../assets/Images/Ads/mouse.png";
-import speaker from "../../assets/Images/Ads/speaker.png";
+import janebikhodro from "../../assets/Images/Ads/janebikhodro.jpg";
+import manshoe from "../../assets/Images/Ads/manshoe.jpg";
+import powerbank from "../../assets/Images/Ads/powerbank.jpg";
+import abzar from "../../assets/Images/Ads/abzar.jpg";
 // import {img31} from './ads.card3.style.css';
 
 export default function AdsCard3() {
@@ -18,7 +18,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={keyboard.src}
+                                    src={janebikhodro.src}
                                     className="img31"/>
                             </a>
                         </Paper>
@@ -27,7 +27,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={monitor.src}
+                                    src={manshoe.src}
                                     className="img31"/>
                             </a>
                         </Paper>
@@ -36,7 +36,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={mouse.src}
+                                    src={powerbank.src}
                                     className="img31"/>
                             </a>
                         </Paper>
@@ -45,7 +45,7 @@ export default function AdsCard3() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={speaker.src}
+                                    src={abzar.src}
                                     className="img31"/>
                             </a>
                         </Paper>

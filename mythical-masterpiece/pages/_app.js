@@ -11,6 +11,7 @@ import "../components/kalaPreview/KalaPreview.css"
 // import "../components/ProductSellerTable/productSellerStyle.css";
 // import "../components/ProductBuyLendo/productLendoStyle.css"
 // import "../components/chubeHaraj/SwipperStyles.module.css";
+import "../components/AdsCard/adsCardStyle.css";
 
 // import "./assest/Font/YekanBoom.ttf";
 

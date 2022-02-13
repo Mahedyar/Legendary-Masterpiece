@@ -3,11 +3,11 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
-import seri301 from "../../assets/Images/Ads/seri301.png";
-import seri302 from "../../assets/Images/Ads/seri302.png";
-import seri305 from "../../assets/Images/Ads/seri305.png";
-import seri304 from "../../assets/Images/Ads/seri304.png";
-import seri303 from "../../assets/Images/Ads/seri303.png";
+import mozaikifatherday1 from "../../assets/Images/Ads/mozaikifatherday1.jpg";
+import mozaikifatherday2 from "../../assets/Images/Ads/mozaikifatherday2.jpg";
+import mozaikifatherday3 from "../../assets/Images/Ads/mozaikifatherday3.jpg";
+import mozaikifatherday4 from "../../assets/Images/Ads/mozaikifatherday4.jpg";
+import mozaikifatherday5 from "../../assets/Images/Ads/mozaikifatherday5.jpg";
 // import {img41, img42, img43, img44} from "./ads.card4.style.css"
 
 export default function AdsCard4() {
@@ -22,7 +22,7 @@ export default function AdsCard4() {
                                     <Paper elevation={0}>
                                         <a href="">
                                             <img
-                                                src={seri301.src}
+                                                src={mozaikifatherday1.src}
                                                 className="img41"/>
                                         </a>
                                     </Paper>
@@ -31,7 +31,7 @@ export default function AdsCard4() {
                                     <Paper elevation={0}>
                                         <a href="">
                                             <img
-                                                src={seri302.src}
+                                                src={mozaikifatherday2.src}
                                                 className="img42"/>
                                         </a>
                                     </Paper>
@@ -40,7 +40,7 @@ export default function AdsCard4() {
                                     <Paper elevation={0}>
                                         <a href="">
                                             <img
-                                                src={seri305.src}
+                                                src={mozaikifatherday3.src}
                                                 className="img43"/>
                                         </a>
                                     </Paper>
@@ -49,8 +49,8 @@ export default function AdsCard4() {
                                     <Paper elevation={0}>
                                         <a href="">
                                             <img
-                                                src={seri304.src}
-                                                className="img44"/>
+                                                src={mozaikifatherday4.src}
+                                                className="img43"/>
                                         </a>
                                     </Paper>
                                 </Grid>
@@ -61,8 +61,8 @@ export default function AdsCard4() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={seri303.src}
-                                    className="img45"/>
+                                    src={mozaikifatherday5.src}
+                                    className="img44"/>
                             </a>
                         </Paper>
                     </Grid>

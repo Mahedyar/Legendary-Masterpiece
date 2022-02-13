@@ -3,8 +3,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
-import timchebefrosh from "../../assets/Images/Ads/timchebefrosh.png";
-import kharidaghsati from "../../assets/Images/Ads/kharidaghsati.png"
+import timchebefrosh from "../../assets/Images/Ads/timchebefrosh.jpg";
+import kharidaghsati from "../../assets/Images/Ads/kharidaghsati.jpg";
 // import {img11, img12} from './ads.card1.style.css';
 
 

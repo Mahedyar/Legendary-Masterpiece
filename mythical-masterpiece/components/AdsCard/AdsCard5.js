@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
-import bariktala from "../../assets/Images/Ads/bariktala.png";
+import bariktala from "../../assets/Images/Ads/bariktala.jpg";
 // import {img21} from './ads.card2.style.css';
 
 export default function AdsCard5() {

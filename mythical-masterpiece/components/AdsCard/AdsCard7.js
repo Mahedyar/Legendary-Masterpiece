@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import taileft from "../../assets/Images/Ads/taileft.gif";
-import tairight from "../../assets/Images/Ads/tairight.png";
+import tairight from "../../assets/Images/Ads/tairight.jpg";
 // import {img21} from './ads.card2.style.css';
 
 export default function AdsCard7() {

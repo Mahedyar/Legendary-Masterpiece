@@ -3,8 +3,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
-import banner2tai24 from "../../assets/Images/Ads/banner2tai24.png";
-import banner2tai25 from "../../assets/Images/Ads/banner2tai25.png";
+import bannertai24 from "../../assets/Images/Ads/bannertai24.jpg";
+import bannertai25 from "../../assets/Images/Ads/bannertai25.jpg";
 // import {img21} from './ads.card2.style.css';
 
 export default function AdsCard2() {
@@ -16,7 +16,7 @@ export default function AdsCard2() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={banner2tai24.src}
+                                    src={bannertai24.src}
                                     className="img21"/>
                             </a>
                         </Paper>
@@ -25,7 +25,7 @@ export default function AdsCard2() {
                         <Paper elevation={0}>
                             <a href="">
                                 <img
-                                    src={banner2tai25.src}
+                                    src={bannertai25.src}
                                     className="img21"/>
                             </a>
                         </Paper>
