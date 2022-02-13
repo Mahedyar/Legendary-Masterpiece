@@ -17,7 +17,12 @@ const KalaPreview = (props) => {
 
   useEffect(() => {
     if (fullSize) {
-      setSlidesNumber(5);
+      if(props.imagedKalaPreview){
+        setSlidesNumber(4)
+      }else{
+        setSlidesNumber(5)
+      }
+      ;
       setChubWidth(1082);
     }
 
@@ -37,7 +42,7 @@ const KalaPreview = (props) => {
     <div className="chubeHaraj">
       <Container>
         <Box
-          sx={props.imagedKalaPreview && fullSize ? { display: "flex" } : {}}
+          sx={ {marginTop:"30px" , display: props.imagedKalaPreview && fullSize ? "flex" :"" }}
         >
           {(!props.imagedKalaPreview || !fullSize) && (
             <KalaPreviewTitle previewTitle={props.previewTitle} />
