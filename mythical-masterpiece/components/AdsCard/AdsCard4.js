@@ -14,10 +14,10 @@ export default function AdsCard4() {
     return (
         <Container>
             <Box className="adsbox">
-                <Grid container spacing={0}>
+                <Grid container spacing={1}>
                     <Grid item md={8} lg={8}>
                         <Box>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={3}>
                                 <Grid item xs={12} sm={12} md={7} lg={7}>
                                     <Paper elevation={0}>
                                         <a href="">

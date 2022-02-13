@@ -83,67 +83,67 @@ const Home = () => {
   // console.log(windowSize.width)
   return (
     <>
-      <Slider />
-      <ChubeHaraj products={products} cardsPaddingTop={3} />
+      {/*<Slider />*/}
+      {/*<ChubeHaraj products={products} cardsPaddingTop={3} />*/}
       <AdsCard1 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
 
       <AdsCard2 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
       <AdsCard3 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        imagedKalaPreview={1}
-        previewTitle={"لوازم آرایشی"}
-        previewImage={firstImagedPreview.src}
-        // ImageTitle={"لوازم آرایشی"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  imagedKalaPreview={1}*/}
+      {/*  previewTitle={"لوازم آرایشی"}*/}
+      {/*  previewImage={firstImagedPreview.src}*/}
+      {/*  // ImageTitle={"لوازم آرایشی"}*/}
+      {/*/>*/}
       <AdsCard4 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
       <AdsCard5 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
       <AdsCard6 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
       <AdsCard7 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
       <AdsCard8 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
+      {/*<KalaPreview*/}
+      {/*  products={products}*/}
+      {/*  cardsPaddingTop={1}*/}
+      {/*  previewTitle={"گوشی موبایل"}*/}
+      {/*/>*/}
 
-      <MediaFooter />
+      {/*<MediaFooter />*/}
     </>
   );
 };

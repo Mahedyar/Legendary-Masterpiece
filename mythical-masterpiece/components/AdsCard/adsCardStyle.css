@@ -1,16 +1,36 @@
-.img11{
-    width: 100%;
-    height: 90%;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 10px;
-    margin: 25px 0;
+@media screen and (min-width: 900px){
+    .img11{
+        width: 100%;
+        height: 90%;
+        margin: 15px 0;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 10px;
+    }
 }
-.img12{
-    width: 100%;
-    height: 100%;
-    border-bottom-right-radius: 80px;
-    border-top-right-radius: 10px;
-    margin: 25px 0;
+@media screen and (max-width: 900px){
+    .img11{
+        width: 100%;
+        height: 90%;
+        margin: 5px 0;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width: 900px){
+    .img12{
+        width: 100%;
+        height: 90%;
+        margin: 15px 0;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 10px;
+    }
+}
+@media screen and (max-width: 900px){
+    .img12{
+        width: 100%;
+        height: 90%;
+        margin: 5px 0;
+        border-radius: 10px;
+    }
 }
 .img21{
     width: 100%;
@@ -26,21 +46,21 @@
 }
 .img41, .img42{
     width: 100%;
-    height: 15rem;
+    height: 16.1rem;
     border-radius: 10px;
     margin: 10px 0 0 0;
 }
 .img43{
     width: 100%;
-    height: 15rem;
+    height: 16.1rem;
     border-radius: 10px;
-    margin: 0 0 10px 0;
+    margin: 5px 0 0 0;
 }
 .img44{
-    width: 92%;
-    height: 500px;
+    width: 95%;
+    height: 550px;
     border-radius: 10px;
-    margin: 10px 0 0 30px;
+    margin: 10px 0 0 20px;
 }
 .img51{
     width: 100%;

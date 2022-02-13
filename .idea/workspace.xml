@@ -2,45 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="gif file added and tail.png deleted">
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/abzar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/bannertai24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/bannertai25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/bariktala.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/janebikhodro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/kharidaghsati.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/manshoe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/mozaikifatherday1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/mozaikifatherday2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/mozaikifatherday3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/mozaikifatherday4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/mozaikifatherday5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/powerbank.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/tairight.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/timchebefrosh.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/banner2tai24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/banner2tai25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/bariktala.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/keyboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/kharidaghsati.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/monitor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/mouse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri301.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri302.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri303.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri304.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri305.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/speaker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/tairight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/timchebefrosh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard1.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard2.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard3.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard4.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard5.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard7.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard7.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/adsCardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/adsCardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +45,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
