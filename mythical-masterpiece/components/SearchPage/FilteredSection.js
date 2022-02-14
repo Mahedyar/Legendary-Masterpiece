@@ -3,7 +3,6 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import ProductCard from "./ProductCard";
 
 const FilteredSection = (props) => {
-
     return (
         <section className={classes.section}>
             <div className={classes.filterBox}>
@@ -13,13 +12,13 @@ const FilteredSection = (props) => {
                 </div>
                 <div className={classes.sortingList}>
                     <ul>
-                        <li className={classes.active}>پربازدیدها</li>
-                        <li>ارزان ترین</li>
-                        <li>گران ترین</li>
-                        <li>پرفروش ترین</li>
-                        <li>جدیدترین</li>
-                        <li>سریع ترین ارسال!</li>
-                        <li>تخفیف دار</li>
+                        <li className={activeClass}>پربازدیدها</li>
+                        <li >ارزان ترین</li>
+                        <li >گران ترین</li>
+                        <li >پرفروش ترین</li>
+                        <li >جدیدترین</li>
+                        <li >سریع ترین ارسال!</li>
+                        <li >تخفیف دار</li>
                     </ul>
                 </div>
                 <div className={classes.remaining}>

@@ -85,7 +85,7 @@ const FilterOptions = (props) => {
                         {brandsFiltered.map(brand => (
                             <label htmlFor={brand} className={classes.customCheckBox} key={brand}>
                                 <span className={classes.farsiLabel}>{brand}</span>
-                                <input id={brand} type="checkbox" onChange={props.checkBoxChangeHandler} onClick={(e) => {
+                                <input id={brand} type="checkbox" onClick={(e) => {
                                     clickHandler(e, brand)
                                 }}/>
                                 <span

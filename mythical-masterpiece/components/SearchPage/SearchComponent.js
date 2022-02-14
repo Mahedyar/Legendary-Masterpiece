@@ -32,32 +32,40 @@ const SearchComponent = (props) => {
     const [filteredByRangeProducts, setFilteredByRangeProducts] = useState(props.products);
 
     useEffect(() => {
+        let firstComparison = filteredListBySearchInput.filter(item => filteredListByCheckBox.includes(item))
+        let secondComparison = firstComparison.filter(item => filteredListByDiscountProducts.includes(item));
+        let thirdComparison = secondComparison.filter(item => filteredByRangeProducts.includes(item));
+
         setFilteredProducts(() => {
-
-        })
-    },[filteredListByCheckBox,filteredListBySearchInput,filteredListByDiscountProducts,filteredByRangeProducts])
-
-    const filterListByCheckBoxHandler = () => {
-        setFilteredListByCheckBox(() => {
-            let filteredArray = [];
-            checkBox.map(checkedItem => {
-                const newProducts = props.products.filter(item => item.brand.trim() === checkedItem.trim())
-                filteredArray = [
-                    ...filteredArray,
-                    newProducts
-                ]
-            })
             return [
-                ...filteredArray
+                ...thirdComparison
             ]
         })
-    }
+
+
+    }, [filteredListByCheckBox, filteredListBySearchInput, filteredListByDiscountProducts, filteredByRangeProducts])
+
+    useEffect(() => {
+        if (checkBox.length === 0) {
+            setFilteredListByCheckBox(props.products)
+        }
+        if (checkBox.length > 0) {
+            setFilteredListByCheckBox(() => {
+                const filteredArray = props.products.filter(item => checkBox.includes(item.brand))
+                console.log(`checkbox filter`,filteredArray)
+                return [
+                    ...filteredArray
+                ]
+            })
+        }
+    },[checkBox])
 
     const searchProductHandler = (event) => {
         setProductsSearchInput(() => {
             const newProducts = props.products.filter((item) => {
                 return item.title.includes(event.target.value);
             })
+            console.log(`search `,newProducts);
             return [
                 ...newProducts
             ]
@@ -104,7 +112,6 @@ const SearchComponent = (props) => {
                 <div className={classes.pageGrid}>
                     <FilteredSection arrayLengh={filteredProducts.length} products={filteredProducts}/>
                     <FilterOptions
-                        checkBoxChangeHandler={filterListByCheckBoxHandler}
                         filterListByRangeHandler={filterListByRangeHandler}
                         filterListByDiscountHandler={filterListByDiscountHandler}
                         searchProductHandler={searchProductHandler}
