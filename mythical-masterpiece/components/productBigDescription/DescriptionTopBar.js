@@ -11,13 +11,16 @@ const DescriptionTopBar = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-evenly",
           direction: "rtl",
           height : "86px" ,
-          width : "930px" ,
+          width : "100%" ,
           backgroundColor : "#fafafa",
           borderRadius : "10px" ,
-          borderColor : "#d9d9d9"
+          borderColor : "#d9d9d9",
+          border:'2px solid #d9d9d9',
+          paddingTop:"3.4vh",
+          marginTop:'20px'
 
 
         }}

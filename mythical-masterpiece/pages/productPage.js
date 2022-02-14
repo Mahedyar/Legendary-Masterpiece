@@ -64,14 +64,14 @@ export default function ProductPage() {
                 <Box sx={{ gridArea: 'main',  }}><ProductSellerTable sellers={sellers}/></Box>
                 <Box sx={{ gridArea: 'info',  }}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
                 <Box sx={{ gridArea: 'sidebar', }}><MainProductImage/></Box>
-                <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}><DescriptionTopBar/></Box>
+                <Box sx={{ gridArea: 'stylesFeatures',}}><DescriptionTopBar/></Box>
                 <Box sx={{ gridArea: 'tabList',  }}>
 
-                    <Container>
-                        <Box sx={{marginTop : "40px" , border : "2px solid #d9d9d9" , borderRadius : "15px" }}>
+
+                        <Box sx={{marginTop : "15px" , border : "2px solid #d9d9d9" , borderRadius : "15px" }}>
                             <ProductBigDescription />
                         </Box>
-                    </Container>
+
 
                 </Box>
                 <Box sx={{ gridArea: 'SimilarProduct', bgcolor: 'peachpuff' }}>SimilarProduct</Box>
