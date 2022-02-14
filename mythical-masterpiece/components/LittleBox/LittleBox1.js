@@ -8,7 +8,7 @@ import Paper from "@mui/material/Paper";
 export default function LittleBox1() {
     return (
         <Container>
-            <div style={{width: '100%'}}>
+            <div style={{width: '100%' }}>
                 <Box className='box11'>
                     <Paper elevation={0}>
                         <a href="">
