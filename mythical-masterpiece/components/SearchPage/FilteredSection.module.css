@@ -62,7 +62,8 @@
 }
 
 .cardsGrid {
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
+    margin-top: 20px;
     width: 100%;
     min-height: 80vh;
 }

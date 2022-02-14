@@ -1,6 +1,8 @@
+import SearchComponent from "../../components/SearchPage/SearchComponent";
+
 const FilteredProductsPage = () => {
     return (
-        <p>hello</p>
+        <SearchComponent products={[1]}/>
     )
 }
 

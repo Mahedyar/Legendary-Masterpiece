@@ -1,5 +1,6 @@
 import classes from "./FilteredSection.module.css"
 import FilterListIcon from '@mui/icons-material/FilterList';
+import ProductCard from "./ProductCard";
 
 const FilteredSection = (props) => {
 
@@ -8,7 +9,7 @@ const FilteredSection = (props) => {
         <section className={classes.section}>
             <div className={classes.filterBox}>
                 <div className={classes.sortHeader}>
-                    <FilterListIcon className={classes.icon} />
+                    <FilterListIcon className={classes.icon}/>
                     <p>ترتیب نمایش:</p>
                 </div>
                 <div className={classes.sortingList}>
@@ -28,8 +29,17 @@ const FilteredSection = (props) => {
             </div>
             <div className={classes.cardsGrid}>
                 <ul>
-                    {[].map(item => (
-                        <li>nothing</li>
+                    {props.products.map(item => (
+                        <ProductCard
+                            key={item}
+                            kingSeat={item.kingSeat}
+                            price={item.price}
+                            offPercent={item.offPercent}
+                            title={item.title}
+                            link={item.id}
+                            colors={item.colors}
+                            img={item.images[0]}
+                        />
                     ))}
                 </ul>
             </div>

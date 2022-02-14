@@ -1,0 +1,178 @@
+.section {
+    display: flex;
+    padding: 0 32px 32px;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.section > div {
+    padding: 24px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.section h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.sortingList {
+    list-style: none;
+    padding-right: 32px;
+    font-size: 13px;
+    color: #595959;
+}
+
+.searchBox {
+    border-radius: 2px;
+    position: relative;
+    background: #f6f6f6;
+}
+
+.searchBox input {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    width: 100%;
+    background: transparent;
+    font-size: 14px;
+    padding: 8px 16px 8px 32px;
+    line-height: 22px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #9b9b9b;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.brandSection {
+    display: block;
+}
+
+.customCheckBox {
+    font-size: 14px;
+    display: block;
+    position: relative;
+    font-weight: 400;
+    color: #141414;
+    text-align: right;
+    line-height: 18px;
+    padding-right: 28px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.farsiLabel {
+    display: inline-block;
+    max-width: 44%;
+    text-align: right;
+    padding-left: 8px;
+}
+
+.customCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 6px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+.checkMark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 19px;
+    width: 19px;
+    background: #fff;
+    border: 1.5px solid #bfbfbf;
+    margin-top: 0;
+    border-radius: 2px;
+}
+
+.customCheckBox .checked.checkMark:after {
+    content: '';
+    position: absolute;
+}
+
+.customCheckBox input:checked .checked.checkMark {
+    color: #0082fd;
+}
+
+.customCheckBox input:checked .checked.checkMark:after {
+    display: block;
+}
+
+.customCheckBox .checked.checkMark:after {
+    top: 0;
+    left: 5px;
+    width: 6px;
+    height: 10px;
+    border-top: 0 solid rgb(0, 130, 253);
+    border-right:2px solid rgb(0, 130, 253);
+    border-bottom:2px solid rgb(0, 130, 253);
+    border-left: 0 solid rgb(0, 130, 253);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    transform: rotate(45deg);
+}
+
+.brandsContainer {
+    max-height: 220px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    transition: max-height .8s ease-in-out;
+}
+
+.brandsContainer.expanded {
+    max-height: 700px;
+    overflow-y: scroll;
+    transition: max-height 0.8s ease-in-out;
+}
+
+.viewAll {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    color: #595959;
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 8px 0;
+    line-height: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.viewAllIcon {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.viewAllIcon.rotate {
+    transform: rotate(180deg);
+}
+
+.rangeContents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount {
+    font-size: 14px;
+    color: #333;
+    margin-left: 4px;
+}
+
+.unit {
+    font-size: 11px;
+    color: #9b9b9b;
+}

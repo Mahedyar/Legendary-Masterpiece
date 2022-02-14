@@ -20,7 +20,7 @@ const getPageSize = () => {
     return screenSize;
 }
 
-const SearchComponent = () => {
+const SearchComponent = (props) => {
     const [height, width] = getPageSize();
 
 
@@ -30,7 +30,7 @@ const SearchComponent = () => {
             <BreadCrumbs/>
             <div className={classes.pageContent}>
                 <div className={classes.pageGrid}>
-                    <FilteredSection arrayLengh={17} />
+                    <FilteredSection arrayLengh={props.products.length} products={props.products} />
                     <FilterOptions />
                 </div>
             </div>
