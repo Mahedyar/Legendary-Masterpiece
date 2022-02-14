@@ -17,13 +17,8 @@ import "../components/ProductSellerTable/productSellerStyle.css";
 import "../components/ProductBuyLendo/productLendoStyle.css";
 import "../components/productBigDescription/CommentsPart/ProgressBar.css"
 import HeadFooter from "../Layouts/HeadFooter";
-
-
-
-
-
-import "../components/ProductSellerTable/productSellerStyle.css";
-import "../components/ProductBuyLendo/productLendoStyle.css";
+// import "../components/ProductSellerTable/productSellerStyle.css";
+// import "../components/ProductBuyLendo/productLendoStyle.css";
 // import "../components/chubeHaraj/SwipperStyles.module.css";
 
 

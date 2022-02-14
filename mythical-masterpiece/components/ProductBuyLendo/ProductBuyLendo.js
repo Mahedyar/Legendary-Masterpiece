@@ -14,7 +14,7 @@ export default function ProductBuyLendo(props) {
             }}>
                 <Box
                     sx={{
-                        width: 460,
+                        // width: 460,
                         height: 140,
                         backgroundColor: 'white',
                         // margin: '20px 5px',

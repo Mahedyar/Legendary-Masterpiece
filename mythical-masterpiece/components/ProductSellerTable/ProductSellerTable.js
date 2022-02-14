@@ -234,7 +234,7 @@ export default function ProductSellerTable(props) {
                                 alignItems: 'center',
                                 flexWrap: 'wrap',
                                 backgroundColor: 'white',
-                                width: '110px',
+                                // width: '110px',
                                 height: '24px',
                                 margin: '0.3rem 2rem 1.2rem 0',
                                 borderRadius: '5px',
