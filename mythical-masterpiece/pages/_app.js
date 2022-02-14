@@ -9,15 +9,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../components/kalaPreview/KalaPreview.css"
-
-
 import "../components/slider/styles.css";
 import "../components/chubeHaraj/SwipperStyles.css";
 import "../components/AdsCard/adsCardStyle.css";
-// import "../components/Header/SearchPart.css"
-// import "../components/chubeHaraj/SwipperStyles.module.css";
+import "../components/LittleBox/little.box1.style.css";
 
-// import "./assest/Font/YekanBoom.ttf";
 
 
 function MyApp({ Component, pageProps }) {
