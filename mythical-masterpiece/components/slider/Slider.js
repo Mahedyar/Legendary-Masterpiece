@@ -15,7 +15,7 @@ export default function Slider() {
     return (
         <>
             {matches &&
-                <Container maxWidth={'lg'}>
+                <Container maxWidth={'lg'} sx={{paddingTop:'30px'}} >
 
                 <Grid sx={12}>
                 <Swiper

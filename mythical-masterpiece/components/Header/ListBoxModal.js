@@ -18,9 +18,8 @@ const [click,setClick]=useState(false)
         <List
             sx={{
                 width: '100%',
-                height:'65%',
+                height:'45%',
                 maxWidth: 202.63,
-
                 maxHeight: '60%',
                 '& ul': {padding: 0},
                 direction: "rtl",

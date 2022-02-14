@@ -38,9 +38,9 @@ export default function Advantages() {
 
     return (
         <>
-            <hr/>
+            <Box sx={{width: '100%', margin: 'auto' ,borderTop:'1px solid #ced4da'}}/>
             <Container  maxWidth={'lg'}>
-                <Box sx={{width: '100%', margin: 'auto'}}>
+                <Box sx={{width: '100%', margin: 'auto' }}>
                     <Grid container  >
                         {advantages.map((item) => <AdvantagesItems
                             key={item.id}
