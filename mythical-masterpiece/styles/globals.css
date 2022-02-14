@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 	.MuiTypography-root , .MuiBox-root , .MuiListSubheader-root ,
-    .css-6od3lo-MuiChip-label , .css-yz9k0d-MuiInputBase-input {
+    .css-6od3lo-MuiChip-label , .css-yz9k0d-MuiInputBase-input , .MuiButton-root {
     font-family: dana;
 }
 
