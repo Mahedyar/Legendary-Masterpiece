@@ -11,9 +11,30 @@ import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from "../components/footer/MediaFooter";
 
+import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
+import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>;
 
 export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
+  const sellers =
+    {
+      seller : "موبایل استور",
+      score : "۱۵۰",
+      sellerType : "خوب",
+      guarantee : "گارانتی ۱۸ ماهه شرکتی",
+      availability : "موجود در انبار تیمچه",
+    };
+  const lendo =
+      {
+        prepayment : "۰",
+        installment : "۴۶۴,۲۶۷",
+        reward : "۲۰,۰۰۰",
+      };
+
   const products = [
     {
       id: 1,
@@ -82,7 +103,6 @@ export default function Home() {
 
       {/*Footer*/}
       <MediaFooter />
-
     </>
   );
 }
