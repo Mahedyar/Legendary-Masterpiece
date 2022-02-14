@@ -5,7 +5,7 @@ import BoxModal from "./BoxModal";
 
 const style = {
   position: "absolute",
-  top: "55%",
+  top: "62%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "80%",

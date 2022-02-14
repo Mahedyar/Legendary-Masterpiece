@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <img className={classes.gifImage} src={HeaderGif.src} alt="someThing" />
-      <Container sx={{marginTop : "15px",zIndex:1000}}>
+      <Container sx={{marginTop : "15px",zIndex:10}}>
         <TitlePart />
         <Menu/>
       </Container>

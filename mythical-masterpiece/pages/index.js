@@ -22,6 +22,7 @@ import useWindowSize from "../utils/useWindowSize";
 
 import Header from "../components/Header/Header"
 import ResHeader from "../components/Header/ResHeader/ResHeader";
+import MainHeader from "../components/Header/MainHeader";
 
 
 const Home = () => {
@@ -75,8 +76,9 @@ const Home = () => {
   
   return (
     <>
-      <ResHeader/>
+      {/*<ResHeader/>*/}
     {/*<Header />*/}
+      <MainHeader/>
       {/* <Slider />
       <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />

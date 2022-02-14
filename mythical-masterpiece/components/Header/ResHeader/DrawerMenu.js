@@ -5,6 +5,7 @@ import {styled, useTheme} from "@mui/material/styles";
 import MuiAppBar from "@mui/material/AppBar";
 import HeadMenu from "./HeadMenu";
 import BtnLinks from "./BtnLinks";
+import MainMenu from "./MainMenu";
 const drawerWidth = '100%';
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({}),);
@@ -46,11 +47,8 @@ export default function DrawerMenu(props){
                     </Box>
                 </Container>
                 <Box sx={{ borderBottom:"15px solid #f5f5f5",width: '100%',marginTop:'6px' }} />
-                <Container fixed>
-                    <Box>
-                        hello
-                    </Box>
-                </Container>
+
+                        <MainMenu/>
 
             </Drawer>
         </>
