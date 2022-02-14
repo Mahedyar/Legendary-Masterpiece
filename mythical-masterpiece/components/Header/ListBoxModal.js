@@ -5,15 +5,14 @@ import ListSubheader from '@mui/material/ListSubheader';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Typography from "@mui/material/Typography";
 import {Box} from "@mui/material";
+import {useState} from "react";
 
 
 export default function ListBoxModal(props) {
-    // const titr=[
-    //     {title:"دفترچه خریداران",subTitle: ["ثبت سفارش","روشهای پرداخت","شرایط ارسال","پیگیری سفارش","ضمانت و بازگشت کالا"]},
-    //     {title:"دفترچه فروشندگان",subTitle: ["راهنمای فروشندگان","میخواهم فروشنده شوم","قوانین و مقررات فروش "]},
-    //     {title:"دانستنی ها",subTitle: ["حریم شخصی شما","قوانین و مقررات ما","فرصت های شغلی"]},
-    //     {title: "تیمچه", subTitle: ["درباره تیمچه", "ارتباط با تیمچه", "مزیت های تیمچه", "داستان تیمچه","شاه نشین"]},
-    // ]
+const [click,setClick]=useState(false)
+    const handleClick=()=>setClick(true)
+
+
 
     return (
         <List
@@ -39,7 +38,7 @@ export default function ListBoxModal(props) {
                         <ListSubheader sx={{background:'transparent'}}>{props.title}<ArrowBackIosNewIcon sx={{fontSize:10}}/></ListSubheader>
                         {props.subTitle.map((item) => (
                             <ListItem  key={`${item}`}>
-                                <a href={"#"}> <Box sx={{height:10}}><ListItemText  sx={{textAlign: 'right'}} primary={`${item}`} /></Box></a>
+                                <a href={"#"} onClick={handleClick}> <Box sx={{height:10}}><ListItemText  sx={{textAlign: 'right'}} primary={`${item}`} /></Box></a>
                             </ListItem>
                        ))} 
                     </ul>
