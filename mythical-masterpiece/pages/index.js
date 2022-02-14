@@ -18,8 +18,6 @@ import AdsCard5 from "../components/AdsCard/AdsCard5";
 import AdsCard6 from "../components/AdsCard/AdsCard6";
 import AdsCard7 from "../components/AdsCard/AdsCard7";
 import AdsCard8 from "../components/AdsCard/AdsCard8";
-import useWindowSize from "../utils/useWindowSize";
-
 import Header from "../components/Header/Header"
 import ResHeader from "../components/Header/ResHeader/ResHeader";
 import MainHeader from "../components/Header/MainHeader";
@@ -77,8 +75,8 @@ const Home = () => {
   return (
     <>
 
-      {/*<MainHeader/>*/}
-      {/* <Slider />
+      <MainHeader/>
+      <Slider />
       <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />
       <KalaPreview
@@ -138,7 +136,7 @@ const Home = () => {
         previewTitle={"گوشی موبایل"}
       />
 
-      <MediaFooter /> */}
+      <MediaFooter />
     </>
   );
 };

@@ -13,6 +13,7 @@ const style = {
   bgcolor: "#fff",
   outline: "none",
   overflow:'hidden',
+  zIndex : 1000000
 };
 export default function ModalMenu(props) {
   return (
