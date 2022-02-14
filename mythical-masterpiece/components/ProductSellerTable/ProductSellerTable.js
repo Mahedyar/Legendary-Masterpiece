@@ -101,117 +101,119 @@ export default function ProductSellerTable(props) {
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     flexWrap: 'wrap',
-                                                    width: '245px',
+                                                    width: '260px',
                                                     height: '140px',
                                                     margin: '0.3rem 0.2rem 1.2rem 0',
                                                     borderRadius: '5px',
+                                                    // direction : "rtl"
+                                                   
                                                 }}>
                                                     <div style={{
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         flexWrap: 'wrap',
-                                                        width: '240px',
+                                                        width: '260px',
                                                         height: '24px',
                                                         margin: '0 0.2rem 1rem 0',
                                                         borderRadius: '5px',
                                                     }}>
                                                         <Typography style={{
                                                             fontSize: '16px',
-                                                            margin: '0 0.8rem 1rem 0.4rem',
+                                                            // margin: '0 0.8rem 1rem 0.4rem',
                                                             color: 'black',
                                                         }}>بیشتر از ۲۵۰ امتیاز</Typography>
                                                         <Typography style={{
                                                             fontSize: '16px',
                                                             fontWeight: 'bold',
-                                                            margin: '0 0 1rem 0.8rem',
+                                                            // margin: '0 0 1rem 0.8rem',
                                                             color: '#1bb7cc',
                                                         }}>فروشنده ویژه</Typography>
                                                         <CircleIcon style={{
                                                             width: '16px',
                                                             height: '16px',
                                                             color: '#1bb7cc',
-                                                            margin: '0 0 1rem 0.5rem',
+                                                            // margin: '0 0 1rem 0.5rem',
                                                         }}/>
                                                     </div>
                                                     <div style={{
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         flexWrap: 'wrap',
-                                                        width: '240px',
+                                                        width: '260px',
                                                         height: '24px',
                                                         margin: '0 0.2rem 1rem 0',
                                                         borderRadius: '5px',
                                                     }}>
                                                         <Typography style={{
                                                             fontSize: '16px',
-                                                            margin: '0 0.2rem 1rem 0.3rem',
+                                                            // margin: '0 0.2rem 1rem 0.3rem',
                                                             color: 'black',
                                                         }}>از ۱۵۰ تا ۲۴۹ امتیاز</Typography>
                                                         <Typography style={{
                                                             fontSize: '16px',
                                                             fontWeight: 'bold',
-                                                            margin: '0 0.2rem 1rem 0.6rem',
+                                                            // margin: '0 0.2rem 1rem 0.6rem',
                                                             color: '#09b909',
                                                         }}>فروشنده خوب</Typography>
                                                         <CircleIcon style={{
                                                             width: '16px',
                                                             height: '16px',
                                                             color: '#09b909',
-                                                            margin: '0 0 1rem 0.5rem',
+                                                            // margin: '0 0 1rem 0.5rem',
                                                         }}/>
                                                     </div>
                                                     <div style={{
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         flexWrap: 'wrap',
-                                                        width: '240px',
+                                                        width: '260px',
                                                         height: '24px',
                                                         margin: '0 0.2rem 1rem 0',
                                                         borderRadius: '5px',
                                                     }}>
                                                         <Typography style={{
                                                             fontSize: '16px',
-                                                            margin: '0 0.2rem 1rem 0.3rem',
+                                                            // margin: '0 0.2rem 1rem 0.3rem',
                                                             color: 'black',
                                                         }}>از ۵۰ تا ۱۴۹ امتیاز</Typography>
                                                         <Typography style={{
                                                             fontSize: '16px',
                                                             fontWeight: 'bold',
-                                                            margin: '0 0.2rem 1rem 0.4rem',
+                                                            // margin: '0 0.2rem 1rem 0.4rem',
                                                             color: '#f67c19',
                                                         }}>فروشنده معمولی</Typography>
                                                         <CircleIcon style={{
                                                             width: '16px',
                                                             height: '16px',
                                                             color: '#f67c19',
-                                                            margin: '0 0 1rem 0.4rem',
+                                                            // margin: '0 0 1rem 0.4rem',
                                                         }}/>
                                                     </div>
                                                     <div style={{
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         flexWrap: 'wrap',
-                                                        width: '240px',
+                                                        width: '260px',
                                                         height: '24px',
                                                         margin: '0 0.2rem 1rem 0',
                                                         borderRadius: '5px',
                                                     }}>
                                                         <Typography style={{
                                                             fontSize: '16px',
-                                                            margin: '0 0.4rem 1rem 0.5rem',
+                                                            // margin: '0 0.4rem 1rem 0.5rem',
                                                             color: 'black',
                                                         }}>از ۰ تا ۴۹ امتیاز</Typography>
                                                         <Typography style={{
                                                             fontSize: '16px',
                                                             fontWeight: 'bold',
-                                                            margin: '0 0.2rem 1rem 1.1rem',
+                                                            // margin: '0 0.2rem 1rem 1.1rem',
                                                             color: '#d32810',
                                                         }}>فروشنده ضعیف</Typography>
                                                         <CircleIcon style={{
                                                             width: '16px',
                                                             height: '16px',
                                                             color: '#d32810',
-                                                            margin: '0 0 1rem 0.6rem',
+                                                            // margin: '0 0 1rem 0.6rem',
                                                         }}/>
                                                     </div>
                                                 </div>
