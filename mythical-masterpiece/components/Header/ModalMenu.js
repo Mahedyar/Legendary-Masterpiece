@@ -5,7 +5,7 @@ import BoxModal from "./BoxModal";
 
 const style = {
   position: "absolute",
-  top: "60%",
+  top: "55.9%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "80%",
@@ -18,8 +18,11 @@ const style = {
 export default function ModalMenu(props) {
   return (
     <>
-      <Modal sx={{backgroundColor : "red", position : "unset"}} open={props.onOpen} >
-        <Box onMouseLeave = {props.onClose}  sx={style}>
+      <Modal sx={{position : "unset"}} open={props.open} >
+        <Box
+         onMouseEnter = {props.onOpen}
+         onMouseLeave = {props.onClose}
+           sx={style}>
          <BoxModal/>
         </Box>
       </Modal>

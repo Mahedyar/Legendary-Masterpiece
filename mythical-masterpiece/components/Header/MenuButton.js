@@ -12,6 +12,7 @@ function Item(props) {
         p: 1,
         m: 1,
         fontSize: "0.8125rem",
+      
         ...sx,
       }}
       {...other}
@@ -29,7 +30,7 @@ export default function MenuButton() {
 
   return (
     <>
-      {open.show && <ModalMenu onClose = {handleClose} onOpen={open.show} />}
+      {open.show && <ModalMenu onClose = {handleClose} open={open.show} onOpen = {handleOpen} />}
       <div style={{ width: "100%" }}>
         <Box
           sx={{
@@ -43,6 +44,7 @@ export default function MenuButton() {
               onMouseEnter={() => hoverIcon(item.id)}
               onMouseLeave={function (event) {
                 // !open.show ? handleClose() : ()=>{};
+                handleClose() ; 
                 unHoverIcon();
               }}
               onMouseOver={handleOpen}
