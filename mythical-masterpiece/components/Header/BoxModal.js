@@ -35,7 +35,7 @@ export default function BoxModal() {
                 display: "grid",
                 gridTemplateColumns: "repeat(1, 1fr)",
                 direction: "rtl",
-                backgroundColor : index%2 === 1 ? "gray" :"white"
+                backgroundColor : index%2 === 1 ? "#fafafa" :"#fff"
 
               }}
             >
