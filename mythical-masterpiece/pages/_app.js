@@ -13,12 +13,13 @@ import "../components/slider/styles.css";
 import "../components/chubeHaraj/SwipperStyles.css";
 import "../components/AdsCard/adsCardStyle.css";
 import "../components/LittleBox/little.box1.style.css";
+import HeadFooter from "../Layouts/HeadFooter";
 
 
 
 function MyApp({ Component, pageProps }) {
   
-  return <Component {...pageProps} />
+  return <HeadFooter><Component {...pageProps} /></HeadFooter>
 }
 
 export default MyApp

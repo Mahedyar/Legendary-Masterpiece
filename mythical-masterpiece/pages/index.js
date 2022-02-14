@@ -9,7 +9,7 @@ import cream from "../assets/Images/ChubeHaraj/img.png";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
-import MainHeader from "../components/Header/MainHeader"
+// import MainHeader from "../components/Header/MainHeader"
 import LittleBox1 from "../components/LittleBox/LittleBox1";
 import AdsCard1 from "../components/AdsCard/AdsCard1"
 import AdsCard2 from "../components/AdsCard/AdsCard2"
@@ -19,7 +19,7 @@ import AdsCard5 from "../components/AdsCard/AdsCard5"
 import AdsCard6 from "../components/AdsCard/AdsCard6"
 import AdsCard7 from "../components/AdsCard/AdsCard7"
 import AdsCard8 from "../components/AdsCard/AdsCard8"
-import MediaFooter from "../components/footer/MediaFooter"
+// import MediaFooter from "../components/footer/MediaFooter"
 
 
 
@@ -75,7 +75,7 @@ const Home = () => {
   return (
     <>
 
-      <MainHeader/>
+      {/* <MainHeader/> */}
       <Slider />
       <LittleBox1/>
       <ChubeHaraj products={products} cardsPaddingTop={3} />
@@ -137,7 +137,7 @@ const Home = () => {
         previewTitle={"گوشی موبایل"}
       />
 
-      <MediaFooter />
+      {/* <MediaFooter /> */}
       
     </>
   );
