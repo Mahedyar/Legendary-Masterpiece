@@ -26,17 +26,17 @@ export default function AboutFooterHolder() {
     }));
     return (
         <>
-            <Box sx={{width: '100%',textAlign:'raight',margin:'auto'}}>
+            <Box sx={{width: '100%',textAlign:'right',margin:'auto'}}>
                 <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
-                    <Grid item sm={12} sx={{background:"#fafafa",padding:5}}>
+                    <Grid item sm={12} sx={{background:"#fafafa",padding:'0 15px'}}>
                         <Item>
-                            <Typography variant="h6" sx={{fontWeight:"bold"}}>تیمچه، خرید آنلاین همه نوع کالا</Typography>
+                            <Typography variant="h6" sx={{fontWeight:"bold",fontSize:'0.875rem'}}>تیمچه، خرید آنلاین همه نوع کالا</Typography>
                         </Item>
                         <Item sx={{color:"#8c8c8c",padding:0}}>
-                            <Typography variant="body2" >{text}{<br/>}{expand?moreText:""}</Typography>
+                            <Typography variant="body2" sx={{fontSize:'0.75rem'}} >{text}{<br/>}{expand?moreText:""}</Typography>
                         </Item>
                         <Item sx={{textAlign: 'center'}}>
-                            <Typography variant="caption" sx={{ fontWeight: 'bold',color:'#434343' }} onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon sx={{ fontSize: 12 }}/>:<ExpandMoreIcon sx={{ fontSize: 12 }}/>}</Typography>
+                            <Typography variant="caption" sx={{ fontWeight: '400',color:'#434343',fontSize:'0.675rem' }} onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon sx={{ fontSize: 12 }}/>:<ExpandMoreIcon sx={{ fontSize: 12 }}/>}</Typography>
                         </Item>
                     </Grid>
                 </Grid>

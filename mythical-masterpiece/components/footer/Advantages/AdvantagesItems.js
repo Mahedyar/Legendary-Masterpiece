@@ -19,7 +19,7 @@ export default function AdvantagesItems(props){
                 <div><img  src={props.image}/></div>
 
                 <Container >
-                    <Typography variant="button" sx={{fontSize:14,color:"#434343",fontWeight:"bold",lineHeight:1.5,letterSpacing:0}}>{props.title}</Typography>
+                    <Typography variant="button" sx={{fontSize:14,color:"#434343",fontWeight:"700",lineHeight:1.5,letterSpacing:0}}>{props.title}</Typography>
                     <Typography variant="body2" sx={{fontSize:12,color:"#84868e"}}> {props.description}</Typography>
                 </Container>
 

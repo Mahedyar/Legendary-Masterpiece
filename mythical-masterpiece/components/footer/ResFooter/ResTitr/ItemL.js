@@ -21,15 +21,16 @@ export default function ItemL(){
                     justifyContent:'right',
                     direction:"rtl",
                     lineHeight:0.2,
+
                 }}>
                 {titr.map((sectionId) => (
 
                     <li key={`section-${sectionId.title}`}>
                         <ul>
-                            <ListSubheader ><Typography variant="h6" sx={{fontWeight:"bold",color:" #141414"}}>{`${sectionId.title}`}</Typography></ListSubheader>
+                            <ListSubheader ><Typography variant="h6" sx={{fontWeight:"bold",color:" #141414",fontSize:'0.872rem'}}>{`${sectionId.title}`}</Typography></ListSubheader>
                             {sectionId.subTitle.map((item) => (
-                                <ListItem  key={`${sectionId}-${item}`}>
-                                    <a href={"#"}> <Box sx={{height:10}}><Typography variant="body2" sx={{color: "#8c8c8c"}}><ListItemText sx={{textAlign: 'right'}} primary={`${item}`} /></Typography></Box></a>
+                                <ListItem sx={{paddingLeft:0,paddingRight:0}} key={`${sectionId}-${item}`}>
+                                    <a href={"#"}> <Box sx={{height:10}}><ListItemText sx={{textAlign: 'right'}} ><Typography variant="body2" sx={{color: "#8c8c8c",fontSize:'0.8125rem'}}>{item}</Typography></ListItemText></Box></a>
                                 </ListItem>
                             ))}
                         </ul>

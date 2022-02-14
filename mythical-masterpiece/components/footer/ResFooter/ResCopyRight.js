@@ -21,7 +21,7 @@ export default function CopyRightHolder() {
             <Grid >
                 <Grid  sm={12}>
                     <Item>
-                        <Typography variant="caption" >کلیه حقوق این سایت متعلق به شرکت نوین تجارت مجازی آریا (تیمچه) است. <div>Copyrights Timcheh Co - 1399©</div></Typography>
+                        <Typography variant="caption" sx={{fontSize:'0.625rem'}} >کلیه حقوق این سایت متعلق به شرکت نوین تجارت مجازی آریا (تیمچه) است. <div>Copyrights Timcheh Co - 1399©</div></Typography>
                     </Item>
                 </Grid>
 

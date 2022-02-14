@@ -32,13 +32,13 @@ export default function AboutFooterHolder() {
                 <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
                     <Grid item sm={12} sx={{background:"#fafafa",padding:5}}>
                         <Item>
-                            <Typography variant="h6" sx={{fontWeight:"bold"}}>تیمچه، خرید آنلاین همه نوع کالا</Typography>
+                            <Typography variant="h6" sx={{fontWeight:"bold",fontSize:'1rem'}}>تیمچه، خرید آنلاین همه نوع کالا</Typography>
                         </Item>
                         <Item sx={{color:"#8c8c8c"}}>
-                            <Typography variant="body2" >{text}{<br/>}{expand?moreText:""}</Typography>
+                            <Typography variant="body2" sx={{fontSize:'0.8125rem'}} >{text}{<br/>}{expand?moreText:""}</Typography>
                         </Item>
                         <Item sx={{textAlign: 'center'}}>
-                            <Typography variant="caption" sx={{ fontWeight: 'bold',color:'#434343' }} onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon sx={{ fontSize: 12 }}/>:<ExpandMoreIcon sx={{ fontSize: 12 }}/>}</Typography>
+                            <Typography variant="caption" sx={{ fontWeight: 400,color:'#434343' }} onClick={onClick}>{expand?"بستن":"نمایش بیشتر"}{expand?<ExpandLessIcon sx={{ fontSize: 12 }}/>:<ExpandMoreIcon sx={{ fontSize: 12 }}/>}</Typography>
                         </Item>
                     </Grid>
                 </Grid>
