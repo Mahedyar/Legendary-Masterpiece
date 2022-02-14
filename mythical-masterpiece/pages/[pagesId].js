@@ -8,20 +8,74 @@ import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 
 import ProductBigDescription from "../components/productBigDescription/ProductBigDescription";
 import DescriptionTopBar from "../components/productBigDescription/descriptionTopBar";
+import KalaPreview from "../components/kalaPreview/KalaPreview";
+import livan from "../assets/Images/ChubeHaraj/img_1.png";
+import drill from "../assets/Images/ChubeHaraj/img_2.png";
+import kafsh from "../assets/Images/ChubeHaraj/img_3.png";
+import sandis from "../assets/Images/ChubeHaraj/img_4.png";
+import headphone from "../assets/Images/ChubeHaraj/img_5.png";
+import cream from "../assets/Images/ChubeHaraj/img.png";
 
 export default function ProductPage() {
   const sellers = {
     seller: "موبایل استور",
     score: "۱۵۰",
+    color : "#09b909",
     sellerType: "خوب",
     guarantee: "گارانتی ۱۸ ماهه شرکتی",
     availability: "موجود در انبار تیمچه",
+
   };
   const lendo = {
     prepayment: "۰",
     installment: "۴۶۴,۲۶۷",
     reward: "۲۰,۰۰۰",
   };
+
+    const products = [
+        {
+            id: 1,
+            image: livan.src,
+            name: "لیوان پلاستیکی",
+            offPercent: 14,
+            price: 15000,
+        },
+        {
+            id: 2,
+            image: drill.src,
+            name: "دریل",
+            offPercent: 22,
+            price: 800000,
+        },
+        {
+            id: 3,
+            image: kafsh.src,
+            name: "کفش ورزشی",
+            offPercent: 31,
+            price: 320000,
+        },
+        {
+            id: 4,
+            image: sandis.src,
+            name: "ساندیس",
+            offPercent: 8,
+            price: 8000,
+        },
+        {
+            id: 5,
+            image: headphone.src,
+            name: "هدفون مدل یونیوو",
+            offPercent: 48,
+            price: 450000,
+        },
+        {
+            id: 6,
+            image: cream.src,
+            name: "کرم مخصوص صورت",
+            offPercent: 17,
+            price: 85000,
+        },
+    ];
 
   return (
     <Container maxWidth="lg">
@@ -80,8 +134,12 @@ export default function ProductPage() {
               <ProductBigDescription />
             </Box>
           </Box>
-          <Box sx={{ gridArea: "SimilarProduct", bgcolor: "peachpuff" }}>
-            SimilarProduct
+          <Box sx={{ gridArea: "SimilarProduct", }}>
+              <KalaPreview
+                  products={products}
+                  cardsPaddingTop={1}
+                  previewTitle={"گوشی موبایل"}
+              />
           </Box>
         </Box>
       </Box>

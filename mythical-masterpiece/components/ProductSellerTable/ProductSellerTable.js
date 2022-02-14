@@ -242,7 +242,7 @@ export default function ProductSellerTable(props) {
                                 <CircleIcon style={{
                                     width: '16px',
                                     height: '16px',
-                                    color: '#09b909',
+                                    color: `${props.sellers.color}`,
                                     margin: '0 0.2rem 2rem 0.3rem',
                                 }}/>
                                 <Typography style={{

@@ -84,30 +84,60 @@ export default function Home() {
       <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
 
-
-
-
-
-      {/* <Slider />
-      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
+      <AdsCard2 />
       <KalaPreview
-        products={products}
-        slidesPerView={5}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard3 />
+      <KalaPreview
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <KalaPreview
-        products={products}
-        slidesPerView={4}
-        cardsPaddingTop={1}
-        imagedKalaPreview={1}
-        previewImage={firstImagedPreview.src}
-        ImageTitle={"لوازم آرایشی"}
+          products={products}
+          cardsPaddingTop={1}
+          imagedKalaPreview={1}
+          previewTitle={"لوازم آرایشی"}
+          previewImage={firstImagedPreview.src}
+          // ImageTitle={"لوازم آرایشی"}
+      />
+      <AdsCard4 />
+      <KalaPreview
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard5 />
+      <KalaPreview
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard6 />
+      <KalaPreview
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard7 />
+      <KalaPreview
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
+      />
+      <AdsCard8 />
+      <KalaPreview
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
 
       {/* <MediaFooter /> */}
