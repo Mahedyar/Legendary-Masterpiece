@@ -22,7 +22,23 @@ const getPageSize = () => {
 
 const SearchComponent = (props) => {
     const [height, width] = getPageSize();
+    const [filteredProducts, setFilteredProducts] = useState(props.products)
 
+    const filterListByRangeHandler = (value) => {
+        setFilteredProducts(() => {
+            const [min, max] = value;
+            console.log(min, max)
+            const newProducts = props.products.filter(item => {
+                console.log(item);
+                return ((+item.price >= min) && (+item.price <= max))
+            })
+            console.log(newProducts);
+            return [
+                ...newProducts
+            ];
+        });
+
+    }
 
     return (
         <Fragment>
@@ -30,8 +46,8 @@ const SearchComponent = (props) => {
             <BreadCrumbs/>
             <div className={classes.pageContent}>
                 <div className={classes.pageGrid}>
-                    <FilteredSection arrayLengh={props.products.length} products={props.products} />
-                    <FilterOptions />
+                    <FilteredSection arrayLengh={filteredProducts.length} products={filteredProducts}/>
+                    <FilterOptions filterListByRangeHandler={filterListByRangeHandler} pricesArray={props.pricesArray} />
                 </div>
             </div>
         </Fragment>

@@ -4,7 +4,6 @@ import ProductCard from "./ProductCard";
 
 const FilteredSection = (props) => {
 
-    const key = Math.random();
     return (
         <section className={classes.section}>
             <div className={classes.filterBox}>
@@ -31,7 +30,7 @@ const FilteredSection = (props) => {
                 <ul>
                     {props.products.map(item => (
                         <ProductCard
-                            key={item}
+                            key={item.id}
                             kingSeat={item.kingSeat}
                             price={item.price}
                             offPercent={item.offPercent}

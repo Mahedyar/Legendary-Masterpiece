@@ -5,10 +5,12 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CustomCheckBox from './CustomCheckBox';
 import CustomRangePicker from "./CustomRangePicker";
 
-const FilterOptions = () => {
+const FilterOptions = (props) => {
+    const initialState = props.pricesArray ? [+props.pricesArray[0],+props.pricesArray[props.pricesArray.length - 1]] : [];
+
     const [checkBox, setCheckBox] = useState([]);
     const [isBrandsExpanded, setIsBrandsExpended] = useState(false);
-    const [value, setValue] = useState([0, 10000000]);
+    const [value, setValue] = useState(initialState);
 
     const expandHandler = () => {
         setIsBrandsExpended((state) => !state)
@@ -94,7 +96,7 @@ const FilterOptions = () => {
             </div>
             <div>
                 <h2>محدوده قیمت</h2>
-                <CustomRangePicker value={value} setValue={setValue} />
+                <CustomRangePicker filterListHandler={props.filterListByRangeHandler.bind(null, value)} minMax={props.pricesArray} value={value} setValue={setValue} />
                 <div className={classes.rangeContents}>
                     <div>
                         <span className={classes.amount}>{value[1].toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</span>

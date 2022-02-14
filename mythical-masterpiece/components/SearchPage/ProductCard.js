@@ -9,8 +9,8 @@ const ProductCard = (props) => {
 
     let newPrice;
 
-    if (props.offPercent) {
-        newPrice = props.price - (props.offPercent * props.price);
+    if (props.offPercent && props.offPercent > 0) {
+        newPrice = props.price - ((props.offPercent / 100) * props.price);
     }
 
     const hoverHandler = () => {
@@ -36,18 +36,18 @@ const ProductCard = (props) => {
                         <h3>{props.title}</h3>
                         <div className={classes.clearFix}/>
                         <div className={classes.discount}>
-                            {props.offPercent ?
+                            {props.offPercent && props.offPercent > 0 ?
                                 <div className={classes.oldPrice}>
                                     {props.price}
                                 </div>
                                 : null}
-                            <div className={classes.discountNumber} style={{visibility: `${props.offPercent ? "visible" : "hidden"}`}}>
+                            <div className={classes.discountNumber} style={{visibility: `${props.offPercent && props.offPercent > 0 ? "visible" : "hidden"}`}}>
                                 <span>{`٪${props.offPercent}`}</span>
                             </div>
                         </div>
                         <div className={classes.clearFix}/>
                         <div className={classes.priceBox}>
-                            <div className={classes.price}>{props.offPercent ? newPrice : props.price}</div>
+                            <div className={classes.price}>{props.offPercent && props.offPercent > 0 ? newPrice : props.price}</div>
                             <div className={classes.currency}>تومان</div>
                         </div>
                         <div className={classes.clearFix}/>

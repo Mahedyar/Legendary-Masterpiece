@@ -83,7 +83,12 @@
     margin: 2px;
 }
 
+.txtBox {
+    direction: rtl;
+}
+
 .txtBox h3 {
+    text-align: right;
     height: 44px;
     overflow: hidden;
     font-size: 13px;
