@@ -10,15 +10,9 @@ import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from '../components/footer/MediaFooter';
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import ProductBigDescription from "../components/productBigDescription/ProductBigDescription"
-import Test from "../components/productBigDescription/Test"
 
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>;
+
+
 
 export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
@@ -68,11 +62,7 @@ export default function Home() {
   ];
   return (
     <>
-     <Container>
-     <Box sx={{marginTop : "40px" , border : "2px solid #d9d9d9" , borderRadius : "15px" }}>
-       <ProductBigDescription />
-     </Box>
-   </Container>
+
 
 
 

@@ -6,6 +6,8 @@ import ProductVizhegiPrice from "../components/productVizhegiPrice/ProductVizheg
 import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
 import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 
+import ProductBigDescription from "../components/productBigDescription/ProductBigDescription"
+
 
 export default function ProductPage() {
     const sellers =
@@ -62,7 +64,15 @@ export default function ProductPage() {
                 <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
                 <Box sx={{ gridArea: 'sidebar', bgcolor: 'red' }}><MainProductImage/></Box>
                 <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}>stylesFeatures</Box>
-                <Box sx={{ gridArea: 'tabList', bgcolor: '#20c02b' }}>tabList</Box>
+                <Box sx={{ gridArea: 'tabList', bgcolor: '#20c02b' }}>
+
+                    <Container>
+                        <Box sx={{marginTop : "40px" , border : "2px solid #d9d9d9" , borderRadius : "15px" }}>
+                            <ProductBigDescription />
+                        </Box>
+                    </Container>
+
+                </Box>
                 <Box sx={{ gridArea: 'SimilarProduct', bgcolor: 'peachpuff' }}>SimilarProduct</Box>
                 <Box sx={{ gridArea: 'footer', bgcolor: 'warning.dark' }}>Footer</Box>
 
