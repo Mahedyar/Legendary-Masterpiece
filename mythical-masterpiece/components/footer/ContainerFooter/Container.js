@@ -15,7 +15,7 @@ export default function ContainerFooter() {
     return (
         <>
 <Container maxWidth={'lg'} >
-            <Box sx={{ width: '100%',height:'auto',margin:'auto',paddingTop:3,}}>
+            <Box sx={{ width: '100%',height:'auto',margin:'auto',paddingTop:3,direction:'rtl'}}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 0, sm: 0, md: 0 }}>
                     <Grid  item lg={7} md={12}>
                         <Item sx={{paddingBottom:'30px'}}><Titr/></Item>
