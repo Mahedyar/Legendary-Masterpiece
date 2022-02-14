@@ -14,15 +14,13 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function ContainerFooter() {
     return (
         <>
-<Container maxWidth={'lg'}>
-            <Box sx={{ width: '100%',margin:'auto',paddingTop:3,height:275}}>
+<Container maxWidth={'lg'} >
+            <Box sx={{ width: '100%',height:'auto',margin:'auto',paddingTop:3,}}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 0, sm: 0, md: 0 }}>
-                    <Grid  item sm={7} >
-                        <Item><Titr/></Item>
-
+                    <Grid  item lg={7} md={12}>
+                        <Item sx={{paddingBottom:'30px'}}><Titr/></Item>
                     </Grid>
-
-                    <Grid item sm={5}>
+                    <Grid item lg={5} md={12}>
                         <Item><SymbolsHolder/></Item>
                     </Grid>
                 </Grid>
