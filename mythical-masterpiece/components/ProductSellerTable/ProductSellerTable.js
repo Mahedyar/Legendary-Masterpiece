@@ -228,7 +228,6 @@ export default function ProductSellerTable(props) {
                                             margin: '0 0.1rem 1rem 0',
                                         }}
                                         />
-
                                     </BootstrapTooltip>
                                 </a>
                             </div>
