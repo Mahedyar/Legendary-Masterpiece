@@ -1,14 +1,21 @@
-import {useState} from "react";
+import {useState, useRef} from "react";
 import classes from './FilterOptions.module.css';
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CustomCheckBox from './CustomCheckBox';
 import CustomRangePicker from "./CustomRangePicker";
 
-const FilterOptions = (props) => {
-    const initialState = props.pricesArray ? [+props.pricesArray[0],+props.pricesArray[props.pricesArray.length - 1]] : [];
+const brands = ["مای", "اپل", "سامسونگ", "هوآوی", "شون", "این لی", "بورژوآ", "کالیستا",
+    "لی لی نایت", "رومئو", "ایزادورا", "میبلین", "لاوینگ نایس", "مدیسان",
+    "متفرقه", "لاوینگ", "لورآل", "آردن", "آدرکوین",
+    "الارو", "گلدن رز", "نوت", "اس وی آر", "بیول", "لوسرو", "رومنس"]
 
-    const [checkBox, setCheckBox] = useState([]);
+const FilterOptions = (props) => {
+    const [brandsFiltered, setBrandsFiltered] = useState(brands);
+
+    const initialState = props.pricesArray ? [+props.pricesArray[0], +props.pricesArray[props.pricesArray.length - 1]] : [];
+
+
     const [isBrandsExpanded, setIsBrandsExpended] = useState(false);
     const [value, setValue] = useState(initialState);
 
@@ -17,7 +24,7 @@ const FilterOptions = (props) => {
     }
 
     const clickHandler = (e, id) => {
-        setCheckBox((checkBox) => {
+        props.setCheckBox((checkBox) => {
             if (!e.target.checked) {
                 const filtered = checkBox.filter(item => item !== id)
                 return [
@@ -30,6 +37,19 @@ const FilterOptions = (props) => {
                     id
                 ]
             }
+        })
+    }
+
+
+    const brandsChangeHandler = (e) => {
+        setBrandsFiltered(() => {
+            const txt = e.target.value;
+            const newBrands = brands.filter((item) => {
+                return item.includes(txt);
+            })
+            return [
+                ...newBrands
+            ]
         })
     }
 
@@ -50,60 +70,61 @@ const FilterOptions = (props) => {
             <div>
                 <h2>جستوجو</h2>
                 <div className={classes.searchBox}>
-                    <input type="text" placeholder={"کالای مورد نظر را جستجو کنید"}/>
+                    <input onChange={props.searchProductHandler} type="text" placeholder={"کالای مورد نظر را جستجو کنید"}/>
                     <SearchIcon className={classes.icon}/>
                 </div>
             </div>
             <div>
                 <h2>برند</h2>
                 <div className={classes.brandSection}>
-                    <div className={classes.searchBox} style={{marginBottom: "24px"}}>
+                    <div onChange={brandsChangeHandler} className={classes.searchBox} style={{marginBottom: "24px"}}>
                         <input type="text" placeholder={"نام برند مورد نظر را جستجو کنید"}/>
                         <SearchIcon className={classes.icon}/>
                     </div>
                     <div className={`${classes.brandsContainer} ${!isBrandsExpanded ? "" : classes.expanded}`}>
-                        {["مای", "شون", "این لی", "بورژوآ", "کالیستا",
-                            "لی لی نایت", "رومئو", "ایزادورا", "میبلین", "لاوینگ نایس", "مدیسان",
-                            "متفرقه", "لاوینگ", "لورآل", "آردن", "آدرکوین",
-                            "الارو", "گلدن رز", "نوت", "اس وی آر", "بیول", "لوسرو", "رومنس"].map(brand => (
+                        {brandsFiltered.map(brand => (
                             <label htmlFor={brand} className={classes.customCheckBox} key={brand}>
                                 <span className={classes.farsiLabel}>{brand}</span>
-                                <input id={brand} type="checkbox" onClick={(e) => {
+                                <input id={brand} type="checkbox" onChange={props.checkBoxChangeHandler} onClick={(e) => {
                                     clickHandler(e, brand)
                                 }}/>
                                 <span
-                                    className={`${classes.checkMark} ${ checkBox.find(item => item === brand) ? classes.checked : ""}`}/>
+                                    className={`${classes.checkMark} ${props.checkBox.find(item => item === brand) ? classes.checked : ""}`}/>
                             </label>
                         ))}
                     </div>
                 </div>
                 <div className={classes.viewAll} onClick={expandHandler}>
                     <span>{!isBrandsExpanded ? "مشاهده همه" : "بستن"}</span>
-                    <KeyboardArrowDownIcon className={`${classes.viewAllIcon} ${!isBrandsExpanded ? "" : classes.rotate}`} />
+                    <KeyboardArrowDownIcon
+                        className={`${classes.viewAllIcon} ${!isBrandsExpanded ? "" : classes.rotate}`}/>
                 </div>
             </div>
             <div>
-                <CustomCheckBox title={"فقط نمایش کالاهای روز پدر"} />
+                <CustomCheckBox title={"فقط نمایش کالاهای روز پدر"}/>
             </div>
             <div>
-                <CustomCheckBox title={"فقط کالاهای موجود"} />
+                <CustomCheckBox title={"فقط کالاهای موجود"}/>
             </div>
             <div>
-                <CustomCheckBox title={"فقط کالاهای اصل"} />
+                <CustomCheckBox title={"فقط کالاهای اصل"}/>
             </div>
             <div>
-                <CustomCheckBox title={"فقط تخفیف دار"} />
+                <CustomCheckBox filterListByDiscountHandler={props.filterListByDiscountHandler} title={"فقط تخفیف دار"}/>
             </div>
             <div>
                 <h2>محدوده قیمت</h2>
-                <CustomRangePicker filterListHandler={props.filterListByRangeHandler.bind(null, value)} minMax={props.pricesArray} value={value} setValue={setValue} />
+                <CustomRangePicker filterListHandler={props.filterListByRangeHandler.bind(null, value)}
+                                   minMax={props.pricesArray} value={value} setValue={setValue}/>
                 <div className={classes.rangeContents}>
                     <div>
-                        <span className={classes.amount}>{value[1].toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</span>
+                        <span
+                            className={classes.amount}>{value[1].toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</span>
                         <span className={classes.unit}>قیمت</span>
                     </div>
                     <div>
-                        <span className={classes.amount}>{value[0].toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</span>
+                        <span
+                            className={classes.amount}>{value[0].toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</span>
                         <span className={classes.unit}>قیمت</span>
                     </div>
                 </div>
