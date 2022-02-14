@@ -45,7 +45,7 @@ export default function ProductPage() {
                     gridTemplateColumns: 'repeat(8, 1fr)',
                     gap: 1,
                     gridTemplateRows: 'auto',
-                    gridTemplateAreas: `"header header header header header header header header"
+                    gridTemplateAreas: `
                                          "breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb"
                                          ". . . . . . . . "
                                          ". . . . . . . . "
@@ -55,16 +55,16 @@ export default function ProductPage() {
                                          "SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct"
                                          ". . . . . . . . "
                                          ". . . . . . . . "
-                                         "footer footer footer footer  footer footer footer footer"`,
+                                         `,
                 }}
             >
-                <Box sx={{ gridArea: 'header', bgcolor: 'primary.main' }}>Header</Box>
+
                 <Box sx={{ gridArea: 'breadCrumb', bgcolor: 'pink' }}>breadCrumb</Box>
-                <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}><ProductSellerTable sellers={sellers}/></Box>
-                <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
-                <Box sx={{ gridArea: 'sidebar', bgcolor: 'red' }}><MainProductImage/></Box>
+                <Box sx={{ gridArea: 'main',  }}><ProductSellerTable sellers={sellers}/></Box>
+                <Box sx={{ gridArea: 'info',  }}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
+                <Box sx={{ gridArea: 'sidebar', }}><MainProductImage/></Box>
                 <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}>stylesFeatures</Box>
-                <Box sx={{ gridArea: 'tabList', bgcolor: '#20c02b' }}>
+                <Box sx={{ gridArea: 'tabList',  }}>
 
                     <Container>
                         <Box sx={{marginTop : "40px" , border : "2px solid #d9d9d9" , borderRadius : "15px" }}>
@@ -74,7 +74,7 @@ export default function ProductPage() {
 
                 </Box>
                 <Box sx={{ gridArea: 'SimilarProduct', bgcolor: 'peachpuff' }}>SimilarProduct</Box>
-                <Box sx={{ gridArea: 'footer', bgcolor: 'warning.dark' }}>Footer</Box>
+
 
             </Box>
         </Box>

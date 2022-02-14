@@ -10,7 +10,7 @@ export default function ProductBuyLendo(props) {
     return (
         <Container>
             <div style={{
-                // margin: '6rem 0 0 18rem'
+                margin: '-7.75rem 0 0 0rem'
             }}>
                 <Box
                     sx={{
