@@ -10,6 +10,7 @@ import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
 import MediaFooter from '../components/footer/MediaFooter';
+import DescriptionTopBar from "../components/productBigDescription/descriptionTopBar";
 
 
 
@@ -62,6 +63,8 @@ export default function Home() {
   ];
   return (
     <>
+
+    <DescriptionTopBar/>
 
 
 

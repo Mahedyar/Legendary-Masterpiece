@@ -7,6 +7,7 @@ import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTa
 import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 
 import ProductBigDescription from "../components/productBigDescription/ProductBigDescription"
+import DescriptionTopBar from '../components/productBigDescription/descriptionTopBar';
 
 
 export default function ProductPage() {
@@ -63,7 +64,7 @@ export default function ProductPage() {
                 <Box sx={{ gridArea: 'main',  }}><ProductSellerTable sellers={sellers}/></Box>
                 <Box sx={{ gridArea: 'info',  }}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
                 <Box sx={{ gridArea: 'sidebar', }}><MainProductImage/></Box>
-                <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}>stylesFeatures</Box>
+                <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}><DescriptionTopBar/></Box>
                 <Box sx={{ gridArea: 'tabList',  }}>
 
                     <Container>

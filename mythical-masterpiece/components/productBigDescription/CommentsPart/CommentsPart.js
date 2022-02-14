@@ -37,7 +37,7 @@ const comments = [
 
 const Comments = () => {
   const matches = useMediaQuery("(min-width:769px)");
-  console.log(matches);
+  // console.log(matches);
   return (
     <>
       <Container>
