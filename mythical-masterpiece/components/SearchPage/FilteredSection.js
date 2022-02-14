@@ -12,7 +12,7 @@ const FilteredSection = (props) => {
                 </div>
                 <div className={classes.sortingList}>
                     <ul>
-                        <li className={activeClass}>پربازدیدها</li>
+                        <li className={classes.active}>پربازدیدها</li>
                         <li >ارزان ترین</li>
                         <li >گران ترین</li>
                         <li >پرفروش ترین</li>

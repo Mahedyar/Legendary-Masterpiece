@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="mediaFooter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/CustomCheckBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/CustomCheckBox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilterOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilterOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilteredSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilteredSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/SearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/search/[...slug].js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
