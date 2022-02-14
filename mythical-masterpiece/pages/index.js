@@ -9,22 +9,24 @@ import cream from "../assets/Images/ChubeHaraj/img.png";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
-import MediaFooter from "../components/footer/MediaFooter";
-import AdsCard1 from "../components/AdsCard/AdsCard1";
-import AdsCard2 from "../components/AdsCard/AdsCard2";
-import AdsCard3 from "../components/AdsCard/AdsCard3";
-import AdsCard4 from "../components/AdsCard/AdsCard4";
-import AdsCard5 from "../components/AdsCard/AdsCard5";
-import AdsCard6 from "../components/AdsCard/AdsCard6";
-import AdsCard7 from "../components/AdsCard/AdsCard7";
-import AdsCard8 from "../components/AdsCard/AdsCard8";
+// import MainHeader from "../components/Header/MainHeader"
+import LittleBox1 from "../components/LittleBox/LittleBox1";
+import AdsCard1 from "../components/AdsCard/AdsCard1"
+import AdsCard2 from "../components/AdsCard/AdsCard2"
+import AdsCard3 from "../components/AdsCard/AdsCard3"
+import AdsCard4 from "../components/AdsCard/AdsCard4"
+import AdsCard5 from "../components/AdsCard/AdsCard5"
+import AdsCard6 from "../components/AdsCard/AdsCard6"
+import AdsCard7 from "../components/AdsCard/AdsCard7"
+import AdsCard8 from "../components/AdsCard/AdsCard8"
+// import MediaFooter from "../components/footer/MediaFooter"
 
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>;
 
-const Home = () => {
+
+
+
+
+export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
   const products = [
     {
@@ -71,81 +73,75 @@ const Home = () => {
     },
   ];
 
+
   
-  // const slideRespHandler = (windowSize) => {
-  //   if (windowSize.width > 425) {
-  //     KalaSlide = 4
-  //   } else {
-
-  //   }
-
-  // }
-  // console.log(windowSize.width)
   return (
     <>
+
+      {/* <MainHeader/> */}
       <Slider />
+      <LittleBox1/>
       <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
 
       <AdsCard2 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <AdsCard3 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        imagedKalaPreview={1}
-        previewTitle={"لوازم آرایشی"}
-        previewImage={firstImagedPreview.src}
-        // ImageTitle={"لوازم آرایشی"}
+          products={products}
+          cardsPaddingTop={1}
+          imagedKalaPreview={1}
+          previewTitle={"لوازم آرایشی"}
+          previewImage={firstImagedPreview.src}
+          // ImageTitle={"لوازم آرایشی"}
       />
       <AdsCard4 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <AdsCard5 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <AdsCard6 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <AdsCard7 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
       <AdsCard8 />
       <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+          products={products}
+          cardsPaddingTop={1}
+          previewTitle={"گوشی موبایل"}
       />
 
-      <MediaFooter />
+      {/* <MediaFooter /> */}
+      
     </>
   );
-};
-
-export default Home;
+}

@@ -16,20 +16,16 @@ function Item(props) {
 export default function Icon() {
     return (
         <div>
-            {/*<img src={instagram.src}/>*/}
-            {/*<img width={25}  src={twitter.src}/>*/}
-            {/*<img width={25}  src={telegram.src}/>*/}
-            {/*<img width={25}  src={linkedin.src}/>*/}
 
             <Box
                 sx={{
                     display: 'flex',
                     flexDirection: 'row',
-                    p: 1,
-                    m: 1,
+
                     background:"#fafafa",
                     borderRadius: 1,
                     width:20,
+                    height:45
                 }}
             >
                 <Item><img src={instagram.src}/></Item>

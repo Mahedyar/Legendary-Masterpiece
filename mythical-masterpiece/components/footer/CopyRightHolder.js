@@ -11,7 +11,7 @@ export default function CopyRightHolder() {
         textAlign: 'center',
         color:  "#818181",
         background:"#f5f5f5",
-        fontsize:10,
+
         direction:"rtl",
 
     }));
@@ -22,7 +22,7 @@ export default function CopyRightHolder() {
             <Grid container>
                 <Grid item sm={12}>
                     <Item>
-                        <Typography variant="caption" display="block">کلیه حقوق این سایت متعلق به شرکت نوین تجارت مجازی آریا (تیمچه) است. <span>Copyrights Timcheh Co - 1399©</span></Typography>
+                        <Typography sx={{fontSize:'0.625rem',}} variant="caption" display="block">کلیه حقوق این سایت متعلق به شرکت نوین تجارت مجازی آریا (تیمچه) است. <span>Copyrights Timcheh Co - 1399©</span></Typography>
                     </Item>
                 </Grid>
 

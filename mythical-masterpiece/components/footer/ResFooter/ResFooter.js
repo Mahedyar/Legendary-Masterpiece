@@ -9,7 +9,6 @@ export default function ResFooter() {
         <>
             <ResTopHolder/>
             <ButtonFooter/>
-            <hr/>
             <ResTitr/>
             <ResSymbolsHolder/>
             <ResAboutFooter/>

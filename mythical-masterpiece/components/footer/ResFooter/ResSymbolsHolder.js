@@ -35,8 +35,8 @@ export default function ResSymbolsHolder(){
                     }}
                 >
                     <Item><img src={kasbokar.src}/></Item>
-                    <Item><img src={resaneh.src}/></Item>
-                    <Item><img src={lendo.src}/><div><Typography variant="caption">برخواسته از تیم لندو</Typography></div></Item>
+                    <Item ><img src={resaneh.src}/></Item>
+                    <Item sx={{borderRight:'1px solid #ced4da'}}><img src={lendo.src}/><div><Typography sx={{fontSize:'0.650rem'}} >برخواسته از تیم لندو</Typography></div></Item>
 
                 </Box>
 
