@@ -13,27 +13,34 @@ const DescriptionTopBar = () => {
           display: "flex",
           justifyContent: "space-between",
           direction: "rtl",
+          height : "86px" ,
+          width : "930px" ,
+          backgroundColor : "#fafafa",
+          borderRadius : "10px" ,
+          borderColor : "#d9d9d9"
+
+
         }}
       >
         <Box sx={{ display: "flex" }}>
-          <LocalShippingIcon sx={{ color: "gray" }} />
+          <LocalShippingIcon sx={{ color: "#8c8c8c" , marginLeft : "5px" }} />
           <Typography>ارسال رایگان به سراسر کشور</Typography>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <LocalShippingIcon />
-          <Typography>ارساfsdfsf سراسر کشور</Typography>
+          <CalendarTodayIcon sx={{ color: "#8c8c8c" , marginLeft : "5px" }}/>
+          <Typography>۱۰ روز ضمانت بازگشت</Typography>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <LocalShippingIcon />
-          <Typography>ارسال رایگان به سراسر کشور</Typography>
+          <SupportAgentIcon sx={{ color: "#8c8c8c" , marginLeft : "5px" }}/>
+          <Typography>پشتیبانی تا ۱۲ شب، حتی جمعه ها</Typography>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <LocalShippingIcon />
-          <Typography>ارسال رایگان به سراسر کشور</Typography>
+          <CheckCircleOutlineIcon sx={{ color: "#8c8c8c" , marginLeft : "5px" }}/>
+          <Typography>تضمین اصالت کالا</Typography>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <LocalShippingIcon />
-          <Typography>ارسال رایگان به سراسر کشور</Typography>
+          <CreditCardIcon sx={{ color: "#8c8c8c" , marginLeft : "5px" }} />
+          <Typography>امکان خرید اقساطی</Typography>
         </Box>
       </Box>
     </>
