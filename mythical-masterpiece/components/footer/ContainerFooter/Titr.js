@@ -30,10 +30,10 @@ const titr=[
 
                     <li key={`section-${sectionId.title}`}>
                         <ul>
-                            <ListSubheader ><Typography variant="h6" sx={{fontWeight:"bold",color:" #141414"}}>{`${sectionId.title}`}</Typography></ListSubheader>
+                            <ListSubheader ><Typography variant="h6" sx={{fontWeight:"bold",color:" #141414",fontSize:'1rem'}}>{`${sectionId.title}`}</Typography></ListSubheader>
                             {sectionId.subTitle.map((item) => (
                                 <ListItem  key={`${sectionId}-${item}`}>
-                                   <a href={"#"}> <Box sx={{height:10}}><Typography variant="body2" sx={{color: "#8c8c8c"}}><ListItemText sx={{textAlign: 'right'}} primary={`${item}`} /></Typography></Box></a>
+                                   <a href={"#"}> <Box sx={{height:10 ,fontSize:'0.8125'}}><Typography sx={{color: "#8c8c8c"}}><ListItemText sx={{textAlign: 'right' }} primary={`${item}`} /></Typography></Box></a>
                                 </ListItem>
                             ))}
                         </ul>
