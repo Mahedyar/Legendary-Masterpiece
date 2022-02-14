@@ -9,29 +9,19 @@ import cream from "../assets/Images/ChubeHaraj/img.png";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../assets/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../assets/Images/KalaPreview/men_new.png";
-import MediaFooter from "../components/footer/MediaFooter";
+import MediaFooter from '../components/footer/MediaFooter';
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import ProductBigDescription from "../components/productBigDescription/ProductBigDescription"
+import Test from "../components/productBigDescription/Test"
 
-import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
-import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
-
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>;
 
 export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
-  const sellers =
-    {
-      seller : "موبایل استور",
-      score : "۱۵۰",
-      sellerType : "خوب",
-      guarantee : "گارانتی ۱۸ ماهه شرکتی",
-      availability : "موجود در انبار تیمچه",
-    };
-  const lendo =
-      {
-        prepayment : "۰",
-        installment : "۴۶۴,۲۶۷",
-        reward : "۲۰,۰۰۰",
-      };
-
   const products = [
     {
       id: 1,
@@ -78,17 +68,25 @@ export default function Home() {
   ];
   return (
     <>
-      <Slider />
+     <Container>
+     <Box sx={{marginTop : "40px" , border : "2px solid #d9d9d9" , borderRadius : "15px" }}>
+       <ProductBigDescription />
+     </Box>
+   </Container>
 
+
+
+
+
+
+      {/* <Slider />
       <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
-
       <KalaPreview
         products={products}
         slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
-
       <KalaPreview
         products={products}
         slidesPerView={4}
@@ -98,8 +96,7 @@ export default function Home() {
         ImageTitle={"لوازم آرایشی"}
       />
 
-      {/*Footer*/}
-      <MediaFooter />
+      <MediaFooter/> */}
     </>
   );
 }

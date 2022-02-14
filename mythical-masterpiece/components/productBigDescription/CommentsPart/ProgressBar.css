@@ -1,0 +1,25 @@
+.rateContainer {
+  margin-top: 18px;
+  display : flex ;
+  align-items: center;
+  
+ 
+}
+
+.bar {
+  display: block;
+  height: 8px;
+  border-radius: 10px;
+  
+  
+}
+
+.containerBar {
+  width: calc(100% - 45px - 32px - 20px);
+  background-color: #f0f0f0;
+  margin : 0 10px 
+}
+
+
+
+
