@@ -14,9 +14,11 @@ import "../components/kalaPreview/KalaPreview.css"
 import "../components/slider/styles.css";
 import "../components/chubeHaraj/SwipperStyles.css";
 import "../components/AdsCard/adsCardStyle.css";
+// import "../components/Header/SearchPart.css"
 // import "../components/chubeHaraj/SwipperStyles.module.css";
 
 // import "./assest/Font/YekanBoom.ttf";
+
 
 function MyApp({ Component, pageProps }) {
   
