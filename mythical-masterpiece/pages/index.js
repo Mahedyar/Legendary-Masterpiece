@@ -76,9 +76,8 @@ const Home = () => {
   
   return (
     <>
-      {/*<ResHeader/>*/}
-    {/*<Header />*/}
-      <MainHeader/>
+
+      {/*<MainHeader/>*/}
       {/* <Slider />
       <ChubeHaraj products={products} cardsPaddingTop={3} />
       <AdsCard1 />
