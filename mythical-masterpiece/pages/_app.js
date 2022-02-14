@@ -13,8 +13,18 @@ import "../components/slider/styles.css";
 import "../components/chubeHaraj/SwipperStyles.css";
 import "../components/AdsCard/adsCardStyle.css";
 import "../components/LittleBox/little.box1.style.css";
+import "../components/ProductSellerTable/productSellerStyle.css";
+import "../components/ProductBuyLendo/productLendoStyle.css";
+import "../components/productBigDescription/CommentsPart/ProgressBar.css"
 import HeadFooter from "../Layouts/HeadFooter";
 
+
+
+
+
+import "../components/ProductSellerTable/productSellerStyle.css";
+import "../components/ProductBuyLendo/productLendoStyle.css";
+// import "../components/chubeHaraj/SwipperStyles.module.css";
 
 
 function MyApp({ Component, pageProps }) {

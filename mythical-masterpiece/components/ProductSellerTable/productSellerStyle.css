@@ -1,0 +1,40 @@
+.psbox1{
+    border: 1px solid rgb(210, 206, 206);
+}
+.psicon{
+    margin: 10px 16px;
+    width: 20px;
+    height: 20px;
+}
+
+.pstext1{
+    font-size: 15px;
+    color: darkgrey;
+}
+.pstext2{
+    font-size: 15px;
+    color: darkgrey;
+    margin: 0 0 1rem 0;
+}
+.pstext3{
+    font-size: 15px;
+    margin: 0.6rem 0;
+}
+.pstext31{
+    font-size: 14px;
+    margin: 0.8rem 0;
+    font-weight: bold;
+}
+.pshalf_background{
+    background: linear-gradient(to top, rgba(255, 221, 0, 0.91) 60%, transparent 60%);
+}
+.pstext4{
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+}
+
+.pssection1{
+    background-color: rgba(245, 245, 245, 0.96);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}

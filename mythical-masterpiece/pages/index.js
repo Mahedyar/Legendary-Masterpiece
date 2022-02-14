@@ -23,7 +23,10 @@ import AdsCard8 from "../components/AdsCard/AdsCard8"
 
 
 
-const Home = () => {
+
+
+
+export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
   const products = [
     {
@@ -70,7 +73,7 @@ const Home = () => {
     },
   ];
 
-//   const windowSize = useWindowSize();
+
   
   return (
     <>
@@ -86,61 +89,29 @@ const Home = () => {
         previewTitle={"گوشی موبایل"}
       />
 
-      <AdsCard2 />
+
+
+
+
+      {/* <Slider />
+      <ChubeHaraj products={products} slidesPerView={4} cardsPaddingTop={3} />
       <KalaPreview
         products={products}
+        slidesPerView={5}
         cardsPaddingTop={1}
         previewTitle={"گوشی موبایل"}
       />
-      <AdsCard3 />
       <KalaPreview
         products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <KalaPreview
-        products={products}
+        slidesPerView={4}
         cardsPaddingTop={1}
         imagedKalaPreview={1}
-        previewTitle={"لوازم آرایشی"}
         previewImage={firstImagedPreview.src}
-        // ImageTitle={"لوازم آرایشی"}
-      />
-      <AdsCard4 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard5 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard6 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard7 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
-      />
-      <AdsCard8 />
-      <KalaPreview
-        products={products}
-        cardsPaddingTop={1}
-        previewTitle={"گوشی موبایل"}
+        ImageTitle={"لوازم آرایشی"}
       />
 
       {/* <MediaFooter /> */}
       
     </>
   );
-};
-
-export default Home;
+}
