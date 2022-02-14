@@ -1,13 +1,21 @@
 import {MongoClient} from "mongodb";
 
-const handler = async (req, res) => {
-    if (req.method === "GET") {
-        const client = await MongoClient.connect("mongodb+srv://mahdi:MdFfx@uJC78ietT@daneshkarcluster.xri1m.mongodb.net/ShoppingItemsDatabase?retryWrites=true&w=majority")
+
+export default async function handler(req, res) {
+    if (req.method === "POST") {
+        const data = req.body;
+
+        const client = await MongoClient.connect("mongodb+srv://mahdi:MdFfxuJC78ietT@daneshkarcluster.xri1m.mongodb.net/ShoppingItemsDatabase?retryWrites=true&w=majority")
         const db = client.db();
 
+        const productsCollection = db.collection("ShopItem");
 
+        const result = await productsCollection.insertOne(data)
 
+        console.log(result);
+        client.close();
+
+        res.status(201).json({message: "data inserted"});
     }
-}
 
-export default handler;
+}
