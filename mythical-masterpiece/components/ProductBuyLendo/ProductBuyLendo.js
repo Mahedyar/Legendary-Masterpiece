@@ -10,16 +10,16 @@ export default function ProductBuyLendo(props) {
     return (
         <Container>
             <div style={{
-                margin: '6rem 0 0 18rem'
+                // margin: '6rem 0 0 18rem'
             }}>
                 <Box
                     sx={{
                         width: 460,
                         height: 140,
                         backgroundColor: 'white',
-                        margin: '20px 5px',
+                        // margin: '20px 5px',
                         borderRadius: '8px',
-                        margin: '5rem 0 0 8rem',
+                        // margin: '5rem 0 0 8rem',
                         border: '1px solid #d9d9d9',
                     }}
                 >
@@ -90,7 +90,7 @@ export default function ProductBuyLendo(props) {
                     sx={{
                         width: 460,
                         height: 48,
-                        margin: '0.7rem 0 0 8rem',
+                        margin: '0.7rem 0 0 0rem',
                         border: '1px solid #d9d9d9',
                         borderRadius: '8px',
                     }}

@@ -3,9 +3,26 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import MainProductImage from "../components/productImage/MainProductImage";
 import ProductVizhegiPrice from "../components/productVizhegiPrice/ProductVizhegiPrice";
+import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
+import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 
 
 export default function ProductPage() {
+    const sellers =
+        {
+            seller : "موبایل استور",
+            score : "۱۵۰",
+            sellerType : "خوب",
+            guarantee : "گارانتی ۱۸ ماهه شرکتی",
+            availability : "موجود در انبار تیمچه",
+        };
+    const lendo =
+        {
+            prepayment : "۰",
+            installment : "۴۶۴,۲۶۷",
+            reward : "۲۰,۰۰۰",
+        };
+
     return (
         <Container maxWidth="lg">
         <Box
@@ -41,8 +58,8 @@ export default function ProductPage() {
             >
                 <Box sx={{ gridArea: 'header', bgcolor: 'primary.main' }}>Header</Box>
                 <Box sx={{ gridArea: 'breadCrumb', bgcolor: 'pink' }}>breadCrumb</Box>
-                <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}>Seller</Box>
-                <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}><ProductVizhegiPrice/></Box>
+                <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}><ProductSellerTable sellers={sellers}/></Box>
+                <Box sx={{ gridArea: 'info', bgcolor: 'orange' }}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
                 <Box sx={{ gridArea: 'sidebar', bgcolor: 'red' }}><MainProductImage/></Box>
                 <Box sx={{ gridArea: 'stylesFeatures', bgcolor: 'gold' }}>stylesFeatures</Box>
                 <Box sx={{ gridArea: 'tabList', bgcolor: '#20c02b' }}>tabList</Box>

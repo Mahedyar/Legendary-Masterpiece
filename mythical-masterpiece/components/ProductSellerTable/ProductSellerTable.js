@@ -26,17 +26,17 @@ const BootstrapTooltip = styled(({className, ...props}) => (
 
 export default function ProductSellerTable(props) {
     return (
-        <Container>
+        // <Container >
             <div style={{
-                margin: '1rem 0 4rem 0',
+                margin: '1rem 0rem 4rem 0.35rem',
             }}>
                 <Box
                     sx={{
                         display: 'block',
-                        width: 300,
+                        width: 318,
                         height: 227,
                         backgroundColor: 'white',
-                        margin: '2rem 0.5rem 0 0',
+                        // margin: '2rem 0.5rem 0 0',
                         borderRadius: '8px',
                     }}
                     className="psbox1"
@@ -304,6 +304,6 @@ export default function ProductSellerTable(props) {
 
                 </Box>
             </div>
-        </Container>
+         // </Container>
     );
 }

@@ -13,10 +13,7 @@ import MediaFooter from "../components/footer/MediaFooter";
 
 import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
 import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>;
+
 
 export default function Home() {
   // const kalaPreviewTitleHide = 1 ,
