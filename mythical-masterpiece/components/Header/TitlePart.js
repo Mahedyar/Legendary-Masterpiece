@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import Link from 'next/link'
 import Box from "@mui/material/Box";
 import timcheLogo from "../../assets/Images/Header/Timche.svg";
 import SearchBox from "./SearchBox";
@@ -17,7 +17,7 @@ const TitlePart = () => {
         }}
       >
         <Box sx={{display : "flex" , width : "60%"}}>
-          <img src={timcheLogo.src}></img>
+            <Link href={'/'}><img src={timcheLogo.src} /></Link>
           <SearchBox />
         </Box>
         <TitlePartIcons />

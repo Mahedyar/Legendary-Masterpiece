@@ -17,20 +17,20 @@ import headphone from "../assets/Images/ChubeHaraj/img_5.png";
 import cream from "../assets/Images/ChubeHaraj/img.png";
 
 export default function ProductPage() {
-  const sellers = {
-    seller: "موبایل استور",
-    score: "۱۵۰",
-    color : "#09b909",
-    sellerType: "خوب",
-    guarantee: "گارانتی ۱۸ ماهه شرکتی",
-    availability: "موجود در انبار تیمچه",
+    const sellers = {
+        seller: "موبایل استور",
+        score: "۱۵۰",
+        color : "#09b909",
+        sellerType: "خوب",
+        guarantee: "گارانتی ۱۸ ماهه شرکتی",
+        availability: "موجود در انبار تیمچه",
 
-  };
-  const lendo = {
-    prepayment: "۰",
-    installment: "۴۶۴,۲۶۷",
-    reward: "۲۰,۰۰۰",
-  };
+    };
+    const lendo = {
+        prepayment: "۰",
+        installment: "۴۶۴,۲۶۷",
+        reward: "۲۰,۰۰۰",
+    };
 
     const products = [
         {
@@ -77,27 +77,27 @@ export default function ProductPage() {
         },
     ];
 
-  return (
-    <Container maxWidth="lg">
-      <Box
-        sx={{
-          width: "100%",
-        //   height: "1400px",
-          "& > .MuiBox-root > .MuiBox-root": {
-            p: 0.5,
+    return (
+        <Container maxWidth="lg">
+            <Box
+                sx={{
+                    width: "100%",
+                    //   height: "1400px",
+                    "& > .MuiBox-root > .MuiBox-root": {
+                        p: 0.5,
 
-            fontSize: "0.875rem",
-            fontWeight: "700",
-          },
-        }}
-      >
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "repeat(8, 1fr)",
-            gap: 1,
-            gridTemplateRows: "auto",
-            gridTemplateAreas: `
+                        fontSize: "0.875rem",
+                        fontWeight: "700",
+                    },
+                }}
+            >
+                <Box
+                    sx={{
+                        display: "grid",
+                        gridTemplateColumns: "repeat(8, 1fr)",
+                        gap: 1,
+                        gridTemplateRows: "auto",
+                        gridTemplateAreas: `
                                          "breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb"
                                          ". . . . . . . . "
                                          ". . . . . . . . "
@@ -108,41 +108,72 @@ export default function ProductPage() {
                                          ". . . . . . . . "
                                          ". . . . . . . . "
                                          `,
-          }}
-        >
-          <Box sx={{ gridArea: "breadCrumb", bgcolor: "pink" }}>breadCrumb</Box>
-          <Box sx={{ gridArea: "main" }}>
-            <ProductSellerTable sellers={sellers} />
-          </Box>
-          <Box sx={{ gridArea: "info" }}>
-            <ProductVizhegiPrice /> <ProductBuyLendo lendo={lendo} />
-          </Box>
-          <Box sx={{ gridArea: "sidebar" }}>
-            <MainProductImage />
-          </Box>
-          <Box sx={{ gridArea: "stylesFeatures" }}>
-            <DescriptionTopBar />
-          </Box>
-          <Box sx={{ gridArea: "tabList" }}>
-            <Box
-              sx={{
-                marginTop: "15px",
-                border: "2px solid #d9d9d9",
-                borderRadius: "15px",
-              }}
-            >
-              <ProductBigDescription />
+                    }}
+                >
+                    <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box>
+                    <Box sx={{gridArea: "main"}}>
+                        <ProductSellerTable sellers={sellers}/>
+                    </Box>
+                    <Box sx={{gridArea: "info"}}>
+                        <ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/>
+                    </Box>
+                    <Box sx={{gridArea: "sidebar"}}>
+                        <MainProductImage/>
+                    </Box>
+                    <Box sx={{gridArea: "stylesFeatures"}}>
+                        <DescriptionTopBar/>
+                    </Box>
+                    <Box sx={{gridArea: "tabList"}}>
+                        <Box
+                            sx={{
+                                marginTop: "15px",
+                                border: "2px solid #d9d9d9",
+                                borderRadius: "15px",
+                            }}
+                        >
+                            <ProductBigDescription/>
+                        </Box>
+                    </Box>
+                    <Box sx={{gridArea: "SimilarProduct",}}>
+                        <KalaPreview
+                            products={products}
+                            cardsPaddingTop={1}
+                            previewTitle={"گوشی موبایل"}
+                        />
+                    </Box>
+                </Box>
             </Box>
-          </Box>
-          <Box sx={{ gridArea: "SimilarProduct", }}>
-              <KalaPreview
-                  products={products}
-                  cardsPaddingTop={1}
-                  previewTitle={"گوشی موبایل"}
-              />
-          </Box>
-        </Box>
-      </Box>
-    </Container>
-  );
+        </Container>
+    );
 }
+
+// export const getStaticProps = async () => {
+//     const client = await MongoClient.connect(
+//         "mongodb+srv://mahdi:MdFfxuJC78ietT@daneshkarcluster.xri1m.mongodb.net/ShoppingItemsDatabase?retryWrites=true&w=majority"
+//     )
+//
+//     const db = client.db();
+//
+//     const productsCollection = db.collection("ShopItem");
+//     const cards = await productsCollection.find().toArray();
+//
+//     client.close();
+//     return {
+//         props: {
+//             CardData: cards.map(card => ({
+//                 id: card._id.toString(),
+//                 seller: card.seller.name,
+//                 score: card.seller.score,
+//                 color: "#09b909",
+//                 sellerType: "خوب",
+//                 guarantee: card.seller.guarantee,
+//                 availability: card.seller.status,
+//                 installment: card.lendSection.lend,
+//                 prePayment: card.lendSection.prePayment,
+//                 reward: card.lendSection.kingSeat,
+//             }))
+//         },
+//         revalidate: 10
+//     }
+//
+// }

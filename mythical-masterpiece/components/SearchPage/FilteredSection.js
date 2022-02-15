@@ -1,8 +1,17 @@
+import {useState} from "react";
 import classes from "./FilteredSection.module.css"
 import FilterListIcon from '@mui/icons-material/FilterList';
 import ProductCard from "./ProductCard";
 
+const sortingItems = ["پربازدیدها","ارزان ترین","گران ترین","پرفروش ترین","جدیدترین","سریع ترین ارسال!","تخفیف دار"]
+
 const FilteredSection = (props) => {
+    const [active, setActive] = useState("پرفروش ترین");
+
+    const activateHandler = (item) => {
+        setActive(item)
+    }
+
     return (
         <section className={classes.section}>
             <div className={classes.filterBox}>
@@ -12,13 +21,9 @@ const FilteredSection = (props) => {
                 </div>
                 <div className={classes.sortingList}>
                     <ul>
-                        <li className={classes.active}>پربازدیدها</li>
-                        <li >ارزان ترین</li>
-                        <li >گران ترین</li>
-                        <li >پرفروش ترین</li>
-                        <li >جدیدترین</li>
-                        <li >سریع ترین ارسال!</li>
-                        <li >تخفیف دار</li>
+                        {sortingItems.map(item => (
+                            <li onClick={activateHandler.bind(null , item)} className={`${active === item ? classes.active : ""}`}>{item}</li>
+                        ))}
                     </ul>
                 </div>
                 <div className={classes.remaining}>

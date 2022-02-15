@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="mediaFooter">
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilterOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilterOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ListBoxModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ListBoxModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/TitlePart.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/TitlePart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/BreadCrumbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/BreadCrumbs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilteredSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/FilteredSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/SearchComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/search/[...slug].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/[pagesId].js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/[pagesId].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -51,6 +54,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
