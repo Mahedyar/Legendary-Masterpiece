@@ -110,7 +110,7 @@ export default function ProductPage() {
                                          `,
                     }}
                 >
-                    <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box>
+                    {/* <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box> */}
                     <Box sx={{gridArea: "main"}}>
                         <ProductSellerTable sellers={sellers}/>
                     </Box>
