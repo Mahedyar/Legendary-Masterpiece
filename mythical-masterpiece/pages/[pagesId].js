@@ -7,7 +7,7 @@ import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTa
 import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 
 import ProductBigDescription from "../components/productBigDescription/ProductBigDescription";
-import DescriptionTopBar from "../components/productBigDescription/descriptionTopBar";
+import DescriptionTopBar from "../components/productBigDescription/DescriptionTopBar";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
 import livan from "../assets/Images/ChubeHaraj/img_1.png";
 import drill from "../assets/Images/ChubeHaraj/img_2.png";
