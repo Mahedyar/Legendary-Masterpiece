@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Image from "next/image";
 import kasbokar from '../../../assets/Images/Footer/logo/kasbokar.png';
 import lendo from '../../../assets/Images/Footer/logo/lendo.svg';
 import resaneh from '../../../assets/Images/Footer/logo/resaneh.png';
@@ -34,9 +35,9 @@ export default function ResSymbolsHolder(){
                         borderRadius: 1,
                     }}
                 >
-                    <Item><img src={kasbokar.src}/></Item>
-                    <Item ><img src={resaneh.src}/></Item>
-                    <Item sx={{borderRight:'1px solid #ced4da'}}><img src={lendo.src}/><div><Typography sx={{fontSize:'0.650rem'}} >برخواسته از تیم لندو</Typography></div></Item>
+                    <Item><Image src={kasbokar}/></Item>
+                    <Item ><Image src={resaneh}/></Item>
+                    <Item sx={{borderRight:'1px solid #ced4da'}}><Image src={lendo}/><div><Typography sx={{fontSize:'0.650rem'}} >برخواسته از تیم لندو</Typography></div></Item>
 
                 </Box>
 

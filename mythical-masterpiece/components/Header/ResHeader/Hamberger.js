@@ -1,5 +1,6 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import timchLogo from '../../../assets/Images/Header/Timche.svg'
+import Image from "next/image";
+import timcheLogo from '../../../assets/Images/Header/Timche.svg'
 import TwoIcon from "./TwoIcon";
 import Box from '@mui/material/Box';
 import {useState} from "react";
@@ -44,7 +45,7 @@ export default function Hamberger(){
                       <TwoIcon/>
                     </Item>
                     <Item>
-                        <img className={'logo-team'} src={timchLogo.src}/>
+                        <Image className={'logo-team'} src={timcheLogo}/>
                     </Item>
                     <Item>
                         <MenuIcon onClick={handleDrawerOpen}/>

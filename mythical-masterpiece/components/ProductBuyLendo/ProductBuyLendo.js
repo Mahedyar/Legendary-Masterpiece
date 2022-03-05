@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import {Container, Stack, Typography} from "@mui/material";
 // import {pskey1, psicon, psicon1, psicon2, pstext21, pstext1, pstext11, pstext2, pstext3, pstext31, pstext4, pshalf_background ,pssection1, psbox1} from './productLendoStyle.css';
 import KeyboardArrowLeftOutlinedIcon from "@mui/icons-material/KeyboardArrowLeftOutlined";
+import Image from "next/image";
 import lendosign from "../../assets/Images/Lendo/lendosign.svg";
 import shahneshin from "../../assets/Images/Lendo/shahneshin.svg";
 
@@ -25,11 +26,11 @@ export default function ProductBuyLendo(props) {
                 >
                     <Box>
                         <Stack dir="rtl" direction="row" alignItems="center" gap={1}>
-                            <img style={{
+                            <Image style={{
                                 width: '16px',
                                 height: '16px',
                                 margin: '0.8rem 1rem 0.5rem 0.4rem'
-                            }} src={lendosign.src}/>
+                            }} src={lendosign}/>
                             <Typography style={{
                                 fontSize: '13px',
                                 margin: '0.8rem 0 0.5rem 0.4rem',
@@ -99,10 +100,10 @@ export default function ProductBuyLendo(props) {
                     }}>
                     <Box>
                         <Stack dir="rtl" direction="row" alignItems="center" gap={1}>
-                            <img src={shahneshin.src} style={{
+                            <Image src={shahneshin} style={{
                                 width: '15px',
                                 height: '15px',
-                                margin: '0.8rem 0.4rem 0 0',
+                                margin: '0.8rem 0.5rem 0 0',
                             }}/>
                             <Typography style={{
                                 fontSize: '14px',

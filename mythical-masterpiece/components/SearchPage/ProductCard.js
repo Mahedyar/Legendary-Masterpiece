@@ -2,6 +2,7 @@ import {useState} from "react";
 
 import Link from 'next/link'
 import classes from './ProductCard.module.css'
+import Image from "next/image";
 import kingSeatIcon from '../../assets/Images/icon/shahneshin.svg'
 
 const ProductCard = (props) => {
@@ -53,7 +54,7 @@ const ProductCard = (props) => {
                         <div className={classes.clearFix}/>
                     </div>
                     <div className={classes.hoveredPart} style={{display: `${hovered ? "flex" : "none"}`}}>
-                        <img src={kingSeatIcon.src} alt="shah neshin icon"/>
+                        <Image src={kingSeatIcon} alt="shah neshin icon"/>
                         <span>{props.kingSeat} تومان پاداش نقدی شاه نشین</span>
                     </div>
                 </div>

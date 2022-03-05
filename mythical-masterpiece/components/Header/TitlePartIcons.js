@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/material";
+import Image from "next/image";
 import shahneshin from "../../assets/Images/Header/shahneshin.svg";
 import giftcard from "../../assets/Images/Header/card_giftcard.svg";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
@@ -56,10 +57,10 @@ export default function DividerStack() {
         </Item>
 
         <Item>
-          <img style={{width : "20px" , height : "20px"}}src={shahneshin.src} />
+          <Image style={{width : "20px" , height : "20px"}}src={shahneshin} />
         </Item>
         <Item>
-          <img style={{width : "20px" , height : "20px"}} src={giftcard.src} />
+          <Image style={{width : "20px" , height : "20px"}} src={giftcard} />
         </Item>
         <Item>
           <HelpOutlineIcon sx={{width : "20px" , height : "20px"}} />

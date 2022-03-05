@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import CloseIcon from '@mui/icons-material/Close';
-import timchLogo from '../../../assets/Images/Header/Timche.svg'
+import Image from "next/image";
+import timcheLogo from '../../../assets/Images/Header/Timche.svg'
 function Item(props) {
     const { sx, ...other } = props;
     return (
@@ -33,7 +34,7 @@ export default function HeadMenu(props){
                 >
                     <Item sx={{alignItems:'center'}}><CloseIcon onClick={props.onClose} sx={{color:'#6c757d'}} /></Item>
 
-                    <Item sx={{bgcolor:'',marginRight:'3rem'}}><img className={'logo-team'} src={timchLogo.src}/></Item>
+                    <Item sx={{bgcolor:'',marginRight:'3rem'}}><Image className={'logo-team'} src={timcheLogo}/></Item>
                 </Box>
 
             </div>

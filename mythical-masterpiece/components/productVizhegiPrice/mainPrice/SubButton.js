@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Image from "next/image";
 import flag from '../../../assets/Images/ProductVizhegiPrice/flag.svg';
 import Typography from '@mui/material/Typography';
 
@@ -29,7 +30,7 @@ export default function subButton(){
                         direction:'rtl',
                     }}
                 >
-                    <Item><img src={flag.src}/></Item>
+                    <Item><Image src={flag}/></Item>
                     <Item><Typography variant="caption">گزارش قیمت بهتر برای این محصول</Typography></Item>
 
                 </Box>

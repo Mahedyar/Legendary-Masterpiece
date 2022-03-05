@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import {Container, Typography} from "@mui/material";
 import Paper from "@mui/material/Paper";
-// import {img1, box11, text11} from "./little.box1.style.css";
+import Image from "next/image";
 
 
 export default function LittleBox1() {

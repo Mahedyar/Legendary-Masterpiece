@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Image from "next/image";
 import topImagePhone from '../../../assets/Images/Header/timche-mobile.gif';
 import Hamberger from "./Hamberger";
 
@@ -11,7 +12,7 @@ import SearchBox from "../SearchBox";
 export default function ResHeader(){
     return(
         <>
-            <img src={topImagePhone.src} className={classes.gifImage} alt="someThing"/>
+            <Image src={topImagePhone} className={classes.gifImage} alt="someThing"/>
 
             <Container sx={{zIndex:1000}}>
               <Hamberger/>

@@ -7,8 +7,9 @@ import Paper from "@mui/material/Paper";
 import { Typography } from "@mui/material";
 import Timer from "./Timer";
 import ItemsSlider from "./ItemsSlider";
+import Image from "next/image";
 import background from "../../assets/Images/ChubeHaraj/sale_bg.png";
-import chubeharaj from "../../assets/Images/ChubeHaraj/sale.png";
+import chubeharaj from "../../assets/Images/ChubeHaraj/timche_sale.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 
@@ -91,12 +92,12 @@ const ChubeHaraj = (props) => {
                   <Timer />
                 </Typography>
 
-                <img
+                <Image
                   style={{
                     // width: `${fullSize || tabletSize ? "240px" : "120px"}`,
                     marginLeft: "0 auto",
                   }}
-                  src={chubeharaj.src}
+                  src={chubeharaj}
                 />
               </Box>
             )}
@@ -147,14 +148,14 @@ const ChubeHaraj = (props) => {
                     }}
                   ></Box>
                   <Timer />
-                  <img
+                  <Image
                     style={
                       {
                         // width: `${fullSize || tabletSize ? "240px" : "120px"}`,
                         // margin : "0 auto"
                       }
                     }
-                    src={chubeharaj.src}
+                    src={chubeharaj}
                   />
                 </Typography>
               </Box>

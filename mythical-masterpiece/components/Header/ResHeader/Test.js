@@ -11,6 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {useState} from "react";
+import Image from "next/image";
 import topImagePhone from '../../../assets/Images/Header/timche-mobile.gif'
 
 const drawerWidth = '100%';
@@ -69,7 +70,7 @@ export default function ResHeader(){
 
                 <Main open={open}>
                     <DrawerHeader />
-                    <img src={topImagePhone.src}/>
+                    <Image src={topImagePhone}/>
 
                 </Main>
 

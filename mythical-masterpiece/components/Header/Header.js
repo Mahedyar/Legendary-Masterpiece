@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import classes from "./Header.module.css";
+import Image from "next/image";
 import HeaderGif from "../../assets/Images/Header/timche-header-add.gif";
 import TitlePart from "./TitlePart";
 import Menu from "./Menu"
@@ -9,7 +10,7 @@ import { Container ,Box} from "@mui/material";
 const Header = () => {
   return (
     <>
-      <img className={classes.gifImage} src={HeaderGif.src} alt="someThing" />
+      <Image className={classes.gifImage} src={HeaderGif} alt="someThing" />
       <Container sx={{marginTop : "15px",zIndex:10}}>
         <TitlePart />
         <Menu/>

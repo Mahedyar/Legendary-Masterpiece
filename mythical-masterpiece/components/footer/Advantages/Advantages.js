@@ -1,6 +1,7 @@
 import {Grid, Box,Container} from "@mui/material";
 import AdvantagesItems from "./AdvantagesItems";
 
+
 export default function Advantages() {
     const advantages = [
         {
