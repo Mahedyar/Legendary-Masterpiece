@@ -16,3 +16,23 @@
     grid-template-columns: 3.5fr 1.2fr;
     align-items: flex-start;
 }
+
+@media screen and (max-width: 1200px) {
+    .pageGrid {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pageGrid {
+        width: 98%;
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .pageGrid {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}

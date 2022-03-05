@@ -10,26 +10,28 @@ const FilteredSection = (props) => {
 
     const activateHandler = (item) => {
         setActive(item)
+        props.sortingAvailableProducts(item)
     }
 
     return (
         <section className={classes.section}>
-            <div className={classes.filterBox}>
+            {props.width > 760 ? <div className={classes.filterBox}>
                 <div className={classes.sortHeader}>
                     <FilterListIcon className={classes.icon}/>
                     <p>ترتیب نمایش:</p>
                 </div>
-                <div className={classes.sortingList}>
+                {props.width > 1100 ? <div className={classes.sortingList}>
                     <ul>
                         {sortingItems.map(item => (
-                            <li onClick={activateHandler.bind(null , item)} className={`${active === item ? classes.active : ""}`}>{item}</li>
+                            <li onClick={activateHandler.bind(null, item)}
+                                className={`${active === item ? classes.active : ""}`}>{item}</li>
                         ))}
                     </ul>
-                </div>
+                </div> : null}
                 <div className={classes.remaining}>
                     <span>{props.arrayLengh}کالا</span>
                 </div>
-            </div>
+            </div> : null}
             <div className={classes.cardsGrid}>
                 <ul>
                     {props.products.map(item => (

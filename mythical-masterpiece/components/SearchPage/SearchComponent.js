@@ -52,39 +52,51 @@ const SearchComponent = (props) => {
         if (checkBox.length > 0) {
             setFilteredListByCheckBox(() => {
                 const filteredArray = props.products.filter(item => checkBox.includes(item.brand))
-                console.log(`checkbox filter`,filteredArray)
                 return [
                     ...filteredArray
                 ]
             })
         }
-    },[checkBox])
+    }, [checkBox])
 
     const searchProductHandler = (event) => {
         setProductsSearchInput(() => {
             const newProducts = props.products.filter((item) => {
                 return item.title.includes(event.target.value);
             })
-            console.log(`search `,newProducts);
+            console.log(`search `, newProducts);
             return [
                 ...newProducts
             ]
         })
     }
 
-    const filterListByDiscountHandler = (status) => {
-        if (!status) {
-            setFilteredListByDiscountProducts(props.products)
-        }
-        if (status) {
-            setFilteredListByDiscountProducts(() => {
-                const newProducts = props.products.filter((item) => {
-                    return (item.offPercent > 0 && item.offPercent)
-                })
-                return [
-                    ...newProducts
-                ]
-            })
+    const filterListByDiscountHandler = (name, status = false) => {
+        switch (name) {
+            case ("فقط تخفیف دار"):
+                if (!status) {
+                    setFilteredListByDiscountProducts(props.products)
+                }
+                if (status) {
+                    setFilteredListByDiscountProducts(() => {
+                        const newProducts = props.products.filter((item) => {
+                            return (item.offPercent > 0 && item.offPercent)
+                        })
+                        return [
+                            ...newProducts
+                        ]
+                    })
+                }
+                break;
+            case ("فقط نمایش کالاهای روز پدر") :
+                console.log("فقط نمایش کالاهای روز پدر")
+                break;
+            case ("فقط کالاهای موجود") :
+                console.log("فقط کالاهای موجود")
+                break;
+            case ("فقط کالاهای اصل") :
+                console.log("فقط کالاهای اصل")
+                break;
         }
     }
 
@@ -104,21 +116,48 @@ const SearchComponent = (props) => {
 
     }
 
+    const sortingAvailableProducts = (item) => {
+        switch (item) {
+            case ("پربازدیدها") :
+                console.log("پربازدیدها")
+                break;
+            case ("ارزان ترین") :
+                setFilteredProducts(filteredProducts.sort((a, b) => (+a.price > +b.price ? 1 : -1)))
+                break;
+            case ("گران ترین") :
+                setFilteredProducts(filteredProducts.sort((a, b) => (+a.price > +b.price ? -1 : 1)))
+                break;
+            case ("جدیدترین") :
+                console.log("جدیدترین")
+                break;
+            case ("سریع ترین ارسال!") :
+                console.log("سریع ترین ارسال!")
+                break;
+            case ("تخفیف دار") :
+                setFilteredProducts(filteredProducts.sort((a, b) => (+a.offPercent > +b.offPercent ? -1 : 1)))
+                break;
+            default :
+                console.log("پرفروش ترین ها")
+                break;
+        }
+    }
+
     return (
         <Fragment>
             <img className={classes.pic} src={img.src} alt="some text"/>
             <BreadCrumbs/>
             <div className={classes.pageContent}>
                 <div className={classes.pageGrid}>
-                    <FilteredSection arrayLengh={filteredProducts.length} products={filteredProducts}/>
-                    <FilterOptions
+                    <FilteredSection width={width} sortingAvailableProducts={sortingAvailableProducts}
+                                     arrayLengh={filteredProducts.length} products={filteredProducts}/>
+                    {width > 760 ? <FilterOptions
                         filterListByRangeHandler={filterListByRangeHandler}
                         filterListByDiscountHandler={filterListByDiscountHandler}
                         searchProductHandler={searchProductHandler}
                         checkBox={checkBox}
                         setCheckBox={setCheckBox}
                         pricesArray={props.pricesArray}
-                    />
+                    /> : null}
                 </div>
             </div>
         </Fragment>
