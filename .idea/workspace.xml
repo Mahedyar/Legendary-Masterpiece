@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="workSpace,package,yarn">
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="workSpace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mythical-masterpiece/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mythical-Masterpiece1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644080211343</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workSpace">
+      <created>1646490076939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646490076939</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +150,7 @@
     <MESSAGE value="main" />
     <MESSAGE value="mediaFooter" />
     <MESSAGE value="workSpace,package,yarn" />
-    <option name="LAST_COMMIT_MESSAGE" value="workSpace,package,yarn" />
+    <MESSAGE value="workSpace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workSpace" />
   </component>
 </project>
