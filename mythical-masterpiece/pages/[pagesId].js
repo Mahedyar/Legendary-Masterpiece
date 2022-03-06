@@ -106,10 +106,7 @@ export default function ProductPage() {
                                          "main"
                                          "stylesFeatures"
                                          "tabList"
-                                         "SimilarProduct"
-                                        
-                                         
-                                        
+                                         "SimilarProduct" 
                                          `,
                     }}
                 >

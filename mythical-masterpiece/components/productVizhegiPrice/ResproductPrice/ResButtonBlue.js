@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import SubButton from '../mainPrice/SubButton'
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 
 function Item(props) {
@@ -25,6 +26,7 @@ function Item(props) {
 
 export default function ResButtonBlue(){
 
+
     return(
         <>
 
@@ -32,7 +34,7 @@ export default function ResButtonBlue(){
             <Box sx={{ display: 'grid', gridTemplateRows: 'repeat(1, 1fr)' }}>
                 <Item>
                     <Stack direction="row" >
-                        <Button sx={{borderRadius:2,width:100,height:45}} variant="contained" disableElevation>
+                        <Button sx={{borderRadius:2,width:'100%',height:45}} variant="contained" disableElevation>
                             افزودن سبد خرید
                         </Button>
                     </Stack>
