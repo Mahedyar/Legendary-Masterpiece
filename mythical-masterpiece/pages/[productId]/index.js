@@ -10,86 +10,134 @@ import ProductBuyLendo from "../../components/ProductBuyLendo/ProductBuyLendo";
 import ProductBigDescription from "../../components/productBigDescription/ProductBigDescription";
 import DescriptionTopBar from "../../components/productBigDescription/DescriptionTopBar";
 import KalaPreview from "../../components/kalaPreview/KalaPreview";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 
 export default function ProductPage(props) {
-
+    const matches = useMediaQuery('(max-width:769px)');
+    const lapTap=useMediaQuery('(min-width:1025px)')
     if (!props.productData) {
         return (
             <p>Loading ...</p>
         )
     }
-    return (
-        <Container maxWidth="lg">
-            <Box
-                sx={{
-                    width: "100%",
-                    //   height: "1400px",
-                    "& > .MuiBox-root > .MuiBox-root": {
-                        p: 0.5,
 
-                        fontSize: "0.875rem",
-                        fontWeight: "700",
-                    },
-                }}
-            >
+    return (
+        matches?
+            <Container maxWidth={matches ? "lg" : "xs"}>
                 <Box
                     sx={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(8, 1fr)",
-                        gap: 1,
-                        gridTemplateRows: "auto",
-                        gridTemplateAreas: `
-                                         "breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb"
-                                         ". . . . . . . . "
-                                         ". . . . . . . . "
+                        width: "100%",
+                        "& > .MuiBox-root > .MuiBox-root": {
+                            p: 0.5,
+
+                            fontSize: "0.875rem",
+                            fontWeight: "700",
+                        },
+                    }}
+                >
+                    <Box
+                        sx={{
+                            display: "grid",
+                            gridTemplateColumns: "repeat(1, 1fr)",
+                            gap: 1,
+                            gridTemplateRows: "auto",
+                            gridTemplateAreas:`
+                                         "sidebar"
+                                         "info"
+                                         "main"
+                                         "stylesFeatures"
+                                         "tabList"
+                                         "SimilarProduct" 
+                                         `,
+                        }}
+                    >
+                        <Box sx={{gridArea: "sidebar",background:'red'}}><MainProductImage/></Box>
+                        <Box sx={{gridArea: "info",background:'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
+                        <Box sx={{gridArea: "main",background:'blue'}}><ProductSellerTable sellers={sellers}/></Box>
+                        <Box sx={{gridArea: "stylesFeatures",background:'green'}}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList",background:'pink'}}>
+                            <Box
+                                sx={{
+                                    marginTop: "15px",
+                                    border: "2px solid #d9d9d9",
+                                    borderRadius: "15px",
+                                }}
+                            ><ProductBigDescription/></Box>
+                        </Box>
+                        <Box sx={{gridArea: "SimilarProduct",background:"purple"}}>
+                            <KalaPreview
+                                products={products}
+                                cardsPaddingTop={1}
+                                previewTitle={"گوشی موبایل"}
+                            />
+                        </Box>
+                    </Box>
+                </Box>
+
+            </Container>:
+            <Container maxWidth="lg">
+                <Box
+                    sx={{
+                        width: "100%",
+                        //   height: "1400px",
+                        "& > .MuiBox-root > .MuiBox-root": {
+                            p: 0.5,
+
+                            fontSize: "0.875rem",
+                            fontWeight: "700",
+                        },
+                    }}
+                >
+
+                    <Box
+                        sx={{
+                            display: "grid",
+                            gridTemplateColumns:lapTap?"(2,1fr)": "repeat(8, 1fr)",
+                            gap: 1,
+                            gridTemplateRows: "auto",
+                            gridTemplateAreas: lapTap?
+                                `
                                         "main main info info info sidebar sidebar sidebar "
                                         "stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures "
                                          "tabList tabList tabList tabList  tabList tabList tabList tabList"
                                          "SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct"
                                          ". . . . . . . . "
                                          ". . . . . . . . "
-                                         `,
-                    }}
-                >
-                    <Box sx={{gridArea: "main"}}>
-                        <ProductSellerTable sellers={props.productData[0]}/>
-                    </Box>
-                    <Box sx={{gridArea: "info"}}>
-                        <ProductVizhegiPrice product={props.productData[0]}/>
-                        <ProductBuyLendo lendo={props.productData[0]}/>
-                    </Box>
-                    <Box sx={{gridArea: "sidebar"}}>
-                        <MainProductImage product={props.productData[0]}/>
-                    </Box>
-                    <Box sx={{gridArea: "stylesFeatures"}}>
-                        <DescriptionTopBar />
-                    </Box>
-                    <Box sx={{gridArea: "tabList"}}>
-                        <Box
-                            sx={{
-                                marginTop: "15px",
-                                border: "2px solid #d9d9d9",
-                                borderRadius: "15px",
-                            }}
-                        >
-                            <ProductBigDescription
-                                description={props.productData[0].description}
-                                properties={props.productData[0].properties}
-                                product={props.productData[0]}
+                                         `:
+                                `
+                            "breadCrumb breadCrumb "
+                                        "info sidebar "
+                                        "main main" 
+                                       " stylesFeatures stylesFeatures"
+                                       "tabList tabList"
+                                       "SimilarProduct SimilarProduct"`,
+                        }}
+                    >
+                        {/* <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box> */}
+                        <Box sx={{gridArea: "main",background:'red'}}><ProductSellerTable sellers={sellers}/></Box>
+                        <Box sx={{gridArea: "info",background:'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
+                        <Box sx={{gridArea: "sidebar",background:'blue'}}><MainProductImage/></Box>
+                        <Box sx={{gridArea: "stylesFeatures",background:'pink'}}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList" ,background:'purple'}}>
+                            <Box
+                                sx={{
+                                    marginTop: "15px",
+                                    border: "2px solid #d9d9d9",
+                                    borderRadius: "15px",
+                                }}
+                            ><ProductBigDescription/></Box>
+                        </Box>
+                        <Box sx={{gridArea: "SimilarProduct",background:'green'}}>
+                            <KalaPreview
+                                products={products}
+                                cardsPaddingTop={1}
+                                previewTitle={"گوشی موبایل"}
                             />
                         </Box>
                     </Box>
-                    <Box sx={{gridArea: "SimilarProduct"}}>
-                        <KalaPreview
-                            products={props.productData}
-                            cardsPaddingTop={1}
-                            previewTitle={"گوشی موبایل"}
-                        />
-                    </Box>
                 </Box>
-            </Box>
-        </Container>
+            </Container>
     );
 }
 
