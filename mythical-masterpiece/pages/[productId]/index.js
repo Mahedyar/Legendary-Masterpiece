@@ -15,7 +15,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function ProductPage(props) {
     const matches = useMediaQuery('(max-width:769px)');
-    const lapTap=useMediaQuery('(min-width:1025px)')
+    const lapTap = useMediaQuery('(min-width:1025px)')
     if (!props.productData) {
         return (
             <p>Loading ...</p>
@@ -23,7 +23,7 @@ export default function ProductPage(props) {
     }
 
     return (
-        matches?
+        matches ?
             <Container maxWidth={matches ? "lg" : "xs"}>
                 <Box
                     sx={{
@@ -42,7 +42,7 @@ export default function ProductPage(props) {
                             gridTemplateColumns: "repeat(1, 1fr)",
                             gap: 1,
                             gridTemplateRows: "auto",
-                            gridTemplateAreas:`
+                            gridTemplateAreas: `
                                          "sidebar"
                                          "info"
                                          "main"
@@ -52,11 +52,12 @@ export default function ProductPage(props) {
                                          `,
                         }}
                     >
-                        <Box sx={{gridArea: "sidebar",background:'red'}}><MainProductImage/></Box>
-                        <Box sx={{gridArea: "info",background:'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
-                        <Box sx={{gridArea: "main",background:'blue'}}><ProductSellerTable sellers={sellers}/></Box>
-                        <Box sx={{gridArea: "stylesFeatures",background:'green'}}><DescriptionTopBar/></Box>
-                        <Box sx={{gridArea: "tabList",background:'pink'}}>
+                        <Box sx={{gridArea: "sidebar", background: 'red'}}><MainProductImage/></Box>
+                        <Box sx={{gridArea: "info", background: 'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo
+                            lendo={lendo}/></Box>
+                        <Box sx={{gridArea: "main", background: 'blue'}}><ProductSellerTable sellers={sellers}/></Box>
+                        <Box sx={{gridArea: "stylesFeatures", background: 'green'}}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList", background: 'pink'}}>
                             <Box
                                 sx={{
                                     marginTop: "15px",
@@ -65,7 +66,7 @@ export default function ProductPage(props) {
                                 }}
                             ><ProductBigDescription/></Box>
                         </Box>
-                        <Box sx={{gridArea: "SimilarProduct",background:"purple"}}>
+                        <Box sx={{gridArea: "SimilarProduct", background: "purple"}}>
                             <KalaPreview
                                 products={products}
                                 cardsPaddingTop={1}
@@ -75,7 +76,7 @@ export default function ProductPage(props) {
                     </Box>
                 </Box>
 
-            </Container>:
+            </Container> :
             <Container maxWidth="lg">
                 <Box
                     sx={{
@@ -93,10 +94,10 @@ export default function ProductPage(props) {
                     <Box
                         sx={{
                             display: "grid",
-                            gridTemplateColumns:lapTap?"(2,1fr)": "repeat(8, 1fr)",
+                            gridTemplateColumns: lapTap ? "(2,1fr)" : "repeat(8, 1fr)",
                             gap: 1,
                             gridTemplateRows: "auto",
-                            gridTemplateAreas: lapTap?
+                            gridTemplateAreas: lapTap ?
                                 `
                                         "main main info info info sidebar sidebar sidebar "
                                         "stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures "
@@ -104,7 +105,7 @@ export default function ProductPage(props) {
                                          "SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct"
                                          ". . . . . . . . "
                                          ". . . . . . . . "
-                                         `:
+                                         ` :
                                 `
                             "breadCrumb breadCrumb "
                                         "info sidebar "
@@ -114,23 +115,29 @@ export default function ProductPage(props) {
                                        "SimilarProduct SimilarProduct"`,
                         }}
                     >
-                        {/* <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box> */}
-                        <Box sx={{gridArea: "main",background:'red'}}><ProductSellerTable sellers={sellers}/></Box>
-                        <Box sx={{gridArea: "info",background:'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
-                        <Box sx={{gridArea: "sidebar",background:'blue'}}><MainProductImage/></Box>
-                        <Box sx={{gridArea: "stylesFeatures",background:'pink'}}><DescriptionTopBar/></Box>
-                        <Box sx={{gridArea: "tabList" ,background:'purple'}}>
+                        <Box sx={{gridArea: "main", background: 'red'}}><ProductSellerTable
+                            sellers={props.productData[0]}/></Box>
+                        <Box sx={{gridArea: "info", background: 'yellow'}}><ProductVizhegiPrice
+                            product={props.productData[0]}/> <ProductBuyLendo lendo={props.productData[0]}/></Box>
+                        <Box sx={{gridArea: "sidebar", background: 'blue'}}><MainProductImage
+                            product={props.productData[0]}/></Box>
+                        <Box sx={{gridArea: "stylesFeatures", background: 'pink'}}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList", background: 'purple'}}>
                             <Box
                                 sx={{
                                     marginTop: "15px",
                                     border: "2px solid #d9d9d9",
                                     borderRadius: "15px",
                                 }}
-                            ><ProductBigDescription/></Box>
+                            ><ProductBigDescription
+                                description={props.productData[0].description}
+                                properties={props.productData[0].properties}
+                                product={props.productData[0]}
+                            /></Box>
                         </Box>
-                        <Box sx={{gridArea: "SimilarProduct",background:'green'}}>
+                        <Box sx={{gridArea: "SimilarProduct", background: 'green'}}>
                             <KalaPreview
-                                products={products}
+                                products={props.productData}
                                 cardsPaddingTop={1}
                                 previewTitle={"گوشی موبایل"}
                             />
@@ -142,8 +149,8 @@ export default function ProductPage(props) {
 }
 
 export const getStaticPaths = async () => {
-    const cards = ["620a567ab5c4f76d8e9ef038","6207a5e0430ad163bdd97391","620a4e53b5c4f76d8e9ef036","620a515cb5c4f76d8e9ef037","620a57b2b5c4f76d8e9ef039"]
-    const pathWithParams = cards.map(card => ({params: {productId: card } }))
+    const cards = ["620a567ab5c4f76d8e9ef038", "6207a5e0430ad163bdd97391", "620a4e53b5c4f76d8e9ef036", "620a515cb5c4f76d8e9ef037", "620a57b2b5c4f76d8e9ef039"]
+    const pathWithParams = cards.map(card => ({params: {productId: card}}))
     return {
         paths: pathWithParams,
         fallback: false
@@ -151,7 +158,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (context) => {
-    const { params } = context;
+    const {params} = context;
     const knownProductId = params.productId
     const client = await MongoClient.connect(
         "mongodb+srv://mahdi:MdFfxuJC78ietT@daneshkarcluster.xri1m.mongodb.net/ShoppingItemsDatabase?retryWrites=true&w=majority"
@@ -161,7 +168,6 @@ export const getStaticProps = async (context) => {
     const cards = await productsCollection.find().toArray();
     client.close();
     const product = cards.filter(item => item._id.toString() === knownProductId.toString())
-    console.log(product)
     return {
         props: {
             productData: [{
@@ -175,7 +181,7 @@ export const getStaticProps = async (context) => {
                 installment: product[0].lendSection.lend,
                 prePayment: product[0].lendSection.prePayment,
                 reward: product[0].lendSection.kingSeat,
-                image: [product[0].image[0],product[0].image[1],product[0].image[2],product[0].image[3]],
+                image: [product[0].image[0], product[0].image[1], product[0].image[2], product[0].image[3]],
                 description: product[0].review,
                 properties: product[0].properties,
                 rating: product[0].rating,

@@ -1,6 +1,7 @@
 import ItemImage from "./ItemImage";
 import Box from "@mui/material/Box";
 import {Typography} from "@mui/material";
+import Link from 'next/link'
 
 function numberToPersian(number) {
     const persian = {
@@ -39,64 +40,66 @@ export default function ItemCard(props) {
     };
 
     return (
-        <Box
-            key={props.product.id}
-            sx={{
-                height: props.fullSize ? 388 : 403,
-                width: props.fullSize ? 215 : 240,
-                boxSizing: "border-box",
-            }}
-        >
-            <ItemImage image={props.product.image}/>
-
-            <Typography
-                component="div"
+        <Link href={`/${props.product.id}`}>
+            <Box
+                key={props.product.id}
                 sx={{
-                    textAlign: "right",
-                    marginBottom: 2,
-                    marginTop: 1,
+                    height: props.fullSize ? 388 : 403,
+                    width: props.fullSize ? 215 : 240,
+                    boxSizing: "border-box",
                 }}
             >
-                {props.product.name}
-            </Typography>
-            <Typography component="div" sx={{display: "flex", direction: "ltr"}}>
+                <ItemImage image={props.product.image}/>
+
                 <Typography
-                    component="span"
+                    component="div"
                     sx={{
-                        backgroundColor: "yellow",
-                        fontWeight: "bold",
-                        marginRight: 1,
+                        textAlign: "right",
+                        marginBottom: 2,
+                        marginTop: 1,
                     }}
                 >
-                    {`%${numberToPersian(props.product.offPercent)}`}
+                    {props.product.name}
+                </Typography>
+                <Typography component="div" sx={{display: "flex", direction: "ltr"}}>
+                    <Typography
+                        component="span"
+                        sx={{
+                            backgroundColor: "yellow",
+                            fontWeight: "bold",
+                            marginRight: 1,
+                        }}
+                    >
+                        {`%${numberToPersian(props.product.offPercent)}`}
+                    </Typography>
+                    <Typography
+                        component="span"
+                        sx={{
+                            textDecoration: "line-through",
+                            color: "gray",
+                        }}
+                    >
+                        {numberToPersian(numberDotmaker(props.product.price))}
+                    </Typography>
                 </Typography>
                 <Typography
-                    component="span"
-                    sx={{
-                        textDecoration: "line-through",
-                        color: "gray",
-                    }}
+                    component="div"
+                    sx={{display: "flex", alignItems: "center", direction: "ltr"}}
                 >
-                    {numberToPersian(numberDotmaker(props.product.price))}
+                    <Typography
+                        component="span"
+                        sx={{
+                            marginRight: 1,
+                            color: "gray",
+                        }}
+                    >
+                        تومان
+                    </Typography>
+                    <Typography component="span" sx={{fontWeight: "bold", fontSize: 20}}>
+                        {finalPrice()}
+                    </Typography>
                 </Typography>
-            </Typography>
-            <Typography
-                component="div"
-                sx={{display: "flex", alignItems: "center", direction: "ltr"}}
-            >
-                <Typography
-                    component="span"
-                    sx={{
-                        marginRight: 1,
-                        color: "gray",
-                    }}
-                >
-                    تومان
-                </Typography>
-                <Typography component="span" sx={{fontWeight: "bold", fontSize: 20}}>
-                    {finalPrice()}
-                </Typography>
-            </Typography>
-        </Box>
+            </Box>
+        </Link>
     );
 }
