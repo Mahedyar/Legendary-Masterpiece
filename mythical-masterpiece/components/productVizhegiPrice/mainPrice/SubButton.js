@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import flag from '../../../assets/Images/ProductVizhegiPrice/flag.svg';
+import flag from '../../../public/Images/ProductVizhegiPrice/flag.svg';
 import Typography from '@mui/material/Typography';
 
 function Item(props) {

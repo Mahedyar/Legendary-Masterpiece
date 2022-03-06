@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import classes from "./Header.module.css";
-import HeaderGif from "../../assets/Images/Header/timche-header-add.gif";
+import HeaderGif from "../../public/Images/Header/timche-header-add.gif";
 import TitlePart from "./TitlePart";
 import Menu from "./Menu"
 import { Container ,Box} from "@mui/material";

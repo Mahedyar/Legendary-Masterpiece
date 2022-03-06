@@ -2,12 +2,11 @@ import MainProductPrice from "./MainProductPrice";
 import ResMainProductPrice from "./ResMainProductPrice";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-
-export default function ProductVizhegiPrice(){
+export default function ProductVizhegiPrice(props){
     const matches = useMediaQuery('(min-width:769px)');
     return(
         <>
-            {matches?<MainProductPrice/>:<ResMainProductPrice/>}
+            {matches?<MainProductPrice product={props.product}/>:<ResMainProductPrice product={props.product}/>}
         </>
     )
 }

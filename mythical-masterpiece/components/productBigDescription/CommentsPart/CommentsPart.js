@@ -1,43 +1,11 @@
 import { Box, Container, Typography } from "@mui/material";
 import BlueButton from "./BlueButton";
 import SingleComment from "./SingleComment";
-import ProgressBar from "./ProgressBar";
 import CommentsRatingBars from "./CommentsRatingBars";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-const comments = [
-  {
-    id: 1,
-    title: "بافت خوب و غلیظ",
-    userName: "کاربر تیمچه",
-    content:
-      "بافت خوب و غلیظی داره و یه مقدارش برای کلی سالاد کافیه. همیشه تو سبد خریم هست",
-  },
-  {
-    id: 2,
-    title: "محصول خوب کاله",
-    userName: "کاربر تیمچه",
-    content:
-      "اولین بار بود کاله میخرم و فک کنم از این به بعد مشتریش بشم. خیلی خوب بود",
-  },
-  {
-    id: 3,
-    title: "دلچسب و خوشمزه",
-    userName: "کاربر تیمچه",
-    content: "همه محصولای کاله خوش طعم و دلچسبن. این سسش هم طعم خیلی خوبی داره",
-  },
-  {
-    id: 4,
-    title: "تازه و طعم خوب",
-    userName: "کاربر تیمچه",
-    content:
-      "طعم خوبی داره و کاملا تازه بود. پای ثابت خونه ماست و همیشه از همین برند سس میخریم",
-  },
-];
-
-const Comments = () => {
+const Comments = (props) => {
   const matches = useMediaQuery("(min-width:769px)");
-  // console.log(matches);
   return (
     <>
       <Container>
@@ -65,11 +33,11 @@ const Comments = () => {
 
           <Box sx={matches ? {width : "50%" , paddingRight: "10%" }:{ width: "100%" }}>
             <CommentsRatingBars
-              fiveStar={15}
-              fourStar={4}
-              threeStar={3}
-              twoStar={2}
-              oneStar={1}
+              fiveStar={props.product.rating.fiveStar}
+              fourStar={props.product.rating.fourStar}
+              threeStar={props.product.rating.threeStar}
+              twoStar={props.product.rating.twoStar}
+              oneStar={props.product.rating.oneStar}
             />
             {!matches && <BlueButton width = {"100%"} >افزودن نظر جدید</BlueButton>}
           </Box>
@@ -86,9 +54,9 @@ const Comments = () => {
             </Typography> }
             
           </Box>
-          {comments.map((singleComment) => (
+          {props.product.comments.map((singleComment) => (
             <SingleComment
-              key={singleComment.id}
+              key={singleComment.content}
               title={singleComment.title}
               userName={singleComment.userName}
               content={singleComment.content}

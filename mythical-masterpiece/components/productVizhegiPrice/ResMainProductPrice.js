@@ -5,17 +5,17 @@ import ResProductPrice from "./ResproductPrice/ResProductPrice";
 import ResProductFeatures from "./ResproductPrice/ResProductFratures";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-export default function ResMainProductPrice() {
+export default function ResMainProductPrice(props) {
     const matches = useMediaQuery("(min-width:769px)");
+
     return (
         <>
 
-            <Container >
+            <Container>
                 <Box sx={{height: '100vh'}}>
-                    <ResHeaderPrice/>
-                    <ResProductPrice/>
+                    <ResHeaderPrice product={props.product}/>
+                    <ResProductPrice product={props.product}/>
                     <ResProductFeatures/>
-
                 </Box>
             </Container>
         </>

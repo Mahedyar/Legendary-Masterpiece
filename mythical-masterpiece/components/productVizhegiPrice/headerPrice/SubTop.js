@@ -18,7 +18,7 @@ function Item(props) {
         />
     );
 }
-export default function subTop(){
+export default function subTop(props){
     return(
         <>
             <div style={{ width: '100%' }}>
@@ -28,8 +28,8 @@ export default function subTop(){
                         flexDirection: 'row',
                     }}
                 >
-                    <Item><Typography sx={{color:'#8c8c8c',fontSize:14}}>برند:  <a href={'#'} style={{color:'rgb(0, 130, 253)'}}>شیائومی</a>  </Typography></Item>
-                    <Item><Typography sx={{color:'#8c8c8c',fontSize:14}}>دسته بندی:  <a href={'#'} style={{color:'rgb(0, 130, 253)'}}>گوشی موبایل</a>  </Typography></Item>
+                    <Item><Typography sx={{color:'#8c8c8c',fontSize:14}}>برند:  <a href={'#'} style={{color:'rgb(0, 130, 253)'}}>{props.product.brand}</a>  </Typography></Item>
+                    <Item><Typography sx={{color:'#8c8c8c',fontSize:14}}>دسته بندی:  <a href={'#'} style={{color:'rgb(0, 130, 253)'}}>{props.product.tags[2]}</a>  </Typography></Item>
                 </Box>
             </div>
         </>

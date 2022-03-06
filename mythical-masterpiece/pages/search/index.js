@@ -1,15 +1,10 @@
 import SearchComponent from "../../components/SearchPage/SearchComponent";
 import {MongoClient} from "mongodb";
-import {Fragment} from "react";
-
 
 const searchPage = (props) => {
 
-
     return (
-        <Fragment>
-            <SearchComponent products={props.CardData} pricesArray={props.prices}/>
-        </Fragment>
+        <SearchComponent products={props.CardData} pricesArray={props.prices}/>
     )
 }
 
