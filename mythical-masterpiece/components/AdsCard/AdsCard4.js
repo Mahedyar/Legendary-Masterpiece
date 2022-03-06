@@ -4,11 +4,11 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import woman_perfume from "../../assets/Images/Ads/woman_perfume.png";
-import smart_watch from "../../assets/Images/Ads/smart_watch.png";
-import electrical_owntools from "../../assets/Images/Ads/electrical_owntools.png";
-import man_perfume from "../../assets/Images/Ads/man_perfume.png";
-import woman_watch from "../../assets/Images/Ads/woman_watch.png";
+import woman_perfume from "../../public/Images/Ads/woman_perfume.png";
+import smart_watch from "../../public/Images/Ads/smart_watch.png";
+import electrical_owntools from "../../public/Images/Ads/electrical_owntools.png";
+import man_perfume from "../../public/Images/Ads/man_perfume.png";
+import woman_watch from "../../public/Images/Ads/woman_watch.png";
 
 export default function AdsCard4() {
     return (

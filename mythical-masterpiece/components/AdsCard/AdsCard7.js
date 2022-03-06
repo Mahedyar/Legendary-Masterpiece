@@ -4,8 +4,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import shahneshinsho from "../../assets/Images/Ads/shahneshinsho.png";
-import free_post from "../../assets/Images/Ads/free_post.png";
+import shahneshinsho from "../../public/Images/Ads/shahneshinsho.png";
+import free_post from "../../public/Images/Ads/free_post.png";
 
 export default function AdsCard7() {
     return (

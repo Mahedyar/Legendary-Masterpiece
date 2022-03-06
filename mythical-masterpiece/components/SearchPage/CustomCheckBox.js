@@ -95,7 +95,6 @@ function BasicSwitch(props) {
 const CustomCheckBox = (props) => {
 
     const switchChangeHandler = (e) => {
-        console.log(e.target.checked);
         props.filterListByDiscountHandler(e.target.checked);
     }
 

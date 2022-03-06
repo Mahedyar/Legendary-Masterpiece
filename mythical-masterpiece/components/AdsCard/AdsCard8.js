@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import nimboot from "../../assets/Images/Ads/nimboot.png";
+import nimboot from "../../public/Images/Ads/nimboot.png";
 
 export default function AdsCard8() {
     return (

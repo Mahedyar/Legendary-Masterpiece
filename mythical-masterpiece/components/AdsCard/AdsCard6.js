@@ -4,8 +4,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import shampoo from "../../assets/Images/Ads/shampoo.png";
-import saboon from "../../assets/Images/Ads/saboon.png";
+import shampoo from "../../public/Images/Ads/shampoo.png";
+import saboon from "../../public/Images/Ads/saboon.png";
 
 export default function AdsCard6() {
     return (

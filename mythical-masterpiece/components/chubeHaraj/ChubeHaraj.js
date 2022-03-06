@@ -8,8 +8,8 @@ import { Typography } from "@mui/material";
 import Timer from "./Timer";
 import ItemsSlider from "./ItemsSlider";
 import Image from "next/image";
-import background from "../../assets/Images/ChubeHaraj/sale_bg.png";
-import chubeharaj from "../../assets/Images/ChubeHaraj/timche_sale.png";
+import background from "../../public/Images/ChubeHaraj/sale_bg.png";
+import chubeharaj from "../../public/Images/ChubeHaraj/timche_sale.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 

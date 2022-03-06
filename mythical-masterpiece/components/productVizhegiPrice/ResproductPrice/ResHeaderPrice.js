@@ -3,7 +3,6 @@ import ResLikeIcon from "./ResLikeIcon";
 import SubTop from "../headerPrice/SubTop";
 import ResButtonColor from "./ResButtonColor";
 
-
 function Item(props) {
     const {sx, ...other} = props;
     return (
@@ -21,15 +20,14 @@ function Item(props) {
     );
 }
 
-export default function ResHeaderPrice() {
+export default function ResHeaderPrice(props) {
     return (
         <>
             <div style={{width: '100%'}}>
-                    <Item><h3>گوشی موبایل شیائومی مدل Poco X3 Pro دو سیم کارت، ظرفیت 256 گیگابایت با رم 8 گیگابایت</h3>
-                    </Item>
+                    <Item><h3>{props.product.title}</h3></Item>
                     <Item>
                         <ResLikeIcon/>
-                        <SubTop/>
+                        <SubTop product={props.product}/>
                         <hr/>
                     </Item>
                     <Item>

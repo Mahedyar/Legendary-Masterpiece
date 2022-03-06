@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import jewelry from "../../assets/Images/Ads/jewelry.png";
+import jewelry from "../../public/Images/Ads/jewelry.png";
 
 export default function AdsCard5() {
     return (

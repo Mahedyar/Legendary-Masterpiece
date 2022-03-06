@@ -4,8 +4,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import refrigerator from "../../assets/Images/Ads/refrigerator.png";
-import washing_machine from "../../assets/Images/Ads/washing_machine.png";
+import refrigerator from "../../public/Images/Ads/refrigerator.png";
+import washing_machine from "../../public/Images/Ads/washing_machine.png";
 
 export default function AdsCard2() {
     return (

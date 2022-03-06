@@ -1,6 +1,6 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import Image from "next/image";
-import timcheLogo from '../../../assets/Images/Header/Timche.svg'
+import timcheLogo from '../../../public/Images/Header/Timche.svg'
 import TwoIcon from "./TwoIcon";
 import Box from '@mui/material/Box';
 import {useState} from "react";

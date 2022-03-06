@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="mediaFooter">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/banner-2tai-24.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/washing_machine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/banner-2tai-25.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/refrigerator.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/barik-tala.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/jewelry.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/kharid-aghsati.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/kharid_aghsati.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri3-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/woman_perfume.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri3-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/smart_watch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri3-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/electrical_owntools.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri3-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/man_perfume.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/seri3-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/woman_watch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/tai_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/shahneshinsho.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/tai_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/free_post.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/timche-befrosh.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/Ads/timche_befroosh.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/ChubeHaraj/sale.png" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/assets/Images/ChubeHaraj/timche_sale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard1.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard2.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard3.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard4.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard5.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard6.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard7.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard8.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/AdsCard/AdsCard8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/Hamberger.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/Hamberger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/HeadMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/HeadMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/ResHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/ResHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/TitlePart.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/TitlePart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/TitlePartIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/TitlePartIcons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/LittleBox/LittleBox1.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/LittleBox/LittleBox1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/ProductBuyLendo/ProductBuyLendo.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/ProductBuyLendo/ProductBuyLendo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/SearchPage/ProductCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/chubeHaraj/ChubeHaraj.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/chubeHaraj/ChubeHaraj.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/chubeHaraj/ItemImage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/chubeHaraj/ItemImage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Advantages/Advantages.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/Advantages/Advantages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResSymbolsHolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/footer/ResFooter/ResSymbolsHolder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/mainPrice/SubButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/mainPrice/SubButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/next.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="res header" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

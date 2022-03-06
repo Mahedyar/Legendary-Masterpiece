@@ -4,10 +4,10 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import keyboard from "../../assets/Images/Ads/keyboard.png";
-import monitor from "../../assets/Images/Ads/monitor.png";
-import mouse from "../../assets/Images/Ads/mouse.png";
-import speaker from "../../assets/Images/Ads/speaker.png";
+import keyboard from "../../public/Images/Ads/keyboard.png";
+import monitor from "../../public/Images/Ads/monitor.png";
+import mouse from "../../public/Images/Ads/mouse.png";
+import speaker from "../../public/Images/Ads/speaker.png";
 
 
 export default function AdsCard3() {

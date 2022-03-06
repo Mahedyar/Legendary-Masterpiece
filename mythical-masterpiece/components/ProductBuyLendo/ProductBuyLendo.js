@@ -1,17 +1,16 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import {Container, Stack, Typography} from "@mui/material";
-// import {pskey1, psicon, psicon1, psicon2, pstext21, pstext1, pstext11, pstext2, pstext3, pstext31, pstext4, pshalf_background ,pssection1, psbox1} from './productLendoStyle.css';
 import KeyboardArrowLeftOutlinedIcon from "@mui/icons-material/KeyboardArrowLeftOutlined";
-import Image from "next/image";
-import lendosign from "../../assets/Images/Lendo/lendosign.svg";
-import shahneshin from "../../assets/Images/Lendo/shahneshin.svg";
+// import Image from "next/image";
+import lendosign from "../../public/Images/Lendo/lendosign.svg";
+import shahneshin from "../../public/Images/Lendo/shahneshin.svg";
 
 export default function ProductBuyLendo(props) {
     return (
         <Container>
             <div style={{
-                margin: '-7.75rem 0 0 0rem'
+                margin: '-7.75rem 0 0 0'
             }}>
                 <Box
                     sx={{
@@ -25,12 +24,12 @@ export default function ProductBuyLendo(props) {
                     }}
                 >
                     <Box>
-                        <Stack dir="rtl" direction="row" alignItems="center" gap={1}>
-                            <Image style={{
+                        <Stack dir="rtl" direction="row" alignItems="center" gap={2}>
+                            <img style={{
                                 width: '16px',
                                 height: '16px',
                                 margin: '0.8rem 1rem 0.5rem 0.4rem'
-                            }} src={lendosign}/>
+                            }} src={lendosign.src}/>
                             <Typography style={{
                                 fontSize: '13px',
                                 margin: '0.8rem 0 0.5rem 0.4rem',
@@ -43,7 +42,7 @@ export default function ProductBuyLendo(props) {
                                 >
                                     <Typography style={{
                                         fontSize: '13px',
-                                        margin: '0 0 0 0'
+                                        margin: '0 3rem 0 0'
                                     }}>اطلاعات بیشتر</Typography>
                                     <KeyboardArrowLeftOutlinedIcon style={{
                                         width: '18px',
@@ -89,7 +88,7 @@ export default function ProductBuyLendo(props) {
                 </Box>
                 <Box
                     sx={{
-                        width: 460,
+                        width: 490,
                         height: 48,
                         margin: '0.7rem 0 0 0rem',
                         border: '1px solid #d9d9d9',
@@ -100,7 +99,7 @@ export default function ProductBuyLendo(props) {
                     }}>
                     <Box>
                         <Stack dir="rtl" direction="row" alignItems="center" gap={1}>
-                            <Image src={shahneshin} style={{
+                            <img src={shahneshin.src} style={{
                                 width: '15px',
                                 height: '15px',
                                 margin: '0.8rem 0.5rem 0 0',
@@ -117,7 +116,7 @@ export default function ProductBuyLendo(props) {
                             <a href="">
                                 <Typography style={{
                                     fontSize: '12px',
-                                    margin: '0.8rem 1.6rem 0.2rem 0',
+                                    margin: '0.8rem 2.6rem 0.2rem 0',
                                     color: 'rgb(0, 130, 253)',
                                 }}>راهنمای عضویت رایگان</Typography>
                             </a>

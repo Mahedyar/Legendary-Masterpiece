@@ -14,12 +14,16 @@ const ProductCard = (props) => {
         newPrice = props.price - ((props.offPercent / 100) * props.price);
     }
 
-    const hoverHandler = () => {
-        setHovered((hovered) => !hovered);
+    const mouseEnterHandler = () => {
+        setHovered(true);
+    }
+
+    const mouseLeaveHandler = () => {
+        setHovered(false);
     }
 
     return (
-        <li onMouseLeave={hoverHandler} onMouseEnter={hoverHandler} className={`${classes.card} ${hovered ? classes.hovered : ""}`}>
+        <li onMouseLeave={mouseLeaveHandler} onMouseEnter={mouseEnterHandler} className={`${classes.card} ${hovered ? classes.hovered : ""}`}>
             <Link href={`/${props.link ? props.link : "search"}`}>
                 <div>
                     <div className={classes.imgBox}>

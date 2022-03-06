@@ -4,8 +4,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Container} from "@mui/material";
 import Image from "next/image";
-import timche_befroosh from "../../assets/Images/Ads/timche_befroosh.png";
-import kharid_aghsati from "../../assets/Images/Ads/kharid_aghsati.png";
+import timche_befroosh from "../../public/Images/Ads/timche_befroosh.png";
+import kharid_aghsati from "../../public/Images/Ads/kharid_aghsati.png";
 
 
 export default function AdsCard1() {

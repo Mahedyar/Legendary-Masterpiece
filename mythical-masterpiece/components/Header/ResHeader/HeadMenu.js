@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from "next/image";
-import timcheLogo from '../../../assets/Images/Header/Timche.svg'
+import timcheLogo from '../../../public/Images/Header/Timche.svg'
 function Item(props) {
     const { sx, ...other } = props;
     return (
