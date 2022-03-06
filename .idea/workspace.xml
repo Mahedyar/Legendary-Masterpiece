@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="workSpace and respansive productPage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/ResHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/ResHeader.js" afterDir="false" />
-    </list>
+    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="res header" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,6 +164,7 @@
     <MESSAGE value="workSpace,package,yarn" />
     <MESSAGE value="workSpace" />
     <MESSAGE value="workSpace and respansive productPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="workSpace and respansive productPage" />
+    <MESSAGE value="res header" />
+    <option name="LAST_COMMIT_MESSAGE" value="res header" />
   </component>
 </project>
