@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function SwiperPhone() {
-  const matches = useMediaQuery("(min-width:425px)");
+  const matches = useMediaQuery("(min-width:769px)");
 
   return (
     <>

@@ -15,6 +15,7 @@ import sandis from "../assets/Images/ChubeHaraj/img_4.png";
 import headphone from "../assets/Images/ChubeHaraj/img_5.png";
 import cream from "../assets/Images/ChubeHaraj/img.png";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {minWidth} from "@mui/system";
 
 export default function ProductPage() {
     const sellers = {
@@ -76,68 +77,56 @@ export default function ProductPage() {
             price: 85000,
         },
     ];
-    const matches = useMediaQuery('(min-width:768px)');
+    const matches = useMediaQuery('(max-width:769px)');
+    const lapTap=useMediaQuery('(min-width:1025px)')
 
     return (
         matches?
-        <Container maxWidth="lg">
-            <Box
-                sx={{
-                    width: "100%",
-                    //   height: "1400px",
-                    "& > .MuiBox-root > .MuiBox-root": {
-                        p: 0.5,
+            <Container maxWidth={matches ? "lg" : "xs"}>
+                <Box
+                    sx={{
+                        width: "100%",
+                        "& > .MuiBox-root > .MuiBox-root": {
+                            p: 0.5,
 
-                        fontSize: "0.875rem",
-                        fontWeight: "700",
-                    },
-                }}
-            >
-
+                            fontSize: "0.875rem",
+                            fontWeight: "700",
+                        },
+                    }}
+                >
                 <Box
                     sx={{
                         display: "grid",
-                        gridTemplateColumns: "repeat(8, 1fr)",
+                        gridTemplateColumns: "repeat(1, 1fr)",
                         gap: 1,
                         gridTemplateRows: "auto",
-                        gridTemplateAreas: `
-                                         "breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb breadCrumb"
-                                         ". . . . . . . . "
-                                         ". . . . . . . . "
-                                        "main main info info info sidebar sidebar sidebar "
-                                        "stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures "
-                                         "tabList tabList tabList tabList  tabList tabList tabList tabList"
-                                         "SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct"
-                                         ". . . . . . . . "
-                                         ". . . . . . . . "
+                        gridTemplateAreas:`
+                                         "sidebar"
+                                         "info"
+                                         "main"
+                                         "stylesFeatures"
+                                         "tabList"
+                                         "SimilarProduct"
+                                        
+                                         
+                                        
                                          `,
                     }}
                 >
-                    {/* <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box> */}
-                    <Box sx={{gridArea: "main"}}>
-                        <ProductSellerTable sellers={sellers}/>
-                    </Box>
-                    <Box sx={{gridArea: "info"}}>
-                        <ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/>
-                    </Box>
-                    <Box sx={{gridArea: "sidebar"}}>
-                        <MainProductImage/>
-                    </Box>
-                    <Box sx={{gridArea: "stylesFeatures"}}>
-                        <DescriptionTopBar/>
-                    </Box>
-                    <Box sx={{gridArea: "tabList"}}>
+                    <Box sx={{gridArea: "sidebar",background:'red'}}><MainProductImage/></Box>
+                    <Box sx={{gridArea: "info",background:'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
+                    <Box sx={{gridArea: "main",background:'blue'}}><ProductSellerTable sellers={sellers}/></Box>
+                    <Box sx={{gridArea: "stylesFeatures",background:'green'}}><DescriptionTopBar/></Box>
+                    <Box sx={{gridArea: "tabList",background:'pink'}}>
                         <Box
                             sx={{
                                 marginTop: "15px",
                                 border: "2px solid #d9d9d9",
                                 borderRadius: "15px",
                             }}
-                        >
-                            <ProductBigDescription/>
-                        </Box>
+                        ><ProductBigDescription/></Box>
                     </Box>
-                    <Box sx={{gridArea: "SimilarProduct",}}>
+                    <Box sx={{gridArea: "SimilarProduct",background:"purple"}}>
                         <KalaPreview
                             products={products}
                             cardsPaddingTop={1}
@@ -145,10 +134,10 @@ export default function ProductPage() {
                         />
                     </Box>
                 </Box>
-            </Box>
-        </Container>:
+                </Box>
 
-            <Container maxWidth="ms">
+            </Container>:
+            <Container maxWidth="lg">
                 <Box
                     sx={{
                         width: "100%",
@@ -165,28 +154,33 @@ export default function ProductPage() {
                     <Box
                         sx={{
                             display: "grid",
-                            gridTemplateColumns: "repeat(1, 8fr)",
+                            gridTemplateColumns:lapTap?"(2,1fr)": "repeat(8, 1fr)",
                             gap: 1,
                             gridTemplateRows: "auto",
-                            gridTemplateAreas: `
-                                   
-                                        "sidebar"
-                                         "info" 
-                                         "breadCrumb"
-                                          "main" 
-                                         "stylesFeatures"
-                                         "tabList"
-                                         "SimilarProduct"
-                                        
-                                         `,
+                            gridTemplateAreas: lapTap?
+                                 `
+                                        "main main info info info sidebar sidebar sidebar "
+                                        "stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures stylesFeatures "
+                                         "tabList tabList tabList tabList  tabList tabList tabList tabList"
+                                         "SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct SimilarProduct"
+                                         ". . . . . . . . "
+                                         ". . . . . . . . "
+                                         `:
+                                `
+                            "breadCrumb breadCrumb "
+                                        "info sidebar "
+                                        "main main" 
+                                       " stylesFeatures stylesFeatures"
+                                       "tabList tabList"
+                                       "SimilarProduct SimilarProduct"`,
                         }}
                     >
                         {/* <Box sx={{gridArea: "breadCrumb", bgcolor: "pink"}}>breadCrumb</Box> */}
-                        <Box sx={{gridArea: "sidebar"}}><MainProductImage/></Box>
-                        <Box sx={{gridArea: "info"}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
-                        <Box sx={{gridArea: "main"}}><ProductSellerTable sellers={sellers}/></Box>
-                        <Box sx={{gridArea: "stylesFeatures"}}><DescriptionTopBar/></Box>
-                        <Box sx={{gridArea: "tabList"}}>
+                        <Box sx={{gridArea: "main",background:'red'}}><ProductSellerTable sellers={sellers}/></Box>
+                        <Box sx={{gridArea: "info",background:'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo lendo={lendo}/></Box>
+                        <Box sx={{gridArea: "sidebar",background:'blue'}}><MainProductImage/></Box>
+                        <Box sx={{gridArea: "stylesFeatures",background:'pink'}}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList" ,background:'purple'}}>
                             <Box
                                 sx={{
                                     marginTop: "15px",
@@ -195,7 +189,7 @@ export default function ProductPage() {
                                 }}
                             ><ProductBigDescription/></Box>
                         </Box>
-                        <Box sx={{gridArea: "SimilarProduct",}}>
+                        <Box sx={{gridArea: "SimilarProduct",background:'green'}}>
                             <KalaPreview
                                 products={products}
                                 cardsPaddingTop={1}

@@ -23,7 +23,7 @@ a {
 
 .MuiContainer-maxWidthLg{
  max-width:100%;
-  width:  1410px;
+  /*width:  1410px;*/
 }
 .css-mjlwbq-MuiPaper-root{
     padding-right:40px ;
@@ -156,7 +156,7 @@ padding-right: 0;
 }
 
 .css-cuefkz-MuiContainer-root {
-    max-width: 550px;
+    width: 300px;
 }
 .ResTakhfif {
     background: yellow;
@@ -168,4 +168,19 @@ padding-right: 0;
 }
 .max-Image{
     padding-top: 20px;
+}
+/*@media only screen and (min-width: 1025px) {*/
+/*    .css-1oh1l5l{*/
+/*        width: 100%;*/
+/*    }*/
+/*    .css-5bvplu{*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+.css-6cl1mf,.css-1raixb6{
+    max-width: 1440px;
+}
+.css-1xia43{
+    width: 700px;
 }
