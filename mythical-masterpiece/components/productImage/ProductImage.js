@@ -18,12 +18,12 @@ function Item(props) {
 }
 
 
-export default function ProductImage(){
+export default function ProductImage(props){
     return(
         <>
             <div style={{ width: '100%' }}>
-                    <Item><BoxMaxImage/></Item>
-                    <Item><BoxMinImage/></Item>
+                    <Item><BoxMaxImage product={props.product}/></Item>
+                    <Item><BoxMinImage product={props.product}/></Item>
             </div>
         </>
     )

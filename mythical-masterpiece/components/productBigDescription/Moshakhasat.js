@@ -25,28 +25,11 @@ const BlankItem = styled(Paper)(({ theme }) => ({
   boxShadow: "none",
 }));
 
-const properties = [
-  {
-    id: 1,
-    title: "قابلیت ها",
-    description: [
-      "تمیز کنندگی , سفید کنندگی , براق کنندگی , لکه زدایی , جلوگیری از رسوبات آهکی در ماشین ظرفشویی",
-      "تست ",
-      "سلام دنیا",
-    ],
-  },
-  {
-    id: 2,
-    title: "رایحه",
-    description: ["سلام", "چه خبر ؟"],
-  },
-];
-export default function Moshakhasat() {
+export default function Moshakhasat(props) {
   const matches = useMediaQuery("(min-width:769px)");
   const blankMaker = (description) => {
     if (description.length > 1) {
       let remainingDescriptions = description.slice(1, description.length);
-      // console.log(remainingDescriptions);
 
       return remainingDescriptions.map((content) => (
         <>
@@ -69,7 +52,7 @@ export default function Moshakhasat() {
       <Typography sx={{fontSize : `${matches ? "18px" : "16x" }` , fontWeight : "bold" , margin : "0 12px 10px 0"}}>مشخصات</Typography>
       <Grid container spacing={2}>
         
-        {properties.map((property) => (
+        {props.properties.map((property) => (
           <>
             <Grid item xs={matches ? 3 : 12}>
               <Item sx={matches ? {} : {backgroundColor : "#f0f0f0" , fontSize : "13px"}}>{property.title}</Item>

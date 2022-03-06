@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
-import kasbokar from '../../../assets/Images/Footer/logo/kasbokar.png';
-import lendo from '../../../assets/Images/Footer/logo/lendo.svg';
-import resaneh from '../../../assets/Images/Footer/logo/resaneh.png';
+import kasbokar from '../../../public/Images/Footer/logo/kasbokar.png';
+import lendo from '../../../public/Images/Footer/logo/lendo.svg';
+import resaneh from '../../../public/Images/Footer/logo/resaneh.png';
 import Typography from '@mui/material/Typography';
 
 function Item(props) {

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Box from "@mui/material/Box";
-import timcheLogo from "../../assets/Images/Header/Timche.svg";
+import timcheLogo from "../../public/Images/Header/Timche.svg";
 import SearchBox from "./SearchBox";
 import TitlePartIcons from "./TitlePartIcons";
 

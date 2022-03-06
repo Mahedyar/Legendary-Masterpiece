@@ -10,7 +10,7 @@ const CustomRangePicker = (props) => {
 
     return (
         <Fragment>
-            <Box sx={{width: 300}}>
+            <Box sx={{width: 230}}>
                 <Slider
                     min={+props.minMax[0]}
                     max={+props.minMax[props.minMax.length - 1]}

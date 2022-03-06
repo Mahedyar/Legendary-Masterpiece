@@ -22,6 +22,32 @@
     justify-content: center;
 }
 
+.cursorPointer {
+    cursor: pointer;
+}
+
+.responsiveSortingList {
+    width: 200px;
+    position: absolute;
+    right: 4px;
+    top: 50px;
+    background: #fff;
+    padding: 5px 5px;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    z-index: 40;
+    box-shadow: 0 2px 20px -1px rgba(0,0,0,0.6);
+}
+
+.responsiveSortingList ul li {
+    font-size: 13px;
+    color: #595959;
+    display: flex;
+    list-style: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
 .sortingList {
     display: flex;
     align-items: center;
@@ -77,4 +103,22 @@
     position: relative;
     top: 2px;
     left: 5px;
+}
+
+@media screen and (max-width: 1200px ){
+    .cardsGrid ul {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .cardsGrid ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .cardsGrid ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -5,9 +5,9 @@ import MainHeader from "../components/Header/MainHeader"
 const HeadFooter = (props) => {
     return (
         <>
-        <MainHeader/>
-        {props.children}
-        <MediaFooter/>
+            <MainHeader/>
+            {props.children}
+            <MediaFooter/>
         </>
     )
 }

@@ -4,16 +4,15 @@ import ResHeaderPrice from '../../components/productVizhegiPrice/ResproductPrice
 import ResProductPrice from "./ResproductPrice/ResProductPrice";
 import ResProductFeatures from "./ResproductPrice/ResProductFratures";
 
-export default function ResMainProductPrice() {
+export default function ResMainProductPrice(props) {
     return (
         <>
 
             <Container>
                 <Box sx={{height: '100vh'}}>
-                    <ResHeaderPrice/>
-                    <ResProductPrice/>
+                    <ResHeaderPrice product={props.product}/>
+                    <ResProductPrice product={props.product}/>
                     <ResProductFeatures/>
-
                 </Box>
             </Container>
         </>

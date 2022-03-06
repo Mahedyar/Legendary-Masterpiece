@@ -7,29 +7,39 @@ const sortingItems = ["پربازدیدها","ارزان ترین","گران ت�
 
 const FilteredSection = (props) => {
     const [active, setActive] = useState("پرفروش ترین");
+    const [sortPanelActivation, setSortPanelActivation] = useState(false);
 
     const activateHandler = (item) => {
-        setActive(item)
+        setActive(item);
+        props.sortingAvailableProducts(item);
+        setSortPanelActivation(false);
     }
+
+    const sortPanelButtonOnCLick = () => {
+        setSortPanelActivation(true);
+    }
+
+    const checking = props.width < 1100 ? (sortPanelActivation) : true;
 
     return (
         <section className={classes.section}>
-            <div className={classes.filterBox}>
-                <div className={classes.sortHeader}>
+            {props.width > 760 ? <div className={classes.filterBox}>
+                <div onClick={sortPanelButtonOnCLick} className={`${classes.sortHeader} ${props.width < 1100 ? classes.cursorPointer : ""}`}>
                     <FilterListIcon className={classes.icon}/>
                     <p>ترتیب نمایش:</p>
                 </div>
-                <div className={classes.sortingList}>
+                {checking ? <div className={`${props.width > 1100 ? classes.sortingList : classes.responsiveSortingList}`}>
                     <ul>
                         {sortingItems.map(item => (
-                            <li onClick={activateHandler.bind(null , item)} className={`${active === item ? classes.active : ""}`}>{item}</li>
+                            <li key={item} onClick={activateHandler.bind(null, item)}
+                                className={`${active === item ? classes.active : ""}`}>{item}</li>
                         ))}
                     </ul>
-                </div>
+                </div> : null}
                 <div className={classes.remaining}>
                     <span>{props.arrayLengh}کالا</span>
                 </div>
-            </div>
+            </div> : null}
             <div className={classes.cardsGrid}>
                 <ul>
                     {props.products.map(item => (

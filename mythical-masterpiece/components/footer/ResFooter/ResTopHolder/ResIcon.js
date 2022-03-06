@@ -1,8 +1,8 @@
 import Box from '@mui/material/Box';
-import instagram from '../../../../assets/Images/Footer/ResTopFooter/instagram-mobile.svg';
-import  twitter from '../../../../assets/Images/Footer/ResTopFooter/twitter.svg';
-import telegram from '../../../../assets/Images/Footer/ResTopFooter/telegram.svg';
-import linkedin from '../../../../assets/Images/Footer/ResTopFooter/linkedin.svg';
+import instagram from '../../../../public/Images/Footer/ResTopFooter/instagram-mobile.svg';
+import  twitter from '../../../../public/Images/Footer/ResTopFooter/twitter.svg';
+import telegram from '../../../../public/Images/Footer/ResTopFooter/telegram.svg';
+import linkedin from '../../../../public/Images/Footer/ResTopFooter/linkedin.svg';
 
 function Item(props) {
     const { sx, ...other } = props;

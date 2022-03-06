@@ -101,16 +101,16 @@ const FilterOptions = (props) => {
                 </div>
             </div>
             <div>
-                <CustomCheckBox title={"فقط نمایش کالاهای روز پدر"}/>
+                <CustomCheckBox filterListByDiscountHandler={(item) => {props.filterListByDiscountHandler("فقط نمایش کالاهای روز پدر", item)}} title={"فقط نمایش کالاهای روز پدر"}/>
             </div>
             <div>
-                <CustomCheckBox title={"فقط کالاهای موجود"}/>
+                <CustomCheckBox filterListByDiscountHandler={(item) => {props.filterListByDiscountHandler("فقط کالاهای موجود", item)}} title={"فقط کالاهای موجود"}/>
             </div>
             <div>
-                <CustomCheckBox title={"فقط کالاهای اصل"}/>
+                <CustomCheckBox filterListByDiscountHandler={(item) => {props.filterListByDiscountHandler("فقط کالاهای اصل", item)}} title={"فقط کالاهای اصل"}/>
             </div>
             <div>
-                <CustomCheckBox filterListByDiscountHandler={props.filterListByDiscountHandler} title={"فقط تخفیف دار"}/>
+                <CustomCheckBox filterListByDiscountHandler={(item) => {props.filterListByDiscountHandler("فقط تخفیف دار", item)}} title={"فقط تخفیف دار"}/>
             </div>
             <div>
                 <h2>محدوده قیمت</h2>

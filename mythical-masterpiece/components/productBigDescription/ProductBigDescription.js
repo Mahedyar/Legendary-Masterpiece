@@ -82,7 +82,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
   })
 );
 
-export default function CustomizedTabs() {
+export default function CustomizedTabs(props) {
   const matches = useMediaQuery("(min-width:769px)");
   const [value, setValue] = React.useState(0);
 
@@ -139,30 +139,13 @@ export default function CustomizedTabs() {
           </StyledTabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <CommentsPart />
+          <CommentsPart product={props.product}/>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Moshakhasat />
+          <Moshakhasat properties={props.properties} />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Box sx={{padding : "10px 16px 24px 16px" , fontSize : "14px"}}>
-            دستمال کاغذی دولایه بی‌تا مدل white در بسته 10 عددی یک انتخاب خوب و
-            اقتصادی است. از این دستمال کاغذی در ادارات، رستوران‌ها، خانه، ماشین
-            و هرکجایی که به دستمال نیاز باشد می‌توان استفاده کرد. هر بسته از این
-            محصول حاوی 100 برگ دستمال دولایه است که در بسته بندی پلاستیکی قرار
-            گرفته است. بسته‌های دستمال به راحتی در جعبه‌های دستمال قرار می‌گیرند
-            و بدون مزاحمت برای استفاده آماده خواهد بود. همیشه گران بودن دستمال
-            نشان از کیفیت آن نمی‌تواند باشد و ممکن است موارد دیگری باعث بالا
-            رفتن قیمت آن شده است. دستمال بی‌تا مدل white با ضخامت مناسب و جنس
-            لطیفی که دارد خود را به عنوان یک انتخاب اقتصادی برای استفاده مشتری
-            نشان می‌دهد. این محصول از مواد اولیه بهداشتی و با کیفیت بالا ساخته
-            شده است. دستمال بی تا با جنس لطیفی که دارد برای استفاده بسیار مناسب
-            بوده و برگ‌های دستمال دارای یک بافت و طرح هستند که استفاده از آن را
-            لذت بخش‌تر می‌کند و قدرت جذب آب را نیز مناسب کرده است. بی‌تا یک برند
-            شناخته شده در زمینه تولید انواع دستمال کاغذی است. در این نوع محصول
-            نیز کیفیت خوبی ارائه شده است. در تولید این محصول تمام شرایط بهداشتی
-            رعایت شده است و جنس دستمال با انسجام خوبی که دارد زود پاره نمی‌شود
-          </Box>
+          <Box sx={{padding : "10px 16px 24px 16px" , fontSize : "14px"}}>{props.description}</Box>
         </TabPanel>
       </Box>
     </Box>

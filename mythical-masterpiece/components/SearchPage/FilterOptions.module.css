@@ -176,3 +176,10 @@
     font-size: 11px;
     color: #9b9b9b;
 }
+
+@media screen and (max-width: 1200px ){
+    .section {
+        max-width: 300px;
+    }
+}
+
