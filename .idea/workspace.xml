@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="res header" />
+    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="res header">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/ProductImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/ProductImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResproductPrice/ResHeaderPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResproductPrice/ResHeaderPrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/[productId]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/[productId]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/styles/globals.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +72,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="test" />
+      <changelist id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="res header" />
       <created>1643041034192</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -80,6 +86,8 @@
       <workItem from="1644080349595" duration="1381000" />
       <workItem from="1644081891157" duration="508000" />
       <workItem from="1646471480499" duration="1715000" />
+      <workItem from="1646583147618" duration="203000" />
+      <workItem from="1646583385655" duration="4275000" />
     </task>
     <task id="LOCAL-00001" summary="first commit + assest file">
       <created>1643261614247</created>
@@ -137,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646575285206</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="res header">
+      <created>1646583159248</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646583159248</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -24,8 +24,7 @@ export default function ResHeaderPrice(props) {
     return (
         <>
             <div style={{width: '100%'}}>
-                    <Item><h3>{props.product.title}</h3>
-                    </Item>
+                    <Item><h3>{props.product.title}</h3></Item>
                     <Item>
                         <ResLikeIcon/>
                         <SubTop product={props.product}/>

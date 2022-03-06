@@ -11,6 +11,8 @@ import ProductBigDescription from "../../components/productBigDescription/Produc
 import DescriptionTopBar from "../../components/productBigDescription/DescriptionTopBar";
 import KalaPreview from "../../components/kalaPreview/KalaPreview";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import {lendo, sellers} from "../../data/sellers";
+import {products} from "../../data/products";
 
 
 export default function ProductPage(props) {
@@ -52,23 +54,27 @@ export default function ProductPage(props) {
                                          `,
                         }}
                     >
-                        <Box sx={{gridArea: "sidebar", background: 'red'}}><MainProductImage/></Box>
-                        <Box sx={{gridArea: "info", background: 'yellow'}}><ProductVizhegiPrice/> <ProductBuyLendo
-                            lendo={lendo}/></Box>
-                        <Box sx={{gridArea: "main", background: 'blue'}}><ProductSellerTable sellers={sellers}/></Box>
-                        <Box sx={{gridArea: "stylesFeatures", background: 'green'}}><DescriptionTopBar/></Box>
-                        <Box sx={{gridArea: "tabList", background: 'pink'}}>
+                        <Box sx={{gridArea: "sidebar",}}><MainProductImage/></Box>
+                        <Box sx={{gridArea: "info", }}><ProductVizhegiPrice/> <ProductBuyLendo
+                            lendo={props.productData[0]}/></Box>
+                        <Box sx={{gridArea: "main",}}><ProductSellerTable sellers={props.productData[0]}/></Box>
+                        <Box sx={{gridArea: "stylesFeatures", }}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList",}}>
                             <Box
                                 sx={{
                                     marginTop: "15px",
                                     border: "2px solid #d9d9d9",
                                     borderRadius: "15px",
                                 }}
-                            ><ProductBigDescription/></Box>
+                            ><ProductBigDescription
+                                description={props.productData[0].description}
+                                properties={props.productData[0].properties}
+                                product={props.productData[0]}
+                            /></Box>
                         </Box>
-                        <Box sx={{gridArea: "SimilarProduct", background: "purple"}}>
+                        <Box sx={{gridArea: "SimilarProduct",}}>
                             <KalaPreview
-                                products={products}
+                                products={props.productData}
                                 cardsPaddingTop={1}
                                 previewTitle={"گوشی موبایل"}
                             />
@@ -115,14 +121,14 @@ export default function ProductPage(props) {
                                        "SimilarProduct SimilarProduct"`,
                         }}
                     >
-                        <Box sx={{gridArea: "main", background: 'red'}}><ProductSellerTable
+                        <Box sx={{gridArea: "main", }}><ProductSellerTable
                             sellers={props.productData[0]}/></Box>
-                        <Box sx={{gridArea: "info", background: 'yellow'}}><ProductVizhegiPrice
+                        <Box sx={{gridArea: "info",}}><ProductVizhegiPrice
                             product={props.productData[0]}/> <ProductBuyLendo lendo={props.productData[0]}/></Box>
-                        <Box sx={{gridArea: "sidebar", background: 'blue'}}><MainProductImage
+                        <Box sx={{gridArea: "sidebar", }}><MainProductImage
                             product={props.productData[0]}/></Box>
-                        <Box sx={{gridArea: "stylesFeatures", background: 'pink'}}><DescriptionTopBar/></Box>
-                        <Box sx={{gridArea: "tabList", background: 'purple'}}>
+                        <Box sx={{gridArea: "stylesFeatures", }}><DescriptionTopBar/></Box>
+                        <Box sx={{gridArea: "tabList", }}>
                             <Box
                                 sx={{
                                     marginTop: "15px",
@@ -135,7 +141,7 @@ export default function ProductPage(props) {
                                 product={props.productData[0]}
                             /></Box>
                         </Box>
-                        <Box sx={{gridArea: "SimilarProduct", background: 'green'}}>
+                        <Box sx={{gridArea: "SimilarProduct", }}>
                             <KalaPreview
                                 products={props.productData}
                                 cardsPaddingTop={1}
