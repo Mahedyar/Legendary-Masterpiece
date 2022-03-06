@@ -169,14 +169,6 @@ padding-right: 0;
 .max-Image{
     padding-top: 20px;
 }
-/*@media only screen and (min-width: 1025px) {*/
-/*    .css-1oh1l5l{*/
-/*        width: 100%;*/
-/*    }*/
-/*    .css-5bvplu{*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
 
 .css-6cl1mf,.css-1raixb6{
     max-width: 1440px;
@@ -184,3 +176,6 @@ padding-right: 0;
 .css-1xia43{
     width: 700px;
 }
+/*@media screen and (max-width: 375px) {*/
+/*    */
+/*}*/
