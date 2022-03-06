@@ -32,7 +32,7 @@ export default function ResButtonBlue(){
             <Box sx={{ display: 'grid', gridTemplateRows: 'repeat(1, 1fr)' }}>
                 <Item>
                     <Stack direction="row" >
-                        <Button sx={{borderRadius:2,width:'100%',height:45}} variant="contained" disableElevation>
+                        <Button sx={{borderRadius:2,width:100,height:45}} variant="contained" disableElevation>
                             افزودن سبد خرید
                         </Button>
                     </Stack>

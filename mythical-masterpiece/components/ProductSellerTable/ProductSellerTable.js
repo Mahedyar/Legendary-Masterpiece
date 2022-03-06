@@ -12,6 +12,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import {isFormData} from "next/dist/server/web/is";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 
 const BootstrapTooltip = styled(({className, ...props}) => (
@@ -26,6 +27,9 @@ const BootstrapTooltip = styled(({className, ...props}) => (
 }));
 
 export default function ProductSellerTable(props) {
+    const matches = useMediaQuery("(min-width:769px)");
+    const lapTap=useMediaQuery('(min-width:1025px)')
+
     return (
         // <Container >
             <div style={{
