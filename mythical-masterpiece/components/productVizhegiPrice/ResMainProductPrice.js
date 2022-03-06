@@ -12,7 +12,7 @@ export default function ResMainProductPrice(props) {
     return (
         <>
 
-            <Container >
+            <Container>
                 <Box sx={{height: '100vh'}}>
                     <ResHeaderPrice product={props.product}/>
                     <ResProductPrice product={props.product}/>
