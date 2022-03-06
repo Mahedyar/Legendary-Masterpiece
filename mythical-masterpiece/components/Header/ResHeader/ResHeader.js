@@ -13,11 +13,11 @@ export default function ResHeader(){
         <>
             <img src={topImagePhone.src} className={classes.gifImage} alt="someThing"/>
 
-            <Container sx={{zIndex:1000}}>
+            <Container sx={{zIndex:100000000000}}>
               <Hamberger/>
             </Container>
             <Box sx={{ borderBottom:"1px solid #d9d9d9",width: '100%' }} />
-            <Container sx={{zIndex:1000 ,direction:'rtl',paddingRight:'-50px'}}>
+            <Container sx={{zIndex:100000000000 ,direction:'rtl',paddingRight:'-50px'}}>
                 <SearchBox />
             </Container>
 
