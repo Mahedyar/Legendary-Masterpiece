@@ -9,7 +9,6 @@ import cream from "../public/Images/ChubeHaraj/img.png";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
 import firstImagedPreview from "../public/Images/KalaPreview/ladies_new.png";
 import secondImagedPreview from "../public/Images/KalaPreview/men_new.png";
-// import MainHeader from "../components/Header/MainHeader"
 import LittleBox1 from "../components/LittleBox/LittleBox1";
 import AdsCard1 from "../components/AdsCard/AdsCard1"
 import AdsCard2 from "../components/AdsCard/AdsCard2"
@@ -19,66 +18,11 @@ import AdsCard5 from "../components/AdsCard/AdsCard5"
 import AdsCard6 from "../components/AdsCard/AdsCard6"
 import AdsCard7 from "../components/AdsCard/AdsCard7"
 import AdsCard8 from "../components/AdsCard/AdsCard8"
-// import MediaFooter from "../components/footer/MediaFooter"
-
-
-
-
-
+import {products} from "../data/products";
 
 export default function Home() {
-  // const kalaPreviewTitleHide = 1 ,
-  const products = [
-    {
-      id: 1,
-      image: livan.src,
-      name: "لیوان پلاستیکی",
-      offPercent: 14,
-      price: 15000,
-    },
-    {
-      id: 2,
-      image: drill.src,
-      name: "دریل",
-      offPercent: 22,
-      price: 800000,
-    },
-    {
-      id: 3,
-      image: kafsh.src,
-      name: "کفش ورزشی",
-      offPercent: 31,
-      price: 320000,
-    },
-    {
-      id: 4,
-      image: sandis.src,
-      name: "ساندیس",
-      offPercent: 8,
-      price: 8000,
-    },
-    {
-      id: 5,
-      image: headphone.src,
-      name: "هدفون مدل یونیوو",
-      offPercent: 48,
-      price: 450000,
-    },
-    {
-      id: 6,
-      image: cream.src,
-      name: "کرم مخصوص صورت",
-      offPercent: 17,
-      price: 85000,
-    },
-  ];
-
-
-
   return (
     <>
-
-      {/* <MainHeader/> */}
       <Slider />
       <LittleBox1/>
       <ChubeHaraj products={products} cardsPaddingTop={3} />
@@ -139,9 +83,6 @@ export default function Home() {
           cardsPaddingTop={1}
           previewTitle={"گوشی موبایل"}
       />
-
-      {/* <MediaFooter /> */}
-
     </>
   );
 }
