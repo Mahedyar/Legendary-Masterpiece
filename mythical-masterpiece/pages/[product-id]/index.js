@@ -1,20 +1,20 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import MainProductImage from "../components/productImage/MainProductImage";
-import ProductVizhegiPrice from "../components/productVizhegiPrice/ProductVizhegiPrice";
-import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
-import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
+import MainProductImage from "../../components/productImage/MainProductImage";
+import ProductVizhegiPrice from "../../components/productVizhegiPrice/ProductVizhegiPrice";
+import ProductSellerTable from "../../components/ProductSellerTable/ProductSellerTable";
+import ProductBuyLendo from "../../components/ProductBuyLendo/ProductBuyLendo";
 
-import ProductBigDescription from "../components/productBigDescription/ProductBigDescription";
-import DescriptionTopBar from "../components/productBigDescription/DescriptionTopBar";
-import KalaPreview from "../components/kalaPreview/KalaPreview";
-import livan from "../public/Images/ChubeHaraj/img_1.png";
-import drill from "../public/Images/ChubeHaraj/img_2.png";
-import kafsh from "../public/Images/ChubeHaraj/img_3.png";
-import sandis from "../public/Images/ChubeHaraj/img_4.png";
-import headphone from "../public/Images/ChubeHaraj/img_5.png";
-import cream from "../public/Images/ChubeHaraj/img.png";
+import ProductBigDescription from "../../components/productBigDescription/ProductBigDescription";
+import DescriptionTopBar from "../../components/productBigDescription/DescriptionTopBar";
+import KalaPreview from "../../components/kalaPreview/KalaPreview";
+import livan from "../../public/Images/ChubeHaraj/img_1.png";
+import drill from "../../public/Images/ChubeHaraj/img_2.png";
+import kafsh from "../../public/Images/ChubeHaraj/img_3.png";
+import sandis from "../../public/Images/ChubeHaraj/img_4.png";
+import headphone from "../../public/Images/ChubeHaraj/img_5.png";
+import cream from "../../public/Images/ChubeHaraj/img.png";
 
 export default function ProductPage() {
     const sellers = {
