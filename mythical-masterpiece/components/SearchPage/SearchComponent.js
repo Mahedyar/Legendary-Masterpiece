@@ -4,6 +4,7 @@ import classes from "./SearchPage.module.css"
 import BreadCrumbs from "./BreadCrumbs";
 import FilteredSection from "./FilteredSection";
 import FilterOptions from "./FilterOptions";
+import BottomNavigation from "./BottomNavigation";
 
 const getPageSize = () => {
     const [screenSize, setScreenSize] = useState([900, 1440]);
@@ -12,6 +13,7 @@ const getPageSize = () => {
         const windowSizeHandler = () => {
             setScreenSize([window.innerHeight, window.innerWidth])
         }
+        window.addEventListener("load", windowSizeHandler);
         window.addEventListener('resize', windowSizeHandler);
         return () => {
             window.removeEventListener('resize', windowSizeHandler)
@@ -122,10 +124,16 @@ const SearchComponent = (props) => {
                 console.log("پربازدیدها")
                 break;
             case ("ارزان ترین") :
-                setFilteredProducts(filteredProducts.sort((a, b) => (+a.price > +b.price ? 1 : -1)))
+                setFilteredProducts((filteredProducts) => {
+                    const newArray = filteredProducts.filter(item => item)
+                    return newArray.sort((a, b) => (+a.price > +b.price ? 1 : -1))
+                })
                 break;
             case ("گران ترین") :
-                setFilteredProducts(filteredProducts.sort((a, b) => (+a.price > +b.price ? -1 : 1)))
+                setFilteredProducts((filteredProducts) => {
+                    const newArray = filteredProducts.filter(item => item)
+                    return newArray.sort((a, b) => (+a.price > +b.price ? -1 : 1))
+                })
                 break;
             case ("جدیدترین") :
                 console.log("جدیدترین")
@@ -134,10 +142,13 @@ const SearchComponent = (props) => {
                 console.log("سریع ترین ارسال!")
                 break;
             case ("تخفیف دار") :
-                setFilteredProducts(filteredProducts.sort((a, b) => (+a.offPercent > +b.offPercent ? -1 : 1)))
+                setFilteredProducts((filteredProducts) => {
+                    const newArray = filteredProducts.filter(item => item)
+                    return newArray.sort((a, b) => (+a.offPercent > +b.offPercent ? -1 : 1))
+                })
                 break;
             default :
-                console.log("پرفروش ترین ها")
+                console.log("پرفروش ترین")
                 break;
         }
     }
@@ -148,8 +159,12 @@ const SearchComponent = (props) => {
             <BreadCrumbs/>
             <div className={classes.pageContent}>
                 <div className={classes.pageGrid}>
-                    <FilteredSection width={width} sortingAvailableProducts={sortingAvailableProducts}
-                                     arrayLengh={filteredProducts.length} products={filteredProducts}/>
+                    <FilteredSection
+                        width={width}
+                        sortingAvailableProducts={sortingAvailableProducts}
+                        arrayLengh={filteredProducts.length}
+                        products={filteredProducts}
+                    />
                     {width > 760 ? <FilterOptions
                         filterListByRangeHandler={filterListByRangeHandler}
                         filterListByDiscountHandler={filterListByDiscountHandler}
@@ -157,7 +172,17 @@ const SearchComponent = (props) => {
                         checkBox={checkBox}
                         setCheckBox={setCheckBox}
                         pricesArray={props.pricesArray}
-                    /> : null}
+                    /> :
+                    <BottomNavigation
+                        width={width}
+                        sortingAvailableProducts={sortingAvailableProducts}
+                        filterListByRangeHandler={filterListByRangeHandler}
+                        filterListByDiscountHandler={filterListByDiscountHandler}
+                        searchProductHandler={searchProductHandler}
+                        checkBox={checkBox}
+                        setCheckBox={setCheckBox}
+                        pricesArray={props.pricesArray}
+                    />}
                 </div>
             </div>
         </Fragment>
