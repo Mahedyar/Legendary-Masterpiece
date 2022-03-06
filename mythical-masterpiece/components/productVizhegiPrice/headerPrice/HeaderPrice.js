@@ -21,16 +21,16 @@ function Item(props) {
     );
 }
 
-export default function HeaderPrice() {
+export default function HeaderPrice(props) {
     return (
         <>
             <div style={{width: '100%'}}>
                 <Box variant={'outline'} sx={{display: 'grid', gridTemplateRows: 'repeat(3, 1fr)'}}>
-                    <Item><h3>گوشی موبایل شیائومی مدل Poco X3 Pro دو سیم کارت، ظرفیت 256 گیگابایت با رم 8 گیگابایت</h3>
+                    <Item><h3>{props.product.title}</h3>
                     </Item>
                     <Item>
-                        <SubTop/>
-                        <SubBottom/>
+                        <SubTop product={props.product}/>
+                        <SubBottom product={props.product}/>
                         <hr/>
                     </Item>
                     <Item>

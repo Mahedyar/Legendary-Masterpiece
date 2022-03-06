@@ -13,7 +13,8 @@ function Item(props) {
     );
 }
 
-export default function ResProductPrice() {
+export default function ResProductPrice(props) {
+    const price = (+props.product.price - (+props.product.price * +props.product.offPercent));
     return (
         <>
             <div style={{width: '100%'}}>
@@ -27,10 +28,10 @@ export default function ResProductPrice() {
                     }}
                 >
                     <Item >
-                        <h1>7,580,000<span style={{fontSize:14,color:"#8c8c8c",}}>تومان</span></h1>
+                        <h1>{price}<span style={{fontSize:14,color:"#8c8c8c",}}>تومان</span></h1>
                     </Item>
                     <Item sx={{pt:2.5}}>
-                        <h3 style={{pl:2}}><span className={'ResTakhfif'} style={{fontSize:14,color:"#8c8c8c"}}>%1</span>7,580,000</h3>
+                        <h3 style={{pl:2}}><span className={'ResTakhfif'} style={{fontSize:14,color:"#8c8c8c"}}>%1</span>{props.product.price}</h3>
                     </Item>
 
                 </Box>

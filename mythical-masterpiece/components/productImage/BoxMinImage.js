@@ -26,7 +26,7 @@ function Item(props) {
         />
     );
 }
-export default function BoxMinImage(){
+export default function BoxMinImage(props){
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -45,17 +45,11 @@ export default function BoxMinImage(){
                         alignItems:'center',
                     }}>
 
-                        {item.images.map((img,index)=><Item onClick={handleOpen} key={item.product}><Box>
+                        {props.product.image.map((img,index)=><Item onClick={handleOpen} key={img}><Box>
                             <img  className={'Img-product'} width={40}height={40} src={img}/></Box></Item>)}
                     <Item onClick={handleOpen}
                           sx={{paddingTop:3.5,cursor:'pointer',color:'#595959'}}><Box>+{item.images.length+item.moreImage.length}</Box></Item>
                     </Box>)}
-
-
-
-
-
-
             </div>
         </>
     )

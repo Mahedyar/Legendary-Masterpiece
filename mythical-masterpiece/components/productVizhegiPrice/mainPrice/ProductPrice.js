@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import NumberToPersian from "../../chubeHaraj/NumberToPersian";
+
 function Item(props) {
     const {sx, ...other} = props;
     return (
@@ -13,7 +13,9 @@ function Item(props) {
     );
 }
 
-export default function ProductPrice() {
+export default function ProductPrice(props) {
+    const price = (+props.product.price - (+props.product.price * +props.product.offPercent));
+
     return (
         <>
             <div style={{width: '100%'}}>
@@ -26,12 +28,12 @@ export default function ProductPrice() {
                     }}
                 >
                     <Item>
-                        <h1>۷,۶۸۰,۰۰۰<span style={{fontSize:15,color:"#8c8c8c"}}>تومان</span></h1>
+                        <h1>{price}<span style={{fontSize:15,color:"#8c8c8c"}}>تومان</span></h1>
                     </Item>
                     <Item sx={{fontSize:10,textDecoration: 'line-through',color: '#8c8c8c',paddingTop:3,paddingLeft:1}}>
-                        <h1 >۷,۶۸۰,۰۰۰</h1>
+                        <h1 >{props.product.price}</h1>
                     </Item>
-                    <span className={'takhfif'}>%1</span>
+                    <span className={'takhfif'}>%{props.product.offPercent}</span>
                 </Box>
             </div>
         </>

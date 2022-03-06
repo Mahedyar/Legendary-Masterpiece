@@ -1,8 +1,6 @@
 import ItemsSlider from "../chubeHaraj/ItemsSlider";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { Typography } from "@mui/material";
 import KalaPreviewTitle from "./KalaPreviewTitle";
 
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -51,7 +49,6 @@ const KalaPreview = (props) => {
           <ItemsSlider
             products={props.products}
             slidesPerView={slidesNumber}
-            // cardsPaddingTop={props.cardsPaddingTop}
           />
 
           {props.imagedKalaPreview && fullSize && (
