@@ -1,7 +1,7 @@
-import linkedin from '../../../assets/Images/Footer/TopFooter/icons8-linkedin-50.png'
-import telegram from '../../../assets/Images/Footer/TopFooter/icons8-telegram-app-50.png'
-import twitter from '../../../assets/Images/Footer/TopFooter/icons8-twitter-50 .png'
-import instagram from '../../../assets/Images/Footer/TopFooter/instagram-gradient.svg'
+import linkedin from '../../../public/Images/Footer/TopFooter/icons8-linkedin-50.png'
+import telegram from '../../../public/Images/Footer/TopFooter/icons8-telegram-app-50.png'
+import twitter from '../../../public/Images/Footer/TopFooter/icons8-twitter-50 .png'
+import instagram from '../../../public/Images/Footer/TopFooter/instagram-gradient.svg'
 import {Grid, Box, Container} from "@mui/material";
 import PropTypes from 'prop-types';
 

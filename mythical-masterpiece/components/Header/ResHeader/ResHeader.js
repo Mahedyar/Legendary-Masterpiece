@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import topImagePhone from '../../../assets/Images/Header/timche-mobile.gif';
+import topImagePhone from '../../../public/Images/Header/timche-mobile.gif';
 import Hamberger from "./Hamberger";
 
 import classes from "../Header.module.css";
-import HeaderGif from "../../../assets/Images/Header/timche-header-add.gif";
+import HeaderGif from "../../../public/Images/Header/timche-header-add.gif";
 import SearchBox from "../SearchBox";
 
 

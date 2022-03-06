@@ -1,5 +1,5 @@
 import {Fragment, useState, useEffect} from "react";
-import img from "../../assets/Images/Ads/SearchPageAdd.webp"
+import img from "../../public/Images/Ads/SearchPageAdd.webp"
 import classes from "./SearchPage.module.css"
 import BreadCrumbs from "./BreadCrumbs";
 import FilteredSection from "./FilteredSection";

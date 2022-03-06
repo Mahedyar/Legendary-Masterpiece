@@ -3,8 +3,8 @@ import Box from '@mui/material/Box';
 import {Container, Stack, Typography} from "@mui/material";
 // import {pskey1, psicon, psicon1, psicon2, pstext21, pstext1, pstext11, pstext2, pstext3, pstext31, pstext4, pshalf_background ,pssection1, psbox1} from './productLendoStyle.css';
 import KeyboardArrowLeftOutlinedIcon from "@mui/icons-material/KeyboardArrowLeftOutlined";
-import lendosign from "../../assets/Images/Lendo/lendosign.svg";
-import shahneshin from "../../assets/Images/Lendo/shahneshin.svg";
+import lendosign from "../../public/Images/Lendo/lendosign.svg";
+import shahneshin from "../../public/Images/Lendo/shahneshin.svg";
 
 export default function ProductBuyLendo(props) {
     return (

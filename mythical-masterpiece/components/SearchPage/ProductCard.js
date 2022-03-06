@@ -2,7 +2,7 @@ import {useState} from "react";
 
 import Link from 'next/link'
 import classes from './ProductCard.module.css'
-import kingSeatIcon from '../../assets/Images/icon/shahneshin.svg'
+import kingSeatIcon from '../../public/Images/icon/shahneshin.svg'
 
 const ProductCard = (props) => {
     const [hovered, setHovered] = useState(false);

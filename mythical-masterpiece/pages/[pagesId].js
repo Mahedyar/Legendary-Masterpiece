@@ -9,12 +9,12 @@ import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
 import ProductBigDescription from "../components/productBigDescription/ProductBigDescription";
 import DescriptionTopBar from "../components/productBigDescription/DescriptionTopBar";
 import KalaPreview from "../components/kalaPreview/KalaPreview";
-import livan from "../assets/Images/ChubeHaraj/img_1.png";
-import drill from "../assets/Images/ChubeHaraj/img_2.png";
-import kafsh from "../assets/Images/ChubeHaraj/img_3.png";
-import sandis from "../assets/Images/ChubeHaraj/img_4.png";
-import headphone from "../assets/Images/ChubeHaraj/img_5.png";
-import cream from "../assets/Images/ChubeHaraj/img.png";
+import livan from "../public/Images/ChubeHaraj/img_1.png";
+import drill from "../public/Images/ChubeHaraj/img_2.png";
+import kafsh from "../public/Images/ChubeHaraj/img_3.png";
+import sandis from "../public/Images/ChubeHaraj/img_4.png";
+import headphone from "../public/Images/ChubeHaraj/img_5.png";
+import cream from "../public/Images/ChubeHaraj/img.png";
 
 export default function ProductPage() {
     const sellers = {
