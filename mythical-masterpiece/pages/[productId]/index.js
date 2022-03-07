@@ -41,7 +41,7 @@ export default function ProductPage(props) {
                     <Box
                         sx={{
                             display: "grid",
-                            gridTemplateColumns: "repeat(1, 1fr)",
+                            gridTemplateColumns: "repeat(1, 768px)",
                             gap: 1,
                             gridTemplateRows: "auto",
                             gridTemplateAreas: `

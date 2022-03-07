@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="res header" />
+    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="fix responsive error tablet and phone">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/BoxModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/BoxModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ModalMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ModalMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/ProductImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/ProductImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResMainProductPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResMainProductPrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/headerPrice/HeaderPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/headerPrice/HeaderPrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/[productId]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/[productId]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/styles/globals.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,22 +27,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="productPage" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/index.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/_app.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mythical-masterpiece/pages/index.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="249RtrUCI9IkTUPLafSHUnRxQ0u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -49,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mythical-masterpiece/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mythical-Masterpiece1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,7 +75,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="850357b5-ed5e-4597-8e54-f7b5712401ce" name="Changes" comment="test" />
+      <changelist id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="res header" />
       <created>1643041034192</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -87,6 +88,9 @@
       <workItem from="1644072215653" duration="983000" />
       <workItem from="1644080349595" duration="1381000" />
       <workItem from="1644081891157" duration="508000" />
+      <workItem from="1646471480499" duration="1715000" />
+      <workItem from="1646583147618" duration="203000" />
+      <workItem from="1646583385655" duration="10065000" />
     </task>
     <task id="LOCAL-00001" summary="first commit + assest file">
       <created>1643261614247</created>
@@ -123,7 +127,42 @@
       <option name="project" value="LOCAL" />
       <updated>1644080211343</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workSpace">
+      <created>1646490076939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646490076939</updated>
+    </task>
+    <task id="LOCAL-00007" summary="workSpace and respansive productPage">
+      <created>1646574238461</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646574238461</updated>
+    </task>
+    <task id="LOCAL-00008" summary="workSpace and respansive productPage">
+      <created>1646575285206</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646575285206</updated>
+    </task>
+    <task id="LOCAL-00009" summary="res header">
+      <created>1646583159248</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646583159248</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix responsive error for 1440, 1024">
+      <created>1646589201954</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646589201954</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +178,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -146,6 +186,12 @@
     <MESSAGE value="test" />
     <MESSAGE value="main" />
     <MESSAGE value="mediaFooter" />
-    <option name="LAST_COMMIT_MESSAGE" value="mediaFooter" />
+    <MESSAGE value="workSpace,package,yarn" />
+    <MESSAGE value="workSpace" />
+    <MESSAGE value="workSpace and respansive productPage" />
+    <MESSAGE value="res header" />
+    <MESSAGE value="fix responsive error for 1440, 1024" />
+    <MESSAGE value="fix responsive error tablet and phone" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix responsive error tablet and phone" />
   </component>
 </project>

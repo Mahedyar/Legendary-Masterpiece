@@ -13,12 +13,12 @@ const style = {
   bgcolor: "#fff",
   outline: "none",
   overflow:'hidden',
-  zIndex : 1000000
+  zIndex : 100
 };
 export default function ModalMenu(props) {
   return (
     <>
-      <Modal sx={{position : "unset"}} open={props.open} >
+      <Modal sx={{position : "unset",zIndex:"100"}} open={props.open} >
         <Box
          onMouseEnter = {props.onOpen}
          onMouseLeave = {props.onClose}

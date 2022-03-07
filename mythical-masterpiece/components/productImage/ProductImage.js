@@ -24,7 +24,7 @@ export default function ProductImage(props){
     const lapTap = useMediaQuery('(min-width:1025px)')
     return(
         <>
-            <div style={{ width: '100%', marginLeft:lapTap? '-71px':""}}>
+            <div style={{ width: '100%', marginLeft:lapTap? '-41px':""}}>
                     <Item><BoxMaxImage product={props.product}/></Item>
                     <Item><BoxMinImage product={props.product}/></Item>
             </div>

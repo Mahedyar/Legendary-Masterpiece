@@ -24,7 +24,7 @@ a {
 
 .MuiContainer-maxWidthLg {
     max-width: 100%;
-    width: 1410px;
+    /*width: 1410px;*/
 }
 
 .css-mjlwbq-MuiPaper-root {
@@ -167,7 +167,7 @@ img {
 
 .takhfif {
     background: yellow;
-    margin-top: 43px;
+    margin-top: 25px;
     margin-left: 30px;
     height: 3vh;
     width: 2vw;
@@ -207,3 +207,6 @@ img {
 .css-se2au3{
     width: 550px;
 }
+/*.css-872cvm,.css-12xbi90 {*/
+/*    width: 1410px;*/
+/*}*/
