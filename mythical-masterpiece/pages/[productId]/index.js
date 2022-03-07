@@ -55,7 +55,7 @@ export default function ProductPage(props) {
                         }}
                     >
                         <Box sx={{gridArea: "sidebar",}}><MainProductImage/></Box>
-                        <Box sx={{gridArea: "info", }}><ProductVizhegiPrice/> <ProductBuyLendo
+                        <Box sx={{gridArea: "info", }}><ProductVizhegiPrice product={props.productData[0]}/> <ProductBuyLendo
                             lendo={props.productData[0]}/></Box>
                         <Box sx={{gridArea: "main",}}><ProductSellerTable sellers={props.productData[0]}/></Box>
                         <Box sx={{gridArea: "stylesFeatures", }}><DescriptionTopBar/></Box>
