@@ -21,7 +21,6 @@ function Item(props) {
         />
     );
 }
-
 export default function HeaderPrice(props) {
     return (
         <>
