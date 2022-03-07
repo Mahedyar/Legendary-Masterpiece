@@ -1,4 +1,4 @@
-import classes from './BottomNavigation.module.css'
+import classes from '../../styles/BottomNavigation.module.css'
 import FilterListIcon from "@mui/icons-material/FilterList";
 import {useState} from "react";
 import FilterOptions from "./FilterOptions";

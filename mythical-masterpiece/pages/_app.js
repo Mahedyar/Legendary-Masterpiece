@@ -8,14 +8,14 @@ import "../styles/fontsCss/fontsStyle.css"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../components/kalaPreview/KalaPreview.css"
-import "../components/slider/styles.css";
-import "../components/chubeHaraj/SwipperStyles.css";
-import "../components/AdsCard/adsCardStyle.css";
-import "../components/LittleBox/little.box1.style.css";
-import "../components/ProductSellerTable/productSellerStyle.css";
-import "../components/ProductBuyLendo/productLendoStyle.css";
-import "../components/productBigDescription/CommentsPart/ProgressBar.css"
+import "../styles/KalaPreview.css"
+import "../styles/styles.css";
+import "../styles/SwipperStyles.css";
+import "../styles/adsCardStyle.css";
+import "../styles/little.box1.style.css";
+import "../styles/productSellerStyle.css";
+import "../styles/productLendoStyle.css";
+import "../styles/ProgressBar.css"
 import HeadFooter from "../Layouts/HeadFooter";
 // import "../components/ProductSellerTable/productSellerStyle.css";
 // import "../components/ProductBuyLendo/productLendoStyle.css";

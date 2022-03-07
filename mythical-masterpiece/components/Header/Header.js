@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import classes from "./Header.module.css";
+import classes from "../../styles/Header.module.css";
 import Image from "next/image";
 import HeaderGif from "../../public/Images/Header/timche-header-add.gif";
 import TitlePart from "./TitlePart";

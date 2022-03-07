@@ -1,13 +1,13 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import MainProductImage from "../components/productImage/MainProductImage";
-import ProductVizhegiPrice from "../components/productVizhegiPrice/ProductVizhegiPrice";
-import ProductSellerTable from "../components/ProductSellerTable/ProductSellerTable";
-import ProductBuyLendo from "../components/ProductBuyLendo/ProductBuyLendo";
+import MainProductImage from "../productImage/MainProductImage";
+import ProductVizhegiPrice from "../productVizhegiPrice/ProductVizhegiPrice";
+import ProductSellerTable from "../ProductSellerTable/ProductSellerTable";
+import ProductBuyLendo from "../ProductBuyLendo/ProductBuyLendo";
 
-import ProductBigDescription from "../components/productBigDescription/ProductBigDescription"
-import DescriptionTopBar from '../components/productBigDescription/descriptionTopBar';
+import ProductBigDescription from "../productBigDescription/ProductBigDescription"
+import DescriptionTopBar from '../productBigDescription/DescriptionTopBar';
 
 
 export default function ProductPage() {

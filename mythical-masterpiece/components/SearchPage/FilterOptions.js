@@ -1,5 +1,5 @@
 import {useState, useRef} from "react";
-import classes from './FilterOptions.module.css';
+import classes from '../../styles/FilterOptions.module.css';
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CustomCheckBox from './CustomCheckBox';

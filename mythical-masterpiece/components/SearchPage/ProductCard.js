@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 import Link from 'next/link'
-import classes from './ProductCard.module.css'
+import classes from '../../styles/ProductCard.module.css'
 import Image from "next/image";
 import kingSeatIcon from '../../assets/Images/icon/shahneshin.svg'
 

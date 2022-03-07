@@ -1,5 +1,5 @@
 import Link from "next/link"
-import classes from "./BreadCrumbs.module.css"
+import classes from "../../styles/BreadCrumbs.module.css"
 
 const BreadCrumbs = () => {
     return (

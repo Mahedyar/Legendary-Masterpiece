@@ -1,6 +1,6 @@
 import {Fragment, useState, useEffect} from "react";
 import img from "../../public/Images/Ads/SearchPageAdd.webp"
-import classes from "./SearchPage.module.css"
+import classes from "../../styles/SearchPage.module.css"
 import BreadCrumbs from "./BreadCrumbs";
 import FilteredSection from "./FilteredSection";
 import FilterOptions from "./FilterOptions";

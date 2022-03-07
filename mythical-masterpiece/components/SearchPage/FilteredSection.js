@@ -1,5 +1,5 @@
 import {useState} from "react";
-import classes from "./FilteredSection.module.css"
+import classes from "../../styles/FilteredSection.module.css"
 import FilterListIcon from '@mui/icons-material/FilterList';
 import ProductCard from "./ProductCard";
 
