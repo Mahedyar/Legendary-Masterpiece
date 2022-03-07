@@ -11,8 +11,6 @@ import ProductBigDescription from "../../components/productBigDescription/Produc
 import DescriptionTopBar from "../../components/productBigDescription/DescriptionTopBar";
 import KalaPreview from "../../components/kalaPreview/KalaPreview";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import {lendo, sellers} from "../../data/sellers";
-import {products} from "../../data/products";
 
 
 export default function ProductPage(props) {
