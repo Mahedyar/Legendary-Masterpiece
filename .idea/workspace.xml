@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="the last commit">
-      <change afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/MainHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/MainHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/ResHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/Header/ResHeader/ResHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/MainProductImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/MainProductImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/ProductImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productImage/ProductImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ProductVizhegiPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ProductVizhegiPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResMainProductPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResMainProductPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResproductPrice/ResHeaderPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResproductPrice/ResHeaderPrice.js" afterDir="false" />
+    <list default="true" id="32b570a3-cff6-44b7-99d0-ca87dc73a35f" name="Changes" comment="responsive productPage">
       <change beforePath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResproductPrice/ResProductPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/components/productVizhegiPrice/ResproductPrice/ResProductPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/pages/[productId]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/pages/[productId]/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythical-masterpiece/styles/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/mythical-masterpiece/styles/Header.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +91,7 @@
       <workItem from="1644081891157" duration="508000" />
       <workItem from="1646471480499" duration="1715000" />
       <workItem from="1646583147618" duration="203000" />
-      <workItem from="1646583385655" duration="24449000" />
+      <workItem from="1646583385655" duration="24783000" />
     </task>
     <task id="LOCAL-00001" summary="first commit + assest file">
       <created>1643261614247</created>
@@ -195,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646625876884</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="responsive productPage">
+      <created>1646837115107</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1646837115107</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +223,7 @@
     <MESSAGE value="fix responsive error tablet and phone" />
     <MESSAGE value="edit headerPrice margin-top20=&gt;10" />
     <MESSAGE value="the last commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="the last commit" />
+    <MESSAGE value="responsive productPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive productPage" />
   </component>
 </project>

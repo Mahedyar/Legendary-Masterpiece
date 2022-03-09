@@ -15,7 +15,7 @@ function Item(props) {
 }
 
 export default function ResProductPrice(props) {
-    const matches = useMediaQuery("(max-width:320px)");
+    const matches = useMediaQuery("(max-width:376px)");
     const price = (+props.product.price - (+props.product.price * +props.product.offPercent));
     return (
         <>
