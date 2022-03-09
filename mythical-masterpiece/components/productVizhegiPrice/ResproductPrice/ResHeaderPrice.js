@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import ResLikeIcon from "./ResLikeIcon";
 import SubTop from "../headerPrice/SubTop";
 import ResButtonColor from "./ResButtonColor";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Item(props) {
     const {sx, ...other} = props;
@@ -21,6 +22,7 @@ function Item(props) {
 }
 
 export default function ResHeaderPrice(props) {
+
     return (
         <>
             <div style={{width: '100%'}}>

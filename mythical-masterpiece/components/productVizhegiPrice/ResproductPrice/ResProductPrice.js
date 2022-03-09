@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Item(props) {
     const {sx, ...other} = props;
@@ -14,6 +15,7 @@ function Item(props) {
 }
 
 export default function ResProductPrice(props) {
+    const matches = useMediaQuery("(max-width:320px)");
     const price = (+props.product.price - (+props.product.price * +props.product.offPercent));
     return (
         <>
@@ -25,10 +27,12 @@ export default function ResProductPrice(props) {
                         flexDirection: 'row',
                         justifyContent:'space-between',
                         direction: 'rtl',
+
+
                     }}
                 >
-                    <Item >
-                        <h1>{price}<span style={{fontSize:14,color:"#8c8c8c",}}>تومان</span></h1>
+                    <Item >{matches?<h3 style={{marginTop:"15px"}}>{price}تومان </h3>:
+                        <h1>{price}<span style={{fontSize:14,color:"#8c8c8c",}}>تومان</span></h1>}
                     </Item>
                     <Item sx={{pt:2.5}}>
                         <h3 style={{pl:2}}><span className={'ResTakhfif'} style={{fontSize:14,color:"#8c8c8c"}}>%1</span>{props.product.price}</h3>

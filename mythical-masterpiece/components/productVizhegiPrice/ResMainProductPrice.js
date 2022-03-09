@@ -4,21 +4,22 @@ import ResHeaderPrice from '../../components/productVizhegiPrice/ResproductPrice
 import ResProductPrice from "./ResproductPrice/ResProductPrice";
 import ResProductFeatures from "./ResproductPrice/ResProductFratures";
 import useMediaQuery from "@mui/material/useMediaQuery";
-
+import {Grid} from "@mui/material";
 
 
 export default function ResMainProductPrice(props) {
-    const matches = useMediaQuery("(min-width:769px)");
+    const matches = useMediaQuery("(min-width:1025px)");
     return (
         <>
-
-            <Container >
-                <Box sx={{height: '100vh',width:'700px'}} >
-                    <ResHeaderPrice product={props.product}/>
-                    <ResProductPrice product={props.product}/>
-                    <ResProductFeatures/>
-                </Box>
-            </Container>
+            <Grid container justifyContent={"center"}>
+                <Container>
+                    <Grid item xs="12">
+                        <ResHeaderPrice product={props.product}/>
+                        <ResProductPrice product={props.product}/>
+                        <ResProductFeatures/>
+                    </Grid>
+                </Container>
+            </Grid>
         </>
     )
 }
